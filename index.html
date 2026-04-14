@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESCHATON — Revista de Estudos Escatológicos</title>
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231a0e0a'/%3E%3Cpath d='M32 10 44 32 32 54 20 32Z' fill='%23c9a84c'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+    --ouro: #c9a84c;
+    --ouro-claro: #e8d5a0;
+    --vermelho: #8b1a1a;
+    --azul-profundo: #0a1628;
+    --azul-medio: #112240;
+    --branco: #f8f5ef;
+    --cinza: #8a8a9a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: var(--azul-profundo);
+    font-family: 'EB Garamond', serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* === HERO === */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 24px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(139,26,26,0.25) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 30%, rgba(201,168,76,0.12) 0%, transparent 45%),
+        radial-gradient(ellipse at 50% 80%, rgba(17,34,64,0.8) 0%, transparent 60%),
+        linear-gradient(180deg, #04080f 0%, #0a1628 50%, #0d1e3a 100%);
+    z-index: 0;
+}
+
+/* Estrelas animadas */
+.stars {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle var(--d, 3s) ease-in-out infinite;
+    animation-delay: var(--delay, 0s);
+    opacity: 0;
+}
+@keyframes twinkle {
+    0%, 100% { opacity: 0; transform: scale(0.8); }
+    50% { opacity: var(--op, 0.7); transform: scale(1.1); }
+}
+
+.hero-content { position: relative; z-index: 2; max-width: 700px; }
+
+.hero-selo {
+    display: inline-block;
+    border: 1px solid rgba(201,168,76,0.4);
+    padding: 6px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 9pt;
+    letter-spacing: 4px;
+    color: var(--ouro);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    animation: fadeUp 1s ease both;
+}
+
+.hero-titulo {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(42pt, 10vw, 72pt);
+    font-weight: 900;
+    color: white;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    line-height: 1;
+    animation: fadeUp 1s ease 0.2s both;
+}
+
+.hero-titulo span {
+    display: block;
+    font-size: clamp(9pt, 2vw, 13pt);
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: var(--ouro-claro);
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero-divisor {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 28px auto;
+    width: 320px;
+    animation: fadeUp 1s ease 0.4s both;
+}
+.hero-divisor::before, .hero-divisor::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--ouro), transparent);
+}
+.hero-divisor-ico { color: var(--ouro); font-size: 14pt; }
+
+.hero-sub {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 14pt;
+    color: rgba(232,213,160,0.8);
+    line-height: 1.6;
+    max-width: 480px;
+    margin: 0 auto 40px;
+    animation: fadeUp 1s ease 0.5s both;
+}
+
+.hero-meta {
+    font-family: 'Oswald', sans-serif;
+    font-size: 9pt;
+    letter-spacing: 2px;
+    color: var(--cinza);
+    text-transform: uppercase;
+    animation: fadeUp 1s ease 0.6s both;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === GRID DE LIÇÕES === */
+.licoes-section {
+    padding: 80px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.section-header h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 22pt;
+    color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.section-header p {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: var(--cinza);
+    font-size: 12pt;
+    margin-top: 8px;
+}
+
+.grid-licoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card-licao {
+    background: var(--azul-medio);
+    border: 1px solid rgba(201,168,76,0.15);
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card-licao:hover {
+    border-color: rgba(201,168,76,0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,168,76,0.2);
+}
+
+.card-topo {
+    height: 90px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 14px;
+    overflow: hidden;
+}
+
+.card-num {
+    font-family: 'Cinzel', serif;
+    font-size: 48pt;
+    font-weight: 900;
+    color: rgba(255,255,255,0.08);
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    line-height: 1;
+    user-select: none;
+}
+
+.card-num-destaque {
+    font-family: 'Oswald', sans-serif;
+    font-size: 9pt;
+    letter-spacing: 2px;
+    color: var(--ouro);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.card-corpo {
+    padding: 16px 18px 20px;
+    border-top: 2px solid;
+}
+
+.card-titulo {
+    font-family: 'Cinzel', serif;
+    font-size: 13pt;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.card-sub {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 10pt;
+    color: var(--cinza);
+    line-height: 1.4;
+}
+
+.card-acoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin-top: 4px;
+}
+
+.card-paginas {
+    font-family: 'Oswald', sans-serif;
+    font-size: 8pt;
+    color: var(--cinza);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 8pt;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ouro);
+    background: rgba(201,168,76,0.1);
+    border: 1px solid rgba(201,168,76,0.3);
+    padding: 5px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.card-btn:hover { background: var(--ouro); color: #111; }
+
+/* === RODAPÉ === */
+.rodape-hub {
+    text-align: center;
+    padding: 40px 24px 60px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+.rodape-hub p {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 10pt;
+    color: var(--cinza);
+}
+.rodape-hub strong {
+    font-family: 'Cinzel', serif;
+    color: var(--ouro);
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+/* Cores por lição */
+.l01 { background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 100%); border-color: #4a7fa5; }
+.l02 { background: linear-gradient(135deg, #1a1428 0%, #2a1a40 100%); border-color: #7a5fa5; }
+.l03 { background: linear-gradient(135deg, #0a2018 0%, #0d3020 100%); border-color: #3a9a6a; }
+.l04 { background: linear-gradient(135deg, #281408 0%, #3a1a08 100%); border-color: #c06020; }
+.l05 { background: linear-gradient(135deg, #280a0a 0%, #3a0808 100%); border-color: #a03030; }
+.l06 { background: linear-gradient(135deg, #1a1a08 0%, #282808 100%); border-color: #a09020; }
+.l07 { background: linear-gradient(135deg, #081828 0%, #082838 100%); border-color: #2080a0; }
+.l08 { background: linear-gradient(135deg, #200828 0%, #2a0838 100%); border-color: #9040a0; }
+.l09 { background: linear-gradient(135deg, #0a2028 0%, #082030 100%); border-color: #2090b0; }
+.l10 { background: linear-gradient(135deg, #200808 0%, #280808 100%); border-color: #803020; }
+.l11 { background: linear-gradient(135deg, #082008 0%, #0a2808 100%); border-color: #40a040; }
+.l12 { background: linear-gradient(135deg, #0a1020 0%, #101828 100%); border-color: #6080c0; }
+.l13 { background: linear-gradient(135deg, #201808 0%, #281a08 100%); border-color: #c09030; }
+
+.cb01 { border-color: #4a7fa5; }
+.cb02 { border-color: #7a5fa5; }
+.cb03 { border-color: #3a9a6a; }
+.cb04 { border-color: #c06020; }
+.cb05 { border-color: #a03030; }
+.cb06 { border-color: #a09020; }
+.cb07 { border-color: #2080a0; }
+.cb08 { border-color: #9040a0; }
+.cb09 { border-color: #2090b0; }
+.cb10 { border-color: #803020; }
+.cb11 { border-color: #40a040; }
+.cb12 { border-color: #6080c0; }
+.cb13 { border-color: #c09030; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="stars" id="stars"></div>
+    <div class="hero-content">
+        <div class="hero-selo">Escola Bíblica Dominical · Adultos Jovens</div>
+        <h1 class="hero-titulo">
+            ESCHATON
+            <span>Revista de Estudos Escatológicos</span>
+        </h1>
+        <div class="hero-divisor">
+            <span class="hero-divisor-ico">✦</span>
+        </div>
+        <p class="hero-sub">
+            "O Fim que Dá Sentido ao Começo"<br>
+            Uma jornada pelos grandes temas da profecia bíblica.
+        </p>
+                <div style="margin-bottom:20px;animation:fadeUp 1s ease 0.55s both;">
+            <a href="capa-revista.html" style="text-decoration:none;">
+                <button style="font-family:'Oswald',sans-serif;font-size:9pt;letter-spacing:2px;text-transform:uppercase;background:transparent;color:#c9a84c;border:1px solid rgba(201,168,76,0.5);padding:9px 22px;border-radius:2px;cursor:pointer;transition:all 0.2s;" onmouseover="this.style.background='rgba(201,168,76,0.15)'" onmouseout="this.style.background='transparent'">
+                    &#9654; Ver Capa da Revista
+                </button>
+            </a>
+        </div>
+        <div class="hero-meta">13 Lições · Perspectivas Pentecostal & Reformada</div>
+    </div>
+</section>
+
+<!-- GRID DE LIÇÕES -->
+<section class="licoes-section">
+    <div class="section-header">
+        <h2>Sumário das Lições</h2>
+        <p>Clique em uma lição para abrir, gerar conteúdo e editar</p>
+    </div>
+
+    <div class="grid-licoes">
+
+        <a href="licao-01.html" class="card-licao">
+            <div class="card-topo l01">
+                <div class="card-num">01</div>
+                <div class="card-num-destaque">Lição 01</div>
+            </div>
+            <div class="card-corpo cb01">
+                <div class="card-titulo">O Que é Escatologia?</div>
+                <div class="card-sub">Introdução, relevância e método de estudo profético</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-02.html" class="card-licao">
+            <div class="card-topo l02">
+                <div class="card-num">02</div>
+                <div class="card-num-destaque">Lição 02</div>
+            </div>
+            <div class="card-corpo cb02">
+                <div class="card-titulo">Os Sinais dos Tempos</div>
+                <div class="card-sub">Mateus 24 e os indicadores proféticos dos últimos dias</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-03.html" class="card-licao">
+            <div class="card-topo l03">
+                <div class="card-num">03</div>
+                <div class="card-num-destaque">Lição 03</div>
+            </div>
+            <div class="card-corpo cb03">
+                <div class="card-titulo">O Arrebatamento</div>
+                <div class="card-sub">Pré, mid e pós-tribulacionismo em perspectiva</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-04.html" class="card-licao">
+            <div class="card-topo l04">
+                <div class="card-num">04</div>
+                <div class="card-num-destaque">Lição 04</div>
+            </div>
+            <div class="card-corpo cb04">
+                <div class="card-titulo">A Grande Tribulação</div>
+                <div class="card-sub">Natureza, duração e propósito do período tribulacional</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-05.html" class="card-licao">
+            <div class="card-topo l05">
+                <div class="card-num">05</div>
+                <div class="card-num-destaque">Lição 05</div>
+            </div>
+            <div class="card-corpo cb05">
+                <div class="card-titulo">O Anticristo</div>
+                <div class="card-sub">Identidade, ascensão, obras e queda do homem da iniquidade</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-06.html" class="card-licao">
+            <div class="card-topo l06">
+                <div class="card-num">06</div>
+                <div class="card-num-destaque">Lição 06</div>
+            </div>
+            <div class="card-corpo cb06">
+                <div class="card-titulo">Israel e a Profecia</div>
+                <div class="card-sub">O papel do povo de Israel nos eventos dos últimos tempos</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-07.html" class="card-licao">
+            <div class="card-topo l07">
+                <div class="card-num">07</div>
+                <div class="card-num-destaque">Lição 07</div>
+            </div>
+            <div class="card-corpo cb07">
+                <div class="card-titulo">O Milênio</div>
+                <div class="card-sub">Pré, A e Pós-milenismo: as três grandes interpretações</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-08.html" class="card-licao">
+            <div class="card-topo l08">
+                <div class="card-num">08</div>
+                <div class="card-num-destaque">Lição 08</div>
+            </div>
+            <div class="card-corpo cb08">
+                <div class="card-titulo">A Segunda Vinda de Cristo</div>
+                <div class="card-sub">A Parusia gloriosa e seus desdobramentos cósmicos</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-09.html" class="card-licao">
+            <div class="card-topo l09">
+                <div class="card-num">09</div>
+                <div class="card-num-destaque">Lição 09</div>
+            </div>
+            <div class="card-corpo cb09">
+                <div class="card-titulo">A Ressurreição dos Mortos</div>
+                <div class="card-sub">Natureza, sequência e esperança da ressurreição</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-10.html" class="card-licao">
+            <div class="card-topo l10">
+                <div class="card-num">10</div>
+                <div class="card-num-destaque">Lição 10</div>
+            </div>
+            <div class="card-corpo cb10">
+                <div class="card-titulo">O Juízo Final</div>
+                <div class="card-sub">O Grande Trono Branco e a sentença eterna</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-11.html" class="card-licao">
+            <div class="card-topo l11">
+                <div class="card-num">11</div>
+                <div class="card-num-destaque">Lição 11</div>
+            </div>
+            <div class="card-corpo cb11">
+                <div class="card-titulo">O Inferno</div>
+                <div class="card-sub">Realidade, natureza e eternidade do estado de perdição</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-12.html" class="card-licao">
+            <div class="card-topo l12">
+                <div class="card-num">12</div>
+                <div class="card-num-destaque">Lição 12</div>
+            </div>
+            <div class="card-corpo cb12">
+                <div class="card-titulo">O Céu e a Nova Jerusalém</div>
+                <div class="card-sub">A vida eterna e a nova criação em Apocalipse 21-22</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+        <a href="licao-13.html" class="card-licao">
+            <div class="card-topo l13">
+                <div class="card-num">13</div>
+                <div class="card-num-destaque">Lição 13</div>
+            </div>
+            <div class="card-corpo cb13">
+                <div class="card-titulo">Vivendo à Luz da Eternidade</div>
+                <div class="card-sub">Ética escatológica e esperança cristã para jovens adultos</div>
+            </div>
+            <div class="card-acoes">
+                <span class="card-paginas">7 páginas</span>
+                <span class="card-btn">Abrir →</span>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<footer class="rodape-hub">
+    <p><strong>ESCHATON</strong> · Revista de Estudos Escatológicos · Escola Bíblica Dominical</p>
+    <p style="margin-top:8px;">Perspectivas Pentecostal & Reformada · Jovens Adultos · 13 Lições</p>
+</footer>
+
+<script>
+// LINKS OFICIAIS - Agora os botões sabem para onde ir
+const ESCHATON_ROUTES = {
+    volume1: 'https://igrejamanancialdevida.github.io/li-esebd/',
+    volume2: 'https://igrejamanancialdevida.github.io/li-esebd-v.2-/',
+    volume3: 'https://igrejamanancialdevida.github.io/li-esebd-v.3/'
+};
+
+const ESCHATON_CURRENT_VOLUME = 'volume3';
+
+function configurarIntegracaoVolumes() {
+    document.querySelectorAll('[data-volume-link]').forEach((elemento) => {
+        const destino = elemento.getAttribute('data-volume-link');
+        const rota = ESCHATON_ROUTES[destino];
+        if (rota) {
+            elemento.setAttribute('href', rota);
+            // Garante que o clique funcione mesmo com bloqueios de segurança
+            elemento.onclick = (e) => { 
+                e.preventDefault();
+                window.location.href = rota; 
+            };
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', configurarIntegracaoVolumes);
+</script>
+
+<script src="https://igrejamanancialdevida.github.io/li-esebd/navegacao.js"></script>
+</body>
+</html>
