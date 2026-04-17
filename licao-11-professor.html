@@ -99,7 +99,9 @@ ul li::before{content:'\2192' !important;position:absolute !important;left:0 !im
 .senha-erro{font-family:'EB Garamond',serif;font-size:10pt;color:#c0392b;margin-top:10px;opacity:0;transition:opacity 0.3s;font-style:italic;}
 .senha-erro.vis{opacity:1;}
 .senha-rodape{margin-top:40px;font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.15);}
-#conteudo-principal{display:none;}
+#conteudo-principal {
+    display: block;
+}
 /* BADGE E PAINEL DO PROFESSOR */
 .badge-prof{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;background:#2e6b30;color:#fff;padding:4px 12px;border-radius:2px;}
 .lbl-prof{color:#2e6b30;font-weight:600;}
@@ -179,23 +181,13 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
   .wm,.wm-prof{display:none;}
 }
+<style>
+  #tela-senha { display: none !important; }
+  #conteudo-principal { display: block !important; }
+</style>
 </style>
 </head>
 <body>
-
-<!-- TELA DE SENHA -->
-<div id="tela-senha">
-  <div class="senha-caixa">
-    <div class="senha-icone"></div>
-    <div class="senha-titulo">Eschaton</div>
-    <div class="senha-sub">Edição do Professor · Acesso Restrito</div>
-    <div class="senha-desc">Este material é exclusivo para docentes.<br>Insira a senha fornecida pela coordenação.</div>
-    <input class="senha-campo" id="senha-input" type="password" placeholder="••••••••" maxlength="20" autocomplete="off" onkeydown="if(event.key==='Enter') verificarSenha()">
-    <button class="senha-btn" onclick="verificarSenha()">Acessar</button>
-    <div class="senha-erro" id="senha-erro">Senha incorreta. Tente novamente.</div>
-    <div class="senha-rodape">Igreja Manancial de Vida · EBD Jovens Adultos</div>
-  </div>
-</div>
 
 <div id="conteudo-principal">
 
