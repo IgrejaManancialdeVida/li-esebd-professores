@@ -1,24 +1,16 @@
 {
-  "name": "ESCHATON",
-  "short_name": "ESCHATON",
-  "description": "Revista de Estudos Escatológicos",
+  "name": "Eschaton — EBD",
+  "short_name": "Eschaton",
+  "description": "Revista de Estudos Escatológicos — 13 Lições · EBD Jovens Adultos",
   "start_url": "./index.html",
-  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#0a1628",
   "theme_color": "#0a1628",
+  "lang": "pt-BR",
+  "categories": ["education", "books"],
   "icons": [
-    {
-      "src": "icon-192.svg",
-      "sizes": "192x192",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "icon-512.svg",
-      "sizes": "512x512",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
+    { "src": "icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
 }
