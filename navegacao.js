@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // 2. DEFINA OS LINKS REAIS AQUI (Substitua pelos seus links do GitHub)
     const volumes = [
         { nome: 'Volume I', link: 'https://igrejamanancialdevida.github.io/li-esebd-professores/' },
-        { nome: 'Volume II', link: 'https://github.com/IgrejaManancialdeVida/li-esebd-professores-v.2-/' },
-        { nome: 'Volume III', link: 'https://github.com/IgrejaManancialdeVida/li-esebd-professores-v.3/' }
+        { nome: 'Volume II', link: 'https://igrejamanancialdevida.github.io/li-esebd-professores-v.2-/' },
+        { nome: 'Volume III', link: 'https://igrejamanancialdevida.github.io/li-esebd-professores-v.3/' }
     ];
 
     // 3. Gerar os botões
