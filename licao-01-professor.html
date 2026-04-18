@@ -528,6 +528,11 @@ h2.prof{
 <a href="index.html"><button class="btn bv" style="border:1px solid #333">← Hub</button></a>
 </div>
 <div class="area">
+
+<div class="pag capa-entrada" id="capaEntradaRevista" onclick="entrarLicao()" aria-label="Abrir lição 11">
+    <img src="capa-revista.png" alt="Capa da revista Eschaton">
+    <div class="entrada-cta">Toque para entrar na lição</div>
+</div>
 <!-- ══════════════════════════════════════
      PARTE I — PÁGINAS DO ALUNO (reproduzidas)
      ══════════════════════════════════════ -->
@@ -883,6 +888,11 @@ h2.prof{
 </div>
 </div><!-- /area -->
 <script>
+
+function entrarLicao(){
+    document.body.classList.add('licao-iniciada');
+    window.scrollTo({top: 0, behavior: 'instant'});
+}
 let edit = false;
 const TAGS = ['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM'];
 function toggleEdit(){
