@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Eschaton · Lição 01 — EDIÇÃO DO PROFESSOR</title>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta name="theme-color" content="#0a1628">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Eschaton · Lição 01 — O Que é Escatologia?</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&amp;family=EB+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Oswald:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
 <style>
@@ -432,6 +436,12 @@ h2.prof{
 .rod-prof .rt{font-family:'Oswald',sans-serif;font-size:7pt;color:var(--prof);letter-spacing:1px;text-transform:uppercase;}
 .rod-prof .rn{font-family:'Cinzel',serif;font-size:9pt;color:var(--prof);}
 
+    @media (max-width:768px){
+    .intro-capa{padding:72px 14px 18px;min-height:100dvh;}
+    .intro-wrap{width:min(100%,420px);aspect-ratio:auto;height:calc(100dvh - 110px);min-height:calc(100dvh - 110px);max-height:calc(100dvh - 110px);}
+    .intro-cover img{object-fit:contain;background:#111;}
+        .intro-btn{font-size:8pt;letter-spacing:1.5px;padding:9px 14px;}
+}
 /* Print */
 @media print{
     body{background:none;}
@@ -440,8 +450,54 @@ h2.prof{
     .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
     .wm,.wm-prof{display:none;}
 }
+
 [contenteditable="true"]{outline:none;cursor:text;}
 [contenteditable="true"]:hover{background:rgba(90,62,138,0.05);border-radius:2px;}
+
+/* MOBILE */
+@media (max-width: 768px){
+    .painel{padding:8px 10px;gap:8px;align-items:flex-start;}
+    .marca{font-size:10pt;letter-spacing:2px;line-height:1.2;}
+    .marca span{font-size:7pt;letter-spacing:0.8px;}
+    .btn{font-size:8pt;padding:8px 12px;}
+    .area{margin-top:88px;padding:16px 10px 40px;gap:12px;}
+    .lbl{margin-left:0;font-size:7pt;letter-spacing:1.4px;}
+    .pag{width:100%;max-width:148mm;min-height:auto;height:auto;}
+    .ccon{padding:0 8vw 10vw 10vw;}
+    .cser{font-size:7pt;letter-spacing:3px;gap:8px;margin-bottom:12px;}
+    .cser::before{width:16px;}
+    .cnd{font-size:22vw;top:18mm;right:8vw;}
+    .cnbg{font-size:42vw;right:-6px;bottom:-12px;}
+    .ctit{font-size:clamp(18pt,8vw,22pt);margin-bottom:10px;}
+    .cver{font-size:9.5pt;line-height:1.5;padding-left:8px;}
+    .int{padding:12mm 6vw 16mm 6vw;min-height:auto;}
+    .wm{font-size:30vw;right:4vw;bottom:12mm;}
+    .ph{margin-bottom:12px;padding-bottom:8px;gap:10px;flex-wrap:wrap;}
+    h2{font-size:11pt;letter-spacing:1.3px;padding-left:8px;margin-bottom:10px;}
+    h3{font-size:9pt;margin-top:10px;}
+    p{font-size:10pt;line-height:1.55;text-align:left;hyphens:none;}
+    .cap::first-letter{font-size:32pt;margin-right:4px;}
+    .bv,.bvp,.bvr,.obj,.apl{padding:9px 10px;margin:10px 0;}
+    .vt,.obj ul li,.qt,.lit ul li{font-size:9.5pt;}
+    .lr{height:18px;}
+    .lins{gap:14px;}
+    .lin{height:18px;}
+    .rod{padding:6px 6vw 5vw 6vw;}
+    .rod::before{left:6vw;right:6vw;}
+}
+
+@media (max-width: 480px){
+    .painel{padding:8px;}
+    .btn{padding:7px 10px;font-size:7.5pt;letter-spacing:1px;}
+    .area{margin-top:96px;padding:14px 8px 32px;}
+    .pag{border-radius:2px;}
+    .ctit{font-size:clamp(16pt,8.5vw,20pt);}
+    .cver{font-size:9pt;}
+    .phl{font-size:7pt;}
+    .pht{font-size:8pt;}
+    p{font-size:9.7pt;}
+}
+
 </style>
 </head>
 <body>
