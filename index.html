@@ -2,7 +2,12 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a1628">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>ESCHATON — Revista de Estudos Escatológicos</title>
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231a0e0a'/%3E%3Cpath d='M32 10 44 32 32 54 20 32Z' fill='%23c9a84c'/%3E%3C/svg%3E">
@@ -333,6 +338,115 @@ body {
 .cb11 { border-color: #40a040; }
 .cb12 { border-color: #6080c0; }
 .cb13 { border-color: #c09030; }
+
+/* === MOBILE === */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 100svh;
+        padding: 48px 16px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-selo {
+        font-size: 8pt;
+        letter-spacing: 3px;
+        padding: 6px 14px;
+        margin-bottom: 22px;
+    }
+
+    .hero-titulo {
+        letter-spacing: 4px;
+    }
+
+    .hero-titulo span {
+        letter-spacing: 3px;
+        margin-top: 12px;
+    }
+
+    .hero-divisor {
+        width: min(240px, 100%);
+        margin: 22px auto;
+    }
+
+    .hero-sub {
+        font-size: 12pt;
+        max-width: 100%;
+        margin-bottom: 28px;
+    }
+
+    .licoes-section {
+        padding: 56px 16px;
+    }
+
+    .section-header {
+        margin-bottom: 36px;
+    }
+
+    .section-header h2 {
+        font-size: 17pt;
+        letter-spacing: 2px;
+    }
+
+    .section-header p {
+        font-size: 11pt;
+    }
+
+    .grid-licoes {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card-topo {
+        height: 84px;
+    }
+
+    .card-num {
+        font-size: 40pt;
+        top: -2px;
+    }
+
+    .card-corpo {
+        padding: 14px 16px 18px;
+    }
+
+    .card-titulo {
+        font-size: 12pt;
+    }
+
+    .card-sub {
+        font-size: 10pt;
+    }
+
+    .card-acoes {
+        padding: 12px 16px;
+    }
+
+    .rodape-hub {
+        padding: 32px 16px 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 14px;
+    }
+
+    .hero-divisor {
+        width: min(200px, 100%);
+    }
+
+    .hero-meta {
+        font-size: 8pt;
+        letter-spacing: 1.5px;
+    }
+
+    .card-btn {
+        padding: 6px 10px;
+    }
+}
 </style>
 </head>
 <body>
