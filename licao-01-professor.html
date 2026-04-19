@@ -12,6 +12,12 @@
 <meta name="apple-mobile-web-app-title" content="Eschaton Prof">
 <title>Eschaton · Lição 01 — O Que é Escatologia?</title>
 
+<meta name="theme-color" content="#1a1428">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&amp;family=EB+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Oswald:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
 <style>
@@ -589,7 +595,7 @@ h2.prof{
 </div>
 <div class="area">
 
-<div class="pag capa-entrada" id="capaEntradaRevista" onclick="entrarLicao()" aria-label="Abrir lição 11">
+<div class="pag capa-entrada" id="capaEntradaRevista" onclick="entrarLicao()" aria-label="Abrir lição 01">
     <img src="capa-revista.png" alt="Capa da revista Eschaton">
     <div class="entrada-cta">Toque para entrar na lição</div>
 </div>
@@ -949,6 +955,10 @@ h2.prof{
 </div><!-- /area -->
 <script>
 
+function entrarLicao(){
+    document.body.classList.add('licao-iniciada');
+    window.scrollTo({top: 0, behavior: 'instant'});
+}
 function entrarLicao(){
     document.body.classList.add('licao-iniciada');
     window.scrollTo({top: 0, behavior: 'instant'});
