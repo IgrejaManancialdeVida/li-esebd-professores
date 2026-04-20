@@ -564,6 +564,179 @@ h2.prof{
     p{font-size:9.7pt;}
 }
 
+/* ===== BLOCOS-ALUNO (inseridos nas páginas do aluno) ===== */
+.bloco-aluno{
+    background:rgba(74,127,165,0.06);
+    border:1px solid rgba(74,127,165,0.25);
+    border-left:4px solid var(--cor);
+    border-radius:3px;
+    padding:10px 12px;
+    margin:12px 0 10px;
+}
+.bloco-aluno .ba-titulo{
+    font-family:'Oswald',sans-serif;
+    font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;
+    color:var(--cor);margin-bottom:6px;
+    display:flex;align-items:center;gap:6px;
+}
+.bloco-aluno .ba-titulo::before{content:'✦';font-size:7pt;color:var(--cor);}
+.bloco-aluno p{
+    font-family:'EB Garamond',serif;font-size:10pt;
+    line-height:1.6;color:var(--ct);margin-bottom:0;
+}
+
+/* ===== MELHORIAS PEDAGÓGICAS DO PROFESSOR ===== */
+
+/* Indicador de competência pedagógica */
+.tag-comp{
+    display:inline-block;
+    font-family:'Oswald',sans-serif;font-size:6.5pt;
+    letter-spacing:1.5px;text-transform:uppercase;
+    border-radius:1px;padding:2px 7px;margin:2px 3px 2px 0;
+    vertical-align:middle;
+}
+.tag-comp.conhecimento{background:#dbeafe;color:#1e40af;}
+.tag-comp.habilidade{background:#dcfce7;color:#166534;}
+.tag-comp.atitude{background:#fef9c3;color:#854d0e;}
+
+/* Bloco de roteiro de pergunta socrática */
+.bloco-soc{
+    background:#f9f5ff;
+    border:1px solid rgba(90,62,138,0.2);
+    border-left:4px solid var(--prof);
+    border-radius:3px;padding:10px 12px;margin:10px 0;
+}
+.bloco-soc .bk{
+    font-family:'Oswald',sans-serif;font-size:7.5pt;
+    letter-spacing:2px;text-transform:uppercase;
+    color:var(--prof);margin-bottom:8px;
+    display:flex;align-items:center;gap:6px;
+}
+.bloco-soc .bk::before{content:'💬';font-size:9pt;}
+.bloco-soc .soc-item{
+    padding:5px 0 5px 14px;
+    border-bottom:1px solid rgba(90,62,138,0.08);
+    position:relative;
+}
+.bloco-soc .soc-item:last-child{border-bottom:none;}
+.bloco-soc .soc-item::before{
+    content:'→';position:absolute;left:0;
+    color:var(--prof);font-size:9pt;top:5px;
+}
+.bloco-soc .soc-item p{
+    font-family:'EB Garamond',serif;font-size:10pt;
+    color:#3a2a55;line-height:1.5;margin-bottom:2px;
+}
+.bloco-soc .soc-espera{
+    font-family:'Oswald',sans-serif;font-size:7pt;
+    letter-spacing:1px;color:#7a5fa0;text-transform:uppercase;
+    margin-top:1px;
+}
+
+/* Bloco de conexão entre páginas (fio condutor) */
+.bloco-fio{
+    background:linear-gradient(135deg,rgba(90,62,138,0.04),rgba(74,127,165,0.04));
+    border:1px dashed rgba(90,62,138,0.3);
+    border-radius:3px;padding:9px 12px;margin:10px 0;
+    display:flex;align-items:flex-start;gap:10px;
+}
+.bloco-fio-icon{
+    font-size:14pt;flex-shrink:0;margin-top:1px;
+    color:var(--prof);line-height:1;
+}
+.bloco-fio-txt{
+    font-family:'EB Garamond',serif;font-size:10pt;
+    font-style:italic;color:#3a2a55;line-height:1.55;
+}
+.bloco-fio-txt strong{
+    font-style:normal;font-family:'Oswald',sans-serif;
+    font-size:7.5pt;letter-spacing:1px;color:var(--prof);
+    text-transform:uppercase;display:block;margin-bottom:3px;
+}
+
+/* Bloco de diferenciação por perfil */
+.bloco-perf{
+    background:#f0f7ff;
+    border:1px solid rgba(74,127,165,0.2);
+    border-left:4px solid var(--cor);
+    border-radius:3px;padding:10px 12px;margin:10px 0;
+}
+.bloco-perf .bk{
+    font-family:'Oswald',sans-serif;font-size:7.5pt;
+    letter-spacing:2px;text-transform:uppercase;
+    color:var(--cor);margin-bottom:8px;
+    display:flex;align-items:center;gap:6px;
+}
+.bloco-perf .bk::before{content:'◈';font-size:8pt;}
+.perf-linha{
+    display:grid;grid-template-columns:90px 1fr;
+    gap:6px 10px;align-items:start;
+    padding:4px 0;border-bottom:1px solid rgba(74,127,165,0.1);
+}
+.perf-linha:last-child{border-bottom:none;}
+.perf-tipo{
+    font-family:'Oswald',sans-serif;font-size:7pt;
+    background:var(--cor);color:#fff;
+    padding:2px 6px;border-radius:1px;
+    letter-spacing:1px;text-transform:uppercase;
+    text-align:center;margin-top:1px;
+}
+.perf-txt{
+    font-family:'EB Garamond',serif;font-size:9.5pt;
+    color:var(--ct);line-height:1.45;
+}
+
+/* Bloco de avaliação formativa rápida */
+.bloco-aval{
+    background:#fffef0;
+    border:1px solid rgba(201,168,76,0.3);
+    border-left:4px solid var(--ouro);
+    border-radius:3px;padding:10px 12px;margin:10px 0;
+}
+.bloco-aval .bk{
+    font-family:'Oswald',sans-serif;font-size:7.5pt;
+    letter-spacing:2px;text-transform:uppercase;
+    color:#8a6a20;margin-bottom:6px;
+    display:flex;align-items:center;gap:6px;
+}
+.bloco-aval .bk::before{content:'📋';font-size:8pt;}
+.bloco-aval p,.bloco-aval li{
+    font-family:'EB Garamond',serif;font-size:10pt;
+    line-height:1.6;color:#4a3a10;
+}
+.bloco-aval ul{list-style:none;padding:0;margin-top:4px;}
+.bloco-aval ul li{padding:2px 0 2px 14px;position:relative;}
+.bloco-aval ul li::before{content:'□';position:absolute;left:0;color:var(--ouro);font-size:8pt;top:3px;}
+
+/* Bloco de mapeamento de aprendizagem */
+.bloco-mapa{
+    background:#f8f9fa;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius:3px;padding:10px 12px;margin:10px 0;
+}
+.bloco-mapa .bk{
+    font-family:'Oswald',sans-serif;font-size:7.5pt;
+    letter-spacing:2px;text-transform:uppercase;
+    color:#444;margin-bottom:8px;
+    display:flex;align-items:center;gap:6px;
+}
+.bloco-mapa .bk::before{content:'🗺';font-size:9pt;}
+.mapa-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:4px;}
+.mapa-cel{
+    background:#fff;border:1px solid rgba(0,0,0,0.08);
+    border-radius:2px;padding:7px 9px;
+}
+.mapa-cel-tit{
+    font-family:'Oswald',sans-serif;font-size:7pt;
+    letter-spacing:1.5px;text-transform:uppercase;
+    color:#888;margin-bottom:4px;
+}
+.mapa-cel p{
+    font-family:'EB Garamond',serif;font-size:9.5pt;
+    color:#333;line-height:1.4;margin-bottom:0;
+    text-align:left;
+}
+
 </style>
 </head>
 <body>
@@ -640,6 +813,10 @@ h2.prof{
 <div class="sep"><span>✦</span></div>
 <p>A geração de jovens adultos de hoje enfrenta crises climáticas, guerras transmitidas ao vivo e um fluxo incessante de notícias apocalípticas. Diante disso, o estudo sério da escatologia bíblica não é evasão — é orientação. É aprender a ler a história com os olhos da eternidade.</p>
 <p>Vale mostrar que a curiosidade contemporânea sobre o fim quase sempre nasce de ansiedade coletiva. A resposta bíblica, porém, não é alimentar pânico, mas formar discernimento. Esta lição deve estabelecer esse tom para toda a série.</p>
+<div class="bloco-aluno">
+<div class="ba-titulo">Para Você Refletir — O que é Escatologia?</div>
+<p>A palavra <em>escatologia</em> vem do grego <em>eschatos</em> (último) + <em>logos</em> (estudo): literalmente, o estudo das últimas coisas. Não é um tema reservado a especialistas — é a pergunta que toda pessoa já fez: "O que será de mim? Para onde vai o mundo?" A Bíblia responde a essas perguntas com esperança fundamentada, não com especulação ansiosa.</p>
+</div>
 <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 <!-- PG 3 — DESENVOLVIMENTO I -->
@@ -659,6 +836,10 @@ h2.prof{
 <p>Enfatize que a ressurreição de Cristo é a chave da escatologia cristã. Ela garante que o futuro prometido por Deus não é hipótese religiosa, mas realidade fundada em um acontecimento histórico. Esse ponto fortalece a confiança do aluno na objetividade da esperança cristã.</p>
 <div class="sep"><span>✦</span></div>
 <p>Compreender esse panorama é essencial antes de mergulhar nos debates específicos sobre o arrebatamento, o milênio e o juízo final — que ocuparão as lições seguintes.</p>
+<div class="bloco-aluno">
+<div class="ba-titulo">Conexão Bíblica — O Fio da Esperança</div>
+<p>De Gênesis 3:15 — a primeira promessa de redenção — ao "Amém, vem, Senhor Jesus" de Apocalipse 22:20, a Bíblia inteira é costurada pelo mesmo fio de esperança. O Antigo Testamento anuncia; o Novo Testamento revela. Os dois testamentos não se contradizem: juntos, eles contam uma única história com um único fim glorioso.</p>
+</div>
 <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 <!-- PG 4 — DESENVOLVIMENTO II -->
@@ -677,6 +858,10 @@ h2.prof{
 <p>Três grandes sistemas organizam o debate moderno: o <strong>Premilenismo</strong> (Cristo volta antes de um reinado literal de mil anos); o <strong>Amilenismo</strong> (o milênio é a era presente da Igreja); e o <strong>Pós-milenismo</strong> (a Igreja avança o Reino até que Cristo volte em triunfo). Cada um será examinado em profundidade na Lição 07.</p>
 <p>Nesta fase, o ideal é apresentar cada sistema de modo descritivo, sem transformar a aula em disputa. O objetivo é dar mapa conceitual. Muitos conflitos surgem quando o aluno conhece o nome da posição, mas não entende sua lógica interna.</p>
 <div class="bv">"Toda a Escritura é divinamente inspirada e proveitosa para ensinar, para redarguir, para corrigir, para instruir em justiça." <cite>2 Timóteo 3:16</cite></div>
+<div class="bloco-aluno">
+<div class="ba-titulo">Sabia Que? — Os Sistemas e a Humildade Teológica</div>
+<p>Cristãos que amam as Escrituras e têm vida devotada chegaram a conclusões diferentes sobre o milênio, o arrebatamento e os eventos finais. Calvino, Spurgeon, Agostinho e Charles Wesley — todos divergiam em pontos escatológicos. Isso não é fraqueza da fé; é evidência de que a Bíblia é rica demais para caber em um único esquema. A humildade teológica não é dúvida — é maturidade.</p>
+</div>
 <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 <!-- PG 5 — VISÕES EM DIÁLOGO -->
@@ -700,7 +885,12 @@ h2.prof{
 <div class="sep"><span>✦</span></div>
 <p>Apesar das divergências, ambas confessam os pilares inegociáveis: o retorno pessoal e visível de Cristo, a ressurreição dos mortos, o juízo final e a vida eterna.</p>
 <div class="bloco-guia"><div class="bk">Subsídio ao Professor</div><p>Estimule comparação respeitosa entre tradições. O objetivo não é escolher um vencedor às pressas, mas formar critérios de leitura bíblica.</p></div>
-<div class="bloco-guia"><div class="bk">Subsídio ao Professor</div><p>Uma boa pergunta para esse momento é: “Quais convicções cada tradição considera centrais para sua leitura do futuro?”. Isso desloca o debate da mera opinião para o campo dos pressupostos bíblicos e hermenêuticos.</p></div><div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
+<div class="bloco-guia"><div class="bk">Subsídio ao Professor</div><p>Uma boa pergunta para esse momento é: “Quais convicções cada tradição considera centrais para sua leitura do futuro?”. Isso desloca o debate da mera opinião para o campo dos pressupostos bíblicos e hermenêuticos.</p></div>
+<div class="bloco-aluno">
+<div class="ba-titulo">Pense Nisso — O Que Une e o Que Divide</div>
+<p>Pentecostais e reformados discordam sobre o milênio e o arrebatamento — mas concordam no que é inegociável: Cristo voltará pessoalmente e visivelmente, os mortos ressuscitarão, haverá julgamento final, e os remidos viverão com Deus para sempre. Aprenda a distinguir o que é fundamento do que é interpretação. Você pode discordar sobre o “como” sem perder a comunhão sobre o “Quem”.</p>
+</div>
+<div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 <!-- PG 6 — APLICAÇÃO -->
 <div class="lbl">Página 6 · Conclusão</div>
@@ -721,7 +911,12 @@ h2.prof{
 <div class="bv">"Aguardando a bendita esperança e a manifestação da glória do grande Deus e Salvador nosso Jesus Cristo." <cite>Tito 2:13</cite></div>
 <p>Na próxima lição: <strong>Os Sinais dos Tempos</strong> — Mateus 24 e suas implicações para hoje.</p>
 <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Na conclusão, amarre esperança futura e responsabilidade presente para evitar um estudo meramente teórico.</p></div>
-<div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Se houver tempo, peça que cada aluno formule em uma frase o que aprendeu sobre a utilidade prática da escatologia. Isso ajuda a verificar se a classe saiu do campo da curiosidade para o da formação espiritual.</p></div><div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
+<div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Se houver tempo, peça que cada aluno formule em uma frase o que aprendeu sobre a utilidade prática da escatologia. Isso ajuda a verificar se a classe saiu do campo da curiosidade para o da formação espiritual.</p></div>
+<div class="bloco-aluno">
+<div class="ba-titulo">Leve Para a Vida — A Esperança que Transforma</div>
+<p>A escatologia não é teoria para o futuro — é combustível para o presente. Quem crê que Cristo voltará vive de forma diferente: serve com mais generosidade, suporta o sofrimento com mais firmeza, perdoa com mais facilidade e evangeliza com mais urgência. A esperança bíblica não faz você escapar do mundo; ela te envia de volta ao mundo com propósito eterno.</p>
+</div>
+<div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 <!-- PG 7 — QUESTÕES -->
 <div class="lbl">Página 7 · Questões &amp; Anotações</div>
@@ -772,6 +967,15 @@ h2.prof{
 </div>
 <h2 class="prof">Visão Geral para o Professor</h2>
 <p>Esta lição inaugura toda a série ESCHATON. Seu papel aqui não é o de especialista em profecias, mas o de <em>orientador de um processo de descoberta.</em> Muitos alunos chegarão com bagagem de conteúdo sensacionalista — vídeos de YouTube, aplicativos de "sinais do fim" — e precisam ser conduzidos a um chão firme sem sentir que sua fé está sendo questionada.</p>
+<div class="bloco-mapa">
+<div class="bk">Mapa de Competências da Lição</div>
+<div class="mapa-grid">
+<div class="mapa-cel"><div class="mapa-cel-tit">Conhecimento</div><p>Definir escatologia; identificar os três sistemas principais; distinguir AT e NT na narrativa profética</p></div>
+<div class="mapa-cel"><div class="mapa-cel-tit">Habilidade</div><p>Comparar posições com respeito; diferenciar fundamentos de interpretações secundárias</p></div>
+<div class="mapa-cel"><div class="mapa-cel-tit">Atitude</div><p>Cultivar humildade teológica; conectar esperança futura à fidelidade presente</p></div>
+<div class="mapa-cel"><div class="mapa-cel-tit">Avaliação</div><p>O aluno consegue explicar por que cristãos divergem em escatologia sem perder a unidade essencial?</p></div>
+</div>
+</div>
 <div class="bloco-tempo">
 <div class="bk">Estrutura de Tempo Sugerida — 50 min</div>
 <div class="tempo-linha"><span class="tempo-min">5 min</span><span class="tempo-desc">Abertura: pergunta provocadora inicial (ver página P2)</span></div>
@@ -798,6 +1002,10 @@ h2.prof{
 <div class="bk">Leitura da Turma</div>
 <p>Ao perceber sinais de ansiedade, volte sempre à centralidade de Cristo. Quando a aula gira apenas em torno de datas, cenários ou crises internacionais, o aluno tende a sair impressionado, mas não necessariamente edificado. A função pastoral do professor é recolocar a esperança cristã em seu eixo bíblico.</p>
 </div>
+<div class="bloco-fio">
+<div class="bloco-fio-icon">⇢</div>
+<div class="bloco-fio-txt"><strong>Fio Condutor da Série</strong>Esta lição estabelece o vocabulário e o método que toda a série usará. O que for plantado aqui — humildade hermenêutica, centralidade de Cristo, conexão doutrina–vida — crescerá em cada lição seguinte. Invista nesta base.</div>
+</div>
 <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P1</span></div>
 </div>
 <!-- PG P2 — DINÂMICA DE ABERTURA + APROFUNDAMENTO TEOLÓGICO -->
@@ -822,6 +1030,21 @@ h2.prof{
 <li>Use as respostas como gancho para introduzir a definição de escatologia</li>
 <li>Diga: "O que acabamos de fazer é exatamente o que a escatologia bíblica se propõe — perguntar o que o futuro revela sobre o presente."</li>
 </ul>
+</div>
+<div class="bloco-soc">
+<div class="bk">Escada de Perguntas Socráticas — Introdução</div>
+<div class="soc-item">
+<p>Nível 1 — Diagnóstico: "O que você já ouviu sobre o fim do mundo que te deixou com dúvida ou com medo?"</p>
+<div class="soc-espera">Espera: respostas revelam bagagem prévia e abertura à correção</div>
+</div>
+<div class="soc-item">
+<p>Nível 2 — Conceitual: "Se a Bíblia fala tanto sobre o futuro, qual seria o principal propósito disso — informar ou transformar?"</p>
+<div class="soc-espera">Espera: percepção de que escatologia é formativa, não apenas informativa</div>
+</div>
+<div class="soc-item">
+<p>Nível 3 — Aplicação: "Que diferença faz para o seu cotidiano saber que a história tem um fim ordenado por Deus?"</p>
+<div class="soc-espera">Espera: conexão entre doutrina e ética de vida; perseverança, generosidade, urgência</div>
+</div>
 </div>
 <div class="sep"><span>✦</span></div>
 <h2 class="prof">Aprofundamento Teológico</h2>
@@ -860,12 +1083,33 @@ h2.prof{
 <li><strong>Nuvem de palavras:</strong> peça que cada aluno escreva em um papel a primeira palavra que vem à cabeça quando ouve "fim do mundo". Cole no quadro e analise juntos. Serve como diagnóstico e ponto de partida.</li>
 </ul>
 </div>
-<div class="bloco-dica">
-<div class="bk">Adaptações por Perfil de Turma</div>
+<div class="bloco-perf">
+<div class="bk">Diferenciação por Perfil de Turma</div>
+<div class="perf-linha">
+<div class="perf-tipo">18–22 anos</div>
+<div class="perf-txt">Enfatize relevância contemporânea: ansiedade climática, IA, pandemias. A escatologia responde ao que eles já sentem. Use referências culturais recentes para criar ponte.</div>
+</div>
+<div class="perf-linha">
+<div class="perf-tipo">25–35 anos</div>
+<div class="perf-txt">Aprofunde os sistemas interpretativos. Eles têm repertório teológico e podem suportar nuance. Instigue comparação crítica entre as tradições.</div>
+</div>
+<div class="perf-linha">
+<div class="perf-tipo">Mista</div>
+<div class="perf-txt">Privilegie "Visões em Diálogo" (pg. 5). Peça que grupos defendam a perspectiva oposta à sua — exercício de empatia hermenêutica.</div>
+</div>
+<div class="perf-linha">
+<div class="perf-tipo">Ansioso</div>
+<div class="perf-txt">Reduza ritmo. Comece pela dimensão pastoral: "Esta lição existe para dar paz, não ansiedade." Ancora na soberania de Deus antes de tratar de sistemas.</div>
+</div>
+</div>
+<div class="bloco-aval">
+<div class="bk">Avaliação Formativa Rápida — Antes de Encerrar</div>
+<p>Verifique se os seguintes objetivos foram alcançados antes de encerrar:</p>
 <ul>
-<li><strong>Turma mais jovem (18-22 anos):</strong> enfatize a relevância contemporânea — ansiedade climática, pandemias, IA. A escatologia fala diretamente ao que eles já sentem.</li>
-<li><strong>Turma mais madura (25-35 anos):</strong> vá mais fundo nos sistemas interpretativos. Eles têm repertório para o debate teológico.</li>
-<li><strong>Turma mista de tradições:</strong> privilegie o bloco "Visões em Diálogo" (pg. 5). Peça que cada grupo defenda a perspectiva oposta à sua.</li>
+<li>O aluno consegue definir "escatologia" com suas próprias palavras?</li>
+<li>Ele distingue pelo menos dois sistemas escatológicos sem caricaturar nenhum?</li>
+<li>Ele articula uma implicação prática da esperança bíblica para sua vida?</li>
+<li>A turma manteve tom de diálogo respeitoso ao longo da lição?</li>
 </ul>
 </div>
 <div class="sep"><span>✦</span></div>
@@ -920,6 +1164,19 @@ h2.prof{
 <div class="resp-num">Questão 04</div>
 <div class="resp-txt">Respostas pessoais variadas. Espere respostas que conectem urgência missionária, liberdade das ansiedades materiais, ética do cuidado (sabendo que o mundo terá fim), generosidade e oração. Valorize qualquer resposta que demonstre que o aluno conectou doutrina à prática de vida.</div>
 </div>
+</div>
+<div class="bloco-fio">
+<div class="bloco-fio-icon">↻</div>
+<div class="bloco-fio-txt"><strong>Como Usar o Gabarito</strong>As respostas sugeridas são orientativas, não definitivas. Valorize respostas pessoais que demonstrem conexão bíblica genuína. Na Questão 04, especialmente, respostas inesperadas e criativas merecem afirmação pública — revelam que o aluno internalizou a doutrina em vez de apenas repeti-la.</div>
+</div>
+<div class="bloco-aval">
+<div class="bk">Seguimento Pós-Lição</div>
+<ul>
+<li>Envie um versículo de esperança escatológica no grupo da turma durante a semana (sugestão: Ap 21:5)</li>
+<li>Proponha a leitura devocional de Daniel 7 + 1 Coríntios 15:20-28 antes da próxima lição</li>
+<li>Registre nomes de alunos que demonstraram interesse especial ou resistência — ambos precisam de atenção pastoral diferenciada</li>
+<li>Avalie se o tom desta lição preparou bem o terreno para a Lição 02 (Os Sinais dos Tempos)</li>
+</ul>
 </div>
 <div class="sep"><span>✦</span></div>
 <h2 class="prof">Materiais Complementares</h2>
