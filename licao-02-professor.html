@@ -656,6 +656,165 @@ h2.prof{
     p{font-size:9pt;}
     .btn{padding:5px 8px;font-size:7pt;}
 }
+
+/* ===== BLOCOS-ALUNO (páginas do aluno reproduzidas) ===== */
+.bloco-aluno{
+    background:rgba(122,95,165,0.06);
+    border:1px solid rgba(122,95,165,0.25);
+    border-left:4px solid var(--cor);
+    border-radius:3px;
+    padding:10px 12px;
+    margin:12px 0 10px;
+}
+.bloco-aluno .ba-titulo{
+    font-family:'Oswald',sans-serif;
+    font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;
+    color:var(--cor);margin-bottom:6px;
+    display:flex;align-items:center;gap:6px;
+}
+.bloco-aluno .ba-titulo::before{content:'✦';font-size:7pt;color:var(--cor);}
+.bloco-aluno p{
+    font-family:'EB Garamond',serif;font-size:10pt;
+    line-height:1.6;color:var(--ct);margin-bottom:0;text-align:left;hyphens:none;
+}
+
+/* ===== MELHORIAS PEDAGÓGICAS ===== */
+
+/* Mapa de Competências */
+.bloco-mapa{
+    background:#f8f9fa;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius:3px;padding:10px 12px;margin:10px 0;
+}
+.bloco-mapa .bk{
+    font-family:'Oswald',sans-serif;font-size:7.5pt;
+    letter-spacing:2px;text-transform:uppercase;
+    color:#444;margin-bottom:8px;
+    display:flex;align-items:center;gap:6px;
+}
+.bloco-mapa .bk::before{content:'🗺';font-size:9pt;}
+.mapa-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:4px;}
+.mapa-cel{
+    background:#fff;border:1px solid rgba(0,0,0,0.08);
+    border-radius:2px;padding:7px 9px;
+}
+.mapa-cel-tit{
+    font-family:'Oswald',sans-serif;font-size:7pt;
+    letter-spacing:1.5px;text-transform:uppercase;
+    color:#888;margin-bottom:4px;
+}
+.mapa-cel p{
+    font-family:'EB Garamond',serif;font-size:9.5pt;
+    color:#333;line-height:1.4;margin-bottom:0;text-align:left;
+}
+
+/* Fio Condutor */
+.bloco-fio{
+    background:linear-gradient(135deg,rgba(90,62,138,0.04),rgba(122,95,165,0.04));
+    border:1px dashed rgba(90,62,138,0.3);
+    border-radius:3px;padding:9px 12px;margin:10px 0;
+    display:flex;align-items:flex-start;gap:10px;
+}
+.bloco-fio-icon{
+    font-size:14pt;flex-shrink:0;margin-top:1px;
+    color:var(--prof);line-height:1;
+}
+.bloco-fio-txt{
+    font-family:'EB Garamond',serif;font-size:10pt;
+    font-style:italic;color:#3a2a55;line-height:1.55;
+}
+.bloco-fio-txt strong{
+    font-style:normal;font-family:'Oswald',sans-serif;
+    font-size:7.5pt;letter-spacing:1px;color:var(--prof);
+    text-transform:uppercase;display:block;margin-bottom:3px;
+}
+
+/* Escada Socrática */
+.bloco-soc{
+    background:#f9f5ff;
+    border:1px solid rgba(90,62,138,0.2);
+    border-left:4px solid var(--prof);
+    border-radius:3px;padding:10px 12px;margin:10px 0;
+}
+.bloco-soc .bk{
+    font-family:'Oswald',sans-serif;font-size:7.5pt;
+    letter-spacing:2px;text-transform:uppercase;
+    color:var(--prof);margin-bottom:8px;
+    display:flex;align-items:center;gap:6px;
+}
+.bloco-soc .bk::before{content:'💬';font-size:9pt;}
+.bloco-soc .soc-item{
+    padding:5px 0 5px 14px;
+    border-bottom:1px solid rgba(90,62,138,0.08);
+    position:relative;
+}
+.bloco-soc .soc-item:last-child{border-bottom:none;}
+.bloco-soc .soc-item::before{
+    content:'→';position:absolute;left:0;
+    color:var(--prof);font-size:9pt;top:5px;
+}
+.bloco-soc .soc-item p{
+    font-family:'EB Garamond',serif;font-size:10pt;
+    color:#3a2a55;line-height:1.5;margin-bottom:2px;text-align:left;
+}
+.bloco-soc .soc-espera{
+    font-family:'Oswald',sans-serif;font-size:7pt;
+    letter-spacing:1px;color:#7a5fa0;text-transform:uppercase;margin-top:1px;
+}
+
+/* Diferenciação por Perfil */
+.bloco-perf{
+    background:#f0f7ff;
+    border:1px solid rgba(122,95,165,0.2);
+    border-left:4px solid var(--cor);
+    border-radius:3px;padding:10px 12px;margin:10px 0;
+}
+.bloco-perf .bk{
+    font-family:'Oswald',sans-serif;font-size:7.5pt;
+    letter-spacing:2px;text-transform:uppercase;
+    color:var(--cor);margin-bottom:8px;
+    display:flex;align-items:center;gap:6px;
+}
+.bloco-perf .bk::before{content:'◈';font-size:8pt;}
+.perf-linha{
+    display:grid;grid-template-columns:90px 1fr;
+    gap:6px 10px;align-items:start;
+    padding:4px 0;border-bottom:1px solid rgba(122,95,165,0.1);
+}
+.perf-linha:last-child{border-bottom:none;}
+.perf-tipo{
+    font-family:'Oswald',sans-serif;font-size:7pt;
+    background:var(--cor);color:#fff;
+    padding:2px 6px;border-radius:1px;
+    letter-spacing:1px;text-transform:uppercase;
+    text-align:center;margin-top:1px;
+}
+.perf-txt{
+    font-family:'EB Garamond',serif;font-size:9.5pt;
+    color:var(--ct);line-height:1.45;
+}
+
+/* Avaliação Formativa */
+.bloco-aval{
+    background:#fffef0;
+    border:1px solid rgba(201,168,76,0.3);
+    border-left:4px solid var(--ouro);
+    border-radius:3px;padding:10px 12px;margin:10px 0;
+}
+.bloco-aval .bk{
+    font-family:'Oswald',sans-serif;font-size:7.5pt;
+    letter-spacing:2px;text-transform:uppercase;
+    color:#8a6a20;margin-bottom:6px;
+    display:flex;align-items:center;gap:6px;
+}
+.bloco-aval .bk::before{content:'📋';font-size:8pt;}
+.bloco-aval p,.bloco-aval li{
+    font-family:'EB Garamond',serif;font-size:10pt;
+    line-height:1.6;color:#4a3a10;
+}
+.bloco-aval ul{list-style:none;padding:0;margin-top:4px;}
+.bloco-aval ul li{padding:2px 0 2px 14px;position:relative;}
+.bloco-aval ul li::before{content:'□';position:absolute;left:0;color:var(--ouro);font-size:8pt;top:3px;}
 </style>
 </head>
 <body>
@@ -740,6 +899,10 @@ h2.prof{
     <p>Em um mundo onde algoritmos amplificam cada crise como "o sinal definitivo", onde pastores monetizam cronogramas proféticos e onde a ansiedade apocalíptica cresce nas redes sociais, o estudo rigoroso de Mateus 24 torna-se o antídoto necessário para uma geração que precisa de ancoragem bíblica sólida.</p>
     <p>O professor deve estar atento ao contexto emocional dos alunos: a geração jovem adulta carrega um senso difuso de urgência e crise que facilmente se converte em fascínio escatológico sem fundamento. Esta lição tem o potencial de transformar ansiedade em esperança fundada — se conduzida com equilíbrio e base bíblica.</p>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Antes de começar, pergunte à turma: "Quando vocês ouvem falar de guerras ou catástrofes, qual é a primeira reação de vocês?" As respostas revelarão o termômetro espiritual da classe e ajudarão a calibrar o tom da aula.</p></div>
+    <div class="bloco-aluno">
+<div class="ba-titulo">Para Você Refletir — O que Jesus Quis Dizer?</div>
+<p>A pergunta dos discípulos em Mateus 24:3 — "Qual o sinal da tua vinda e do fim do século?" — é a mesma que muita gente ainda faz hoje. Jesus não respondeu com uma data, mas com um mapa espiritual: guerras, tribulações, o evangelho sendo pregado. Antes de tentar decifrar cada sinal, pergunte-se: Jesus me chamou a <em>calcular</em> ou a <em>vigiar</em>? A diferença muda completamente a postura do cristão diante das crises do mundo.</p>
+</div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -757,6 +920,10 @@ h2.prof{
     <p>Muitas profecias bíblicas possuem um cumprimento histórico próximo (tipo) e um cumprimento escatológico futuro (antítipo). A destruição de Jerusalém prefigura os eventos do fim dos tempos — assim como o Êxodo prefigurou a redenção em Cristo. Reconhecer esse princípio é chave para interpretar Mateus 24 com maturidade hermenêutica.</p>
     <p>Este princípio do cumprimento duplo é um dos mais importantes recursos hermenêuticos para o estudo das profecias. Ao explicá-lo, o professor pode recorrer a outros exemplos bíblicos: o profeta Isaías anuncia a um filho imediato como sinal (Is 7:14) e, ao mesmo tempo, aponta para o nascimento virginal do Messias (Mt 1:23). Isso mostra que a profecia bíblica frequentemente opera em dois horizontes complementares, sem contradição.</p>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Desenhe no quadro uma linha do tempo simples com dois pontos marcados: "70 d.C." e "Fim dos Tempos". Mostre como Mateus 24 pode estar respondendo aos dois ao mesmo tempo. Isso ajuda os alunos visuais a compreenderem a estrutura interpretativa antes de aprofundar o debate.</p></div>
+    <div class="bloco-aluno">
+<div class="ba-titulo">Conexão Histórica — Quando a Profecia Virou Notícia</div>
+<p>Em 70 d.C., as palavras de Jesus em Mateus 24:2 se tornaram manchete: o Templo foi destruído pedra por pedra. Os cristãos que se lembraram da instrução de fugir para as montanhas (Mt 24:16) sobreviveram. Isso não é coincidência — é evidência de que a profecia bíblica é confiável. O Deus que cumpriu a promessa sobre Jerusalém é o mesmo que cumprirá tudo o que disse sobre o fim da história.</p>
+</div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -777,6 +944,10 @@ h2.prof{
     <p>A vinda de Cristo será como o relâmpago que ilumina do oriente ao ocidente (Mt 24:27) — visível, universal, inconfundível. Nenhuma especulação cronológica sobreviverá ao seu aparecimento. Todo olho o verá (Ap 1:7).</p>
     <p>É importante destacar que Jesus descreve sua própria vinda de modo propositalmente antissensacionalista: ela não será sussurrada em grupos fechados nem reservada a iniciados. A visibilidade universal da Parusia desautoriza qualquer pregação que prometa revelar "segredos" sobre o retorno de Cristo. O professor pode usar esse ponto para discutir com a turma como avaliar discursos proféticos que circulam nas redes sociais.</p>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Ao tratar das três categorias de sinais, escreva no quadro: <strong>Gerais</strong> (toda a era), <strong>Específicos</strong> (ponto de inflexão) e <strong>Climático</strong> (a Vinda). Peça aos alunos que classifiquem eventos contemporâneos em cada coluna. O exercício revela como diferentes hermenêuticas produzem classificações distintas — e abre o debate de forma natural.</p></div>
+    <div class="bloco-aluno">
+<div class="ba-titulo">Sabia Que? — Os Sinais Não São um Cronômetro</div>
+<p>Ao longo dos séculos, cristãos identificaram guerras, pestes e terremotos de sua época como "o sinal definitivo" do fim — e se enganaram. As Guerras Napoleônicas, a Primeira Guerra Mundial, a pandemia de 1918, a Segunda Guerra, a Guerra Fria: todas geraram previsões que não se cumpriram. Jesus antecipou exatamente isso (Mt 24:6: "não vos turbeis"). Os sinais gerais são lembrete de vigilância, não material para especulação cronológica.</p>
+</div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -799,6 +970,10 @@ h2.prof{
     <p>O terreno comum é firme: Cristo voltará, o tempo é incerto (Mt 24:36), e a resposta correta do cristão é vigilância ativa — não paralisia ansiosa nem especulação cronológica irresponsável.</p>
     <p>Ao mediar esse diálogo, o professor deve ressaltar que a divergência não é sobre a certeza da volta de Cristo — ela é unânime —, mas sobre a leitura do mapa profético que a antecede. Manter esse eixo de consenso visível durante o debate impede que a discussão se torne um conflito de tradições e preserva a unidade pastoral da turma.</p>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Ao encerrar o debate das "Visões em Diálogo", peça que cada aluno escreva em silêncio: "O que eu posso afirmar com certeza sobre o futuro, independentemente da posição que adoto?" As respostas convergirão para o consenso cristão histórico — e essa experiência de unidade é pedagogicamente poderosa.</p></div>
+    <div class="bloco-aluno">
+<div class="ba-titulo">Pense Nisso — O Que Une Pentecostais e Reformados</div>
+<p>Pentecostais e reformados leem Mateus 24 de forma diferente — mas concordam nas convicções que importam: Cristo voltará de forma pessoal e visível, ninguém sabe o dia nem a hora, e a resposta correta é vigilância ativa e fidelidade ao evangelho. Antes de focar no que divide, pergunte: <em>as divergências me afastam dessa certeza central, ou me ajudam a entendê-la com mais profundidade?</em> A maturidade teológica começa quando distinguimos o inegociável do secundário.</p>
+</div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -821,6 +996,10 @@ h2.prof{
     <p>Na próxima lição, enfrentaremos um dos debates mais acalorados da escatologia: <strong>O Arrebatamento</strong> — quando, como e para quem.</p>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Na conclusão, use a imagem do "vigia na muralha" — ele não sabe quando o rei voltará, mas permanece de pé, fiel ao seu posto. Essa é a postura que Mateus 24 convoca: vigilância ativa, não expectativa paralisante.</p></div>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Se houver tempo, peça que cada aluno formule em uma frase o que aprendeu sobre como o cristão deve reagir diante das crises do mundo. Isso verifica se a turma saiu do fascínio profético para a fidelidade prática.</p></div>
+    <div class="bloco-aluno">
+<div class="ba-titulo">Leve Para a Vida — Vigilância Sem Ansiedade</div>
+<p>Jesus terminou seu discurso sobre os sinais não com um cronograma, mas com uma ordem: <em>"Vigilai, pois"</em> (Mt 24:42). Vigiar não é ficar paralisado de medo ou obcecado com manchetes — é viver com propósito, generosidade e urgência missionária porque sabe que o tempo é de Deus. Esta semana, toda vez que uma notícia te provocar ansiedade, substitua a especulação por uma ação concreta: ore, sirva, anuncie. Isso é vigilância bíblica.</p>
+</div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -879,6 +1058,15 @@ h2.prof{
     </div>
     <h2 class="prof">Visão Geral para o Professor</h2>
     <p>Esta é a lição mais exegética da série e a mais vulnerável ao sensacionalismo. Mateus 24 é o capítulo mais citado em contextos proféticos populares — e também o mais mal interpretado. O professor não precisa ser um erudito em escatologia, mas precisa dominar a estrutura do texto e estar preparado para redirecionar discussões que saiam do texto para a especulação.</p>
+    <div class="bloco-mapa">
+<div class="bk">Mapa de Competências da Lição</div>
+<div class="mapa-grid">
+<div class="mapa-cel"><div class="mapa-cel-tit">Conhecimento</div><p>Estrutura de Mateus 24; as três categorias de sinais; destruição de 70 d.C.; princípio do cumprimento duplo</p></div>
+<div class="mapa-cel"><div class="mapa-cel-tit">Habilidade</div><p>Classificar sinais como gerais, específicos ou climáticos; comparar as leituras futurista e preterista parcial com respeito</p></div>
+<div class="mapa-cel"><div class="mapa-cel-tit">Atitude</div><p>Substituir especulação cronológica por vigilância ativa; avaliar criticamente afirmações proféticas nas redes sociais</p></div>
+<div class="mapa-cel"><div class="mapa-cel-tit">Avaliação</div><p>O aluno distingue sinais gerais de específicos? Consegue articular o que une as duas tradições sobre a volta de Cristo?</p></div>
+</div>
+</div>
     <div class="bloco-tempo">
         <div class="bk">Estrutura de Tempo Sugerida — 50 min</div>
         <div class="tempo-linha"><span class="tempo-min">5 min</span><span class="tempo-desc">Abertura: pergunta sobre reações às crises do mundo (ver P2)</span></div>
@@ -905,6 +1093,10 @@ h2.prof{
         <div class="bk">Leitura da Turma</div>
         <p>Turmas de tradição pentecostal tendem a chegar com grande familiaridade com a interpretação futurista de Mateus 24. Ao apresentar o preterismo parcial, deixe claro que se trata de uma posição de eruditos evangélicos sérios — não de liberalismo teológico. Isso reduz a resistência inicial e abre espaço para o diálogo genuíno.</p>
     </div>
+    <div class="bloco-fio">
+<div class="bloco-fio-icon">⇢</div>
+<div class="bloco-fio-txt"><strong>Fio Condutor da Série</strong>Esta lição é a mais exegética da série — é aqui que o aluno aprende a ler a Bíblia antes de interpretar o noticiário. O método que você ensinar em Mateus 24 moldará como a turma abordará todo o restante da série: textos difíceis, tradições diferentes, aplicação prática da esperança.</div>
+</div>
     <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P1</span></div>
 </div>
 
@@ -931,6 +1123,21 @@ h2.prof{
             <li>Use as respostas para calibrar o tom da aula — turmas mais ansiosas precisam de mais ancoragem no consenso; turmas mais céticas precisam de mais abertura ao debate</li>
         </ul>
     </div>
+    <div class="bloco-soc">
+<div class="bk">Escada de Perguntas Socráticas — Introdução</div>
+<div class="soc-item">
+<p>Nível 1 — Diagnóstico: "Quando você vê uma catástrofe no noticiário, sua primeira reação é espiritual, emocional ou analítica? O que isso diz sobre sua hermenêutica prática?"</p>
+<div class="soc-espera">Espera: o aluno reconhece que já possui uma interpretação implícita dos sinais — e que ela foi formada culturalmente, não exegeticamente</div>
+</div>
+<div class="soc-item">
+<p>Nível 2 — Conceitual: "Se Mateus 24:6 diz 'ainda não é o fim', para que Jesus deu essa lista de sinais? Qual a função deles se não é para calcular datas?"</p>
+<div class="soc-espera">Espera: os sinais são orientadores de postura (vigilância, missão, perseverança), não cronômetros — desloca o eixo de informação para formação</div>
+</div>
+<div class="soc-item">
+<p>Nível 3 — Aplicação: "Se você soubesse com certeza que Cristo voltaria daqui a 20 anos — mas não soubesse o dia exato — o que mudaria na sua rotina, nas suas prioridades, no seu uso do dinheiro?"</p>
+<div class="soc-espera">Espera: conexão entre escatologia e ética cotidiana; urgência missionária fundada na certeza da vinda, não na ansiedade do momento</div>
+</div>
+</div>
     <div class="sep"><span>✦</span></div>
     <h2 class="prof">Aprofundamento Teológico</h2>
     <div class="bloco-teo">
@@ -969,14 +1176,35 @@ h2.prof{
             <li><strong>Linha do tempo dupla:</strong> desenhe duas linhas — uma terminando em 70 d.C. e outra aberta no futuro. Mostre onde cada tradição coloca os eventos de Mateus 24. A visualização ajuda a perceber que o debate é sobre interpretação, não sobre a realidade da volta de Cristo.</li>
         </ul>
     </div>
-    <div class="bloco-dica">
-        <div class="bk">Adaptações por Perfil de Turma</div>
-        <ul>
-            <li><strong>Turma majoritariamente pentecostal:</strong> comece pelo ponto de consenso (Cristo voltará, ninguém sabe o dia). Apresente o preterismo parcial como posição de evangélicos conservadores, não como teologia liberal. Cite Sproul pelo nome.</li>
-            <li><strong>Turma mais reformada:</strong> não trate o futurismo como ingenuidade. Apresente seus melhores argumentos antes de apontar as limitações. O respeito à posição do outro fortalece o próprio debate.</li>
-            <li><strong>Turma ansiosa com crises globais:</strong> enfatize Mt 24:6 — "ainda não é o fim" — e 1 Ts 5:4-11, que transforma a incerteza do fim em convocação à vigilância e edificação mútua.</li>
-        </ul>
-    </div>
+    <div class="bloco-perf">
+<div class="bk">Diferenciação por Perfil de Turma</div>
+<div class="perf-linha">
+<div class="perf-tipo">Pentecostal</div>
+<div class="perf-txt">Comece pelo consenso (Cristo voltará, ninguém sabe o dia). Apresente o preterismo parcial como posição de evangélicos conservadores sérios — nunca como teologia liberal. Cite Sproul pelo nome.</div>
+</div>
+<div class="perf-linha">
+<div class="perf-tipo">Reformada</div>
+<div class="perf-txt">Não trate o futurismo como ingenuidade. Apresente seus melhores argumentos antes de apontar limitações. O respeito à posição do outro fortalece a qualidade do debate.</div>
+</div>
+<div class="perf-linha">
+<div class="perf-tipo">Ansiosa</div>
+<div class="perf-txt">Enfatize Mt 24:6 — "ainda não é o fim" — e ancora em 1 Ts 5:4-11. Transforme a incerteza do fim em convocação à vigilância e edificação mútua, não em ansiedade paralisante.</div>
+</div>
+<div class="perf-linha">
+<div class="perf-tipo">Cética</div>
+<div class="perf-txt">Ofereça o cumprimento histórico de 70 d.C. como evidência verificável da confiabilidade profética. Argumento racional antes de apelo à autoridade bíblica.</div>
+</div>
+</div>
+    <div class="bloco-aval">
+<div class="bk">Avaliação Formativa Rápida — Antes de Encerrar</div>
+<p>Verifique se os seguintes objetivos foram alcançados antes de encerrar:</p>
+<ul>
+<li>O aluno distingue sinais gerais de específicos sem confundir os dois horizontes?</li>
+<li>Ele conhece as razões centrais das posições futurista e preterista parcial?</li>
+<li>Ele articula por que Jesus não forneceu datas e o que isso exige de nós?</li>
+<li>A turma manteve postura de diálogo respeitoso ao comparar as tradições?</li>
+</ul>
+</div>
     <div class="sep"><span>✦</span></div>
     <h2 class="prof">Gestão de Tensões</h2>
     <div class="alerta">
@@ -1031,6 +1259,19 @@ h2.prof{
             <div class="resp-txt">Respostas pessoais e de consciência. Espere: renúncia à especulação cronológica, foco na fidelidade presente, uso do tempo e dos recursos como se Cristo pudesse voltar a qualquer momento, engajamento missional motivado pelo v.14, sobriedade ao avaliar afirmações proféticas nas redes sociais. O critério de avaliação é se o aluno conectou a incerteza do futuro com a urgência do presente.</div>
         </div>
     </div>
+    <div class="bloco-fio">
+<div class="bloco-fio-icon">↻</div>
+<div class="bloco-fio-txt"><strong>Como Usar o Gabarito</strong>As respostas são orientativas, não definitivas. Na Questão 01, valorize especialmente quem identificar a pergunta dupla dos discípulos como chave do capítulo — esse insight muda o modo de ler o texto inteiro. Na Questão 04, respostas que conectem incerteza do futuro com urgência prática merecem destaque público: mostram que o aluno fez a ponte doutrina–vida.</div>
+</div>
+    <div class="bloco-aval">
+<div class="bk">Seguimento Pós-Lição</div>
+<ul>
+<li>Durante a semana, envie ao grupo: "Mateus 24:42 — 'Vigilai, pois.' O que você está vigiando esta semana?"</li>
+<li>Proponha a leitura devocional de 1 Tessalonicenses 5:1-11 antes da próxima lição (O Arrebatamento)</li>
+<li>Anote os alunos que demonstraram fascínio especulativo — eles precisam de aprofundamento exegético na próxima lição</li>
+<li>Avalie se a turma saiu com a distinção sinais gerais / específicos / climático clara — isso é pré-requisito para a Lição 03</li>
+</ul>
+</div>
     <div class="sep"><span>✦</span></div>
     <h2 class="prof">Materiais Complementares</h2>
     <div class="bloco-mat">
