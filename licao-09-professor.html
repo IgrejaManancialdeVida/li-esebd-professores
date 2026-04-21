@@ -605,6 +605,126 @@ h2.prof{
     p{font-size:9pt;}
     .btn{padding:5px 8px;font-size:7pt;}
 }
+
+/* ── BLOCOS DO ALUNO ── */
+.baluno{border-radius:3px;padding:9px 12px;margin-top:12px;margin-bottom:2px;position:relative;}
+.baluno-ico{font-size:10pt;margin-right:6px;vertical-align:middle;}
+.baluno-tag{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:4px;}
+.baluno-corpo{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:var(--ct);}
+.baluno-linha{border-bottom:1px solid rgba(0,0,0,0.12);height:22px;margin-top:6px;}
+.ba-refletir{background:rgba(32,144,176,0.06);border-left:3px solid var(--cor);}
+.ba-refletir .baluno-tag{color:var(--cor);}
+.ba-biblica{background:rgba(201,168,76,0.07);border-left:3px solid var(--ouro);}
+.ba-biblica .baluno-tag{color:#8a6a20;}
+.ba-sabia{background:rgba(60,120,180,0.06);border-left:3px solid #5080b0;}
+.ba-sabia .baluno-tag{color:#4060a0;}
+.ba-pense{background:rgba(32,144,176,0.04);border:1px dashed rgba(32,144,176,0.30);border-left:3px solid var(--cor);}
+.ba-pense .baluno-tag{color:var(--cor);}
+.ba-vida{background:linear-gradient(135deg,rgba(32,144,176,0.05),rgba(201,168,76,0.06));border:1px solid rgba(201,168,76,0.30);border-left:3px solid var(--ouro);}
+.ba-vida .baluno-tag{color:#8a6a20;}
+
+/* Nota do professor sobre bloco do aluno */
+.nota-prof{background:#f5f0fc;border:1px solid rgba(90,62,138,0.25);border-left:3px solid var(--prof);border-radius:3px;padding:7px 10px;margin-top:5px;}
+.nota-prof-tag{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:var(--prof);margin-bottom:4px;display:flex;align-items:center;gap:5px;}
+.nota-prof-tag::before{content:'▶';font-size:5.5pt;}
+.nota-prof p{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.5;color:#3a2a55;margin-bottom:0;}
+
+@media (max-width:768px){
+    .baluno{padding:8px 10px;}
+    .baluno-corpo,.baluno-linha{font-size:9.5pt;}
+    .nota-prof{padding:6px 9px;}
+}
+@media print{
+    .baluno,.nota-prof{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+
+/* ── BLOCOS PEDAGÓGICOS NOVOS (P1–P4) ── */
+
+/* Mapa de Competências 2×2 */
+.mapa-comp{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.mapa-cell{border-radius:3px;padding:8px 10px;position:relative;}
+.mapa-cell-lbl{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:4px;}
+.mapa-cell-txt{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.5;color:var(--ct);}
+.mc-conhec{background:rgba(32,144,176,0.07);border:1px solid rgba(32,144,176,0.25);}
+.mc-conhec .mapa-cell-lbl{color:var(--cor);}
+.mc-habil{background:rgba(46,107,79,0.07);border:1px solid rgba(46,107,79,0.25);}
+.mc-habil .mapa-cell-lbl{color:#2e6b4f;}
+.mc-atit{background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);}
+.mc-atit .mapa-cell-lbl{color:#8a6a20;}
+.mc-aval{background:rgba(90,62,138,0.07);border:1px solid rgba(90,62,138,0.25);}
+.mc-aval .mapa-cell-lbl{color:var(--prof);}
+
+/* Fio Condutor */
+.fio-condutor{background:linear-gradient(135deg,rgba(32,144,176,0.05),rgba(90,62,138,0.06));border:1px solid rgba(90,62,138,0.2);border-left:4px solid var(--prof);border-radius:3px;padding:9px 12px;margin:10px 0;}
+.fio-condutor .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--prof);margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.fio-condutor .bk::before{content:'⟶';font-size:10pt;}
+.fio-condutor p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:#2a1a44;margin-bottom:0;}
+
+/* Escada de Perguntas Socráticas */
+.escada-socratica{margin:10px 0;}
+.escada-nivel{border-radius:3px;padding:8px 11px;margin-bottom:6px;position:relative;padding-left:36px;}
+.escada-nivel::before{position:absolute;left:10px;top:8px;font-family:'Cinzel',serif;font-weight:900;font-size:11pt;line-height:1;}
+.es-n1{background:rgba(32,144,176,0.06);border:1px solid rgba(32,144,176,0.2);}
+.es-n1::before{content:'1';color:var(--cor);}
+.es-n2{background:rgba(90,62,138,0.06);border:1px solid rgba(90,62,138,0.2);}
+.es-n2::before{content:'2';color:var(--prof);}
+.es-n3{background:rgba(46,107,79,0.06);border:1px solid rgba(46,107,79,0.2);}
+.es-n3::before{content:'3';color:#2e6b4f;}
+.es-lbl{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:3px;}
+.es-n1 .es-lbl{color:var(--cor);}
+.es-n2 .es-lbl{color:var(--prof);}
+.es-n3 .es-lbl{color:#2e6b4f;}
+.es-pergunta{font-family:'EB Garamond',serif;font-size:10pt;font-style:italic;color:var(--ct);line-height:1.45;margin-bottom:3px;}
+.es-resp{font-family:'EB Garamond',serif;font-size:9pt;color:#555;line-height:1.4;}
+.es-resp strong{font-style:normal;color:#333;}
+
+/* Grid Diferenciação por Perfil */
+.dif-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0;}
+.dif-cell{border-radius:3px;padding:7px 9px;border:1px solid rgba(0,0,0,0.1);}
+.dif-tipo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:3px;}
+.dif-acao{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.45;color:var(--ct);}
+.dif-enlutado{background:rgba(139,26,26,0.04);border-color:rgba(139,26,26,0.2);}
+.dif-enlutado .dif-tipo{color:var(--vermelho);}
+.dif-jovem{background:rgba(32,144,176,0.05);border-color:rgba(32,144,176,0.2);}
+.dif-jovem .dif-tipo{color:var(--cor);}
+.dif-mista{background:rgba(46,107,79,0.05);border-color:rgba(46,107,79,0.2);}
+.dif-mista .dif-tipo{color:#2e6b4f;}
+.dif-ansiosa{background:rgba(201,168,76,0.06);border-color:rgba(201,168,76,0.25);}
+.dif-ansiosa .dif-tipo{color:#8a6a20;}
+
+/* Avaliação Formativa Rápida */
+.aval-form{background:#f8f8ff;border:1px solid rgba(90,62,138,0.2);border-left:4px solid var(--prof);border-radius:3px;padding:9px 12px;margin:10px 0;}
+.aval-form .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--prof);margin-bottom:7px;display:flex;align-items:center;gap:6px;}
+.aval-form .bk::before{content:'✓';font-weight:900;}
+.aval-check{display:flex;align-items:flex-start;gap:8px;padding:3px 0;border-bottom:1px solid rgba(90,62,138,0.08);}
+.aval-check:last-child{border-bottom:none;}
+.aval-box{width:13px;height:13px;border:1.5px solid rgba(90,62,138,0.4);border-radius:2px;flex-shrink:0;margin-top:2px;}
+.aval-txt{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.45;color:#2a1a44;}
+
+/* Bloco Uso do Gabarito */
+.bloco-gabarito{background:#fffdf0;border:1px solid rgba(201,168,76,0.3);border-left:4px solid var(--ouro);border-radius:3px;padding:9px 12px;margin:10px 0;}
+.bloco-gabarito .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-gabarito .bk::before{content:'◎';font-size:9pt;}
+.bloco-gabarito p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:#4a3a10;margin-bottom:0;}
+
+/* Seguimento Pós-Lição */
+.bloco-seguimento{background:linear-gradient(135deg,rgba(90,62,138,0.06),rgba(32,144,176,0.05));border:1px solid rgba(90,62,138,0.2);border-left:4px solid var(--prof);border-radius:3px;padding:9px 12px;margin:10px 0;}
+.bloco-seguimento .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--prof);margin-bottom:7px;display:flex;align-items:center;gap:6px;}
+.bloco-seguimento .bk::before{content:'→';font-size:10pt;}
+.seg-item{display:flex;align-items:flex-start;gap:8px;padding:4px 0;border-bottom:1px solid rgba(90,62,138,0.08);}
+.seg-item:last-child{border-bottom:none;}
+.seg-num{font-family:'Cinzel',serif;font-size:8pt;font-weight:700;color:var(--prof);min-width:18px;flex-shrink:0;padding-top:1px;}
+.seg-txt{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.45;color:#2a1a44;}
+
+@media (max-width:768px){
+    .mapa-comp,.dif-grid{grid-template-columns:1fr;}
+    .escada-nivel{padding-left:30px;}
+}
+@media print{
+    .mapa-comp,.escada-socratica,.dif-grid,.aval-form,
+    .bloco-gabarito,.bloco-seguimento,.fio-condutor,
+    .nota-prof{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
 </style>
 </head>
 <body>
@@ -690,6 +810,16 @@ h2.prof{
     <p>A ressurreição bíblica, portanto, não é fuga do mundo material, mas sua redenção final. Deus não abandona a obra de suas mãos; antes, leva à consumação aquilo que criou e declarou bom desde o princípio. Por isso, a esperança cristã não se limita ao consolo para a alma, mas alcança a pessoa inteira.</p>
     <p>Essa doutrina também corrige dois extremos frequentes: o materialismo, que reduz o homem ao corpo presente, e o espiritualismo, que trata o corpo como algo descartável. Nas Escrituras, o ser humano é uma unidade criada por Deus, e a salvação plena inclui a restauração dessa unidade na presença do Senhor.</p>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Abra perguntando: "Quando vocês imaginam a vida eterna, o que enxergam — uma existência espiritual e etérea, ou um mundo físico glorificado?" As respostas revelarão o quanto a visão grega de alma imortal penetrou o imaginário cristão da turma. Use isso para introduzir a distinção bíblica desde o início.</p></div>
+    <div class="baluno ba-refletir">
+        <div class="baluno-tag"><span class="baluno-ico">&#9670;</span> Para você refletir</div>
+        <div class="baluno-corpo">A ressurreição corporal é a esperança mais radical do cristianismo. Como essa doutrina diferencia a fé cristã das demais visões sobre a morte — especialmente das ideias de imortalidade da alma e reencarnação? O que muda para você saber que Deus redimirá o seu próprio corpo?</div>
+        <div class="baluno-linha"></div>
+        <div class="baluno-linha"></div>
+    </div>
+    <div class="nota-prof">
+        <div class="nota-prof-tag">Nota do Professor</div>
+        <p>Este bloco funciona como diagnóstico inicial da turma. Peça que respondam individualmente antes de qualquer debate. Observe se os alunos ainda confundem ressurreição com "ir para o céu como espírito" — isso indica a presença da visão grega. Use as respostas para calibrar o nível de aprofundamento necessário na distinção do Quadro das Três Concepções (ver P3).</p>
+    </div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -708,6 +838,16 @@ h2.prof{
     <p>A ressurreição de Cristo, portanto, não é apenas prova de seu poder, mas o padrão da esperança cristã. O túmulo vazio não anuncia apenas que Jesus venceu a morte; anuncia também que a morte perdeu seu domínio definitivo sobre todos os que lhe pertencem.</p>
     <p>Isso significa que a esperança do crente não repousa em uma sobrevivência vaga após a morte, mas em uma promessa histórica e concreta. Assim como Cristo ressuscitou de fato, em continuidade com o corpo que foi crucificado, também os redimidos ressuscitarão em continuidade real com a sua identidade pessoal, embora plenamente transformados pela glória de Deus.</p>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>A analogia do grão (1 Co 15:35-44) é pedagogicamente poderosa. Leve um grão e um punhado de trigo para a aula, se possível, ou esboce no quadro. A diferença visual entre o que é plantado e o que brota ajuda o aluno a entender "mesmo, mas transformado" — identidade com glorificação, sem confundir corpo glorificado com fantasma nem com simples revivificação do corpo atual.</p></div>
+    <div class="baluno ba-biblica">
+        <div class="baluno-tag"><span class="baluno-ico">&#9998;</span> Conexão Bíblica</div>
+        <div class="baluno-corpo">Leia 1 Coríntios 15:35-44. Paulo usa a imagem do grão para explicar continuidade e transformação. Quais pares de contraste ele apresenta (v. 42-44)? O que cada par revela sobre a diferença entre o corpo atual e o corpo ressurreto?</div>
+        <div class="baluno-linha"></div>
+        <div class="baluno-linha"></div>
+    </div>
+    <div class="nota-prof">
+        <div class="nota-prof-tag">Nota do Professor</div>
+        <p>Os quatro pares paulinos são: corruptível/incorruptível · desonra/glória · fraqueza/poder · natural/espiritual. Peça que os alunos listem os pares antes de discuti-los. Depois, conecte cada par à realidade cotidiana do corpo: doenças e envelhecimento (corruptível), limitações físicas (fraqueza), necessidades biológicas (natural). Isso ancora o contraste no concreto e evita que a discussão se torne abstrata.</p>
+    </div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -729,6 +869,14 @@ h2.prof{
     <p>Seja qual for a cronologia adotada, o ponto central permanece: a morte não terá a palavra final sobre nenhum ser humano. Todos comparecerão diante de Deus como pessoas integrais, e não como consciências desencarnadas. A ressurreição estabelece a seriedade moral da existência humana e a dignidade do corpo diante do Criador.</p>
     <p>O estado intermediário, por sua vez, embora seja de consolo para os que morrem no Senhor, não deve ser confundido com o destino final. A esperança cristã mira além do descanso da alma na presença de Cristo; ela aguarda o dia em que o corpo também será redimido, e a comunhão com Deus será experimentada em plenitude na nova criação.</p>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>O estado intermediário é frequentemente fonte de confusão pastoral — especialmente em contexto de luto. Clarificar que "estar com Cristo" após a morte é real e bom, mas é ainda um estado de espera, ajuda o enlutado a entender que seu ente querido está em paz e comunhão, mas que a ressurreição final ainda está por vir. Isso integra consolo e esperança futura sem separar o que Deus uniu.</p></div>
+    <div class="baluno ba-sabia">
+        <div class="baluno-tag"><span class="baluno-ico">&#9654;</span> Sabia que?</div>
+        <div class="baluno-corpo">A palavra grega <em>anastasis</em> ("ressurreição") significa literalmente "levantar-se" ou "ficar de pé novamente". No mundo antigo, quando Paulo pregou sobre a <em>anastasis</em> em Atenas (At 17:32), os filósofos gregos riram — pois a ressurreição do corpo era considerada indesejável. Para os gregos, o corpo era uma prisão da alma. O evangelho inverteu radicalmente essa visão.</div>
+    </div>
+    <div class="nota-prof">
+        <div class="nota-prof-tag">Nota do Professor</div>
+        <p>Use esta informação para ilustrar o choque cultural do evangelho com o mundo helênico — e a semelhança com o ceticismo contemporâneo. A reação de "riso" dos atenienses (At 17:32) é espelho do que muitos modernos pensam sobre o corpo ressurreto. O ponto de virada é perguntar: "Por que Deus se daria ao trabalho de ressuscitar um corpo que considera bom o suficiente para salvar?" A resposta ancora o valor da corporalidade na teologia da criação.</p>
+    </div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -751,7 +899,17 @@ h2.prof{
     <p>A divergência entre essas leituras não elimina o núcleo comum da fé cristã. Ambas afirmam que a ressurreição será corporal, histórica, universal e inseparável do senhorio de Cristo. A diferença está na ordem dos acontecimentos, não na realidade gloriosa prometida por Deus ao seu povo.</p>
     <p>Por isso, o estudo desse tema deve produzir reverência e esperança, e não mera curiosidade cronológica. A finalidade pastoral da doutrina é fortalecer a perseverança dos santos, consolar os enlutados e orientar a Igreja a viver no presente à luz do futuro prometido.</p>
     <p>Ambas as tradições afirmam com igual convicção: o corpo importa para Deus, a identidade pessoal é preservada na ressurreição, e a vida eterna não é uma existência etérea e desencarnada, mas uma vida plena, encarnada, na nova criação que Deus está preparando.</p>
-    <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Ao encerrar o diálogo entre as tradições, ressalte o consenso teológico: independente da sequência, há identidade pessoal real, corpo glorificado, e encontro definitivo com Cristo. Isso evita que o debate cronológico eclipsse a esperança que une a Igreja. Uma boa pergunta de encerramento: "O que muda na sua vida prática dependendo de qual posição você adota sobre a sequência das ressurreições?"</p></div>
+    <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Ao encerrar o diálogo entre as tradições, ressalte o consenso teológico: independente da sequência, há identidade pessoal real, corpo glorificado, e encontro definitivo com Cristo. Isso evita que o debate cronológico eclipse a esperança que une a Igreja. Uma boa pergunta de encerramento: "O que muda na sua vida prática dependendo de qual posição você adota sobre a sequência das ressurreições?"</p></div>
+    <div class="baluno ba-pense">
+        <div class="baluno-tag"><span class="baluno-ico">&#8857;</span> Pense nisso</div>
+        <div class="baluno-corpo">Pentecostais e reformados divergem sobre o número e a ordem das ressurreições — mas afirmam com igual convicção que a ressurreição será corporal e inseparável do senhorio de Cristo. Essa convergência é suficiente para a comunhão cristã? Onde está a linha entre debate teológico legítimo e divisão desnecessária?</div>
+        <div class="baluno-linha"></div>
+        <div class="baluno-linha"></div>
+    </div>
+    <div class="nota-prof">
+        <div class="nota-prof-tag">Nota do Professor</div>
+        <p>Este bloco é um convite à maturidade eclesial. Oriente o debate para distinguir: (1) núcleo inegociável — ressurreição corporal, identidade preservada, senhorio de Cristo; (2) questões abertas — sequência, número, cronologia. Uma turma saudável aprende a sustentar convicções pessoais sem transformar divergências secundárias em divisão. Se houver tensão entre alunos de tradições diferentes, use isso como oportunidade pedagógica — não como problema a suprimir.</p>
+    </div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -775,6 +933,16 @@ h2.prof{
     <p>Assim, a esperança da ressurreição não produz alienação, mas fidelidade. O cristão pode enfrentar perdas, limitações e a própria morte sem desespero, porque sabe que em Cristo sua história não termina no túmulo. O último capítulo da existência humana pertence ao Deus que ressuscita os mortos.</p>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Na conclusão, use 1 Co 15:58 como chave de fechamento: a doutrina mais elevada da esperança cristã converge para uma exortação concretamente ética — "sede firmes e constantes". Isso demonstra que a escatologia não é fuga, mas fundamento. Se possível, peça que cada aluno formule em uma frase como a ressurreição muda algo concreto em sua semana.</p></div>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>A citação de N.T. Wright sobre as marcas dos pregos no corpo ressurreto de Cristo é teologicamente densa e pode abrir uma conversa rica sobre redenção versus apagamento do passado. Explore: "Seus sofrimentos e cicatrizes importam a Deus — eles não serão eliminados, mas redimidos."</p></div>
+    <div class="baluno ba-vida">
+        <div class="baluno-tag"><span class="baluno-ico">&#10022;</span> Leve para a vida</div>
+        <div class="baluno-corpo">Esta semana, escolha uma atitude concreta motivada pela esperança da ressurreição: trate seu corpo com dignidade como templo que ressuscitará; consolide alguém enlutado com a esperança concreta da ressurreição; ou realize um serviço presente sabendo que ele não é vão no Senhor (1 Co 15:58). Anote aqui o que você vai fazer:</div>
+        <div class="baluno-linha"></div>
+        <div class="baluno-linha"></div>
+    </div>
+    <div class="nota-prof">
+        <div class="nota-prof-tag">Nota do Professor</div>
+        <p>Encerre a lição pedindo que cada aluno verbalize ou escreva sua escolha antes de sair. A verbalização pública aumenta significativamente o comprometimento com a ação. Nas três opções oferecidas (corpo · consolo ao enlutado · serviço), cubra as três dimensões da doutrina: antropologia, pastoral e ética. Se houver aluno em luto presente, dê atenção especial à opção do consolo — sem expô-lo sem permissão.</p>
+    </div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -859,6 +1027,29 @@ h2.prof{
         <div class="bk">Leitura da Turma</div>
         <p>Turmas mais jovens tendem a nunca ter pensado profundamente sobre a morte — para elas, a lição pode ser desconfortável no início. Turmas com membros enlutados precisam de mais gentileza no ritmo e abertura para silêncios. Em ambos os casos, o versículo âncora é 1 Co 15:58: a esperança da ressurreição não nos afasta da vida — nos torna mais firmes nela.</p>
     </div>
+    <div class="fio-condutor">
+        <div class="bk">Fio Condutor da Série</div>
+        <p>Esta lição é o coração antropológico da série. A Lição 08 estabeleceu que Cristo voltará — a Lição 09 revela o que acontece com os corpos quando ele vier. As Lições 10 e 11 (Juízo Final e Nova Criação) pressupõem o que é aprendido aqui. Sem a ressurreição corporal, o juízo perde seu objeto e a nova criação perde seus habitantes. Mantenha essa cadeia de conexões visível para os alunos ao longo da série.</p>
+    </div>
+    <h2 class="prof">Mapa de Competências</h2>
+    <div class="mapa-comp">
+        <div class="mapa-cell mc-conhec">
+            <div class="mapa-cell-lbl">Conhecimento</div>
+            <div class="mapa-cell-txt">Distinguir ressurreição bíblica de imortalidade da alma e reencarnação; conhecer a estrutura de 1 Co 15 e os pares paulinos de contraste</div>
+        </div>
+        <div class="mapa-cell mc-habil">
+            <div class="mapa-cell-lbl">Habilidade</div>
+            <div class="mapa-cell-txt">Articular a diferença entre as tradições com textos bíblicos; aplicar a analogia do grão para explicar continuidade e transformação do corpo</div>
+        </div>
+        <div class="mapa-cell mc-atit">
+            <div class="mapa-cell-lbl">Atitude</div>
+            <div class="mapa-cell-txt">Valorizar o corpo como criação boa de Deus; enfrentar a morte e o luto com esperança concreta e encarnada, não com escapismo espiritualista</div>
+        </div>
+        <div class="mapa-cell mc-aval">
+            <div class="mapa-cell-lbl">Avaliação</div>
+            <div class="mapa-cell-txt">O aluno consegue nomear a distinção entre as três visões e citar ao menos dois textos bíblicos que fundamentam a ressurreição corporal?</div>
+        </div>
+    </div>
     <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P1</span></div>
 </div>
 
@@ -903,6 +1094,26 @@ h2.prof{
         "A ressurreição não é a sobrevivência do melhor de nós — é a vitória de Deus sobre tudo que ameaça destruir a sua boa criação."
         <cite>— N.T. Wright, <em>Surpreendido pela Esperança</em></cite>
     </div>
+    <div class="sep"><span>✦</span></div>
+    <h2 class="prof">Escada de Perguntas Socráticas</h2>
+    <p style="font-family:'EB Garamond',serif;font-size:9.5pt;color:#555;margin-bottom:8px;">Use esta sequência para conduzir a turma do diagnóstico inicial ao comprometimento ético, em três níveis progressivos.</p>
+    <div class="escada-socratica">
+        <div class="escada-nivel es-n1">
+            <div class="es-lbl">Nível 1 · Diagnóstico</div>
+            <div class="es-pergunta">"Quando alguém que você ama morre, o que você acredita que acontece com ele — agora, e no futuro?"</div>
+            <div class="es-resp"><strong>Resposta esperada:</strong> identificar se o aluno diferencia estado intermediário de destino final; detectar presença de visão grega ou bíblica da esperança.</div>
+        </div>
+        <div class="escada-nivel es-n2">
+            <div class="es-lbl">Nível 2 · Conceitual</div>
+            <div class="es-pergunta">"Paulo diz que 'se Cristo não ressuscitou, a vossa fé é vã.' Por que a ressurreição de Cristo é fundamento, e não apenas prova, da nossa esperança?"</div>
+            <div class="es-resp"><strong>Resposta esperada:</strong> Cristo como "primícias" — garantia ontológica da ressurreição dos crentes; solidariedade entre Cabeça e corpo; o túmulo vazio como penhor, não apenas como milagre isolado.</div>
+        </div>
+        <div class="escada-nivel es-n3">
+            <div class="es-lbl">Nível 3 · Aplicação</div>
+            <div class="es-pergunta">"Se este corpo ressuscitará transformado, o que muda no modo como você o trata hoje — e no modo como você enfrenta sofrimento, doença e limitação?"</div>
+            <div class="es-resp"><strong>Resposta esperada:</strong> cuidado com o corpo como templo; perspectiva diferente diante da dor; o trabalho e o serviço presentes não são em vão; a injustiça combatida hoje antecipa a nova criação.</div>
+        </div>
+    </div>
     <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P2</span></div>
 </div>
 
@@ -923,13 +1134,34 @@ h2.prof{
             <li><strong>Releitura de Jo 20:24-29:</strong> leia em voz alta a cena de Tomé tocando as marcas dos pregos. Pergunte: "Se Cristo ressurreto tinha marcas físicas, o que isso diz sobre a ressurreição de vocês?"</li>
         </ul>
     </div>
-    <div class="bloco-dica">
-        <div class="bk">Adaptações por Perfil de Turma</div>
-        <ul>
-            <li><strong>Turma com enlutados:</strong> dedique mais tempo ao estado intermediário e ao consolo de Fp 1:23. A doutrina serve a pessoas reais em dor — não pule para o debate cronológico sem antes ancorar na esperança pastoral.</li>
-            <li><strong>Turma mais jovem e intelectualmente curiosa:</strong> o debate sobre "primeira ressurreição" em Ap 20 pode ser muito estimulante. Apresente os dois lados com respeito e encoraje a pesquisa pessoal nos textos.</li>
-            <li><strong>Turma mista de tradições:</strong> enfatize o consenso — ressurreição corporal, identidade preservada, corpo glorificado — antes de apresentar a divergência sobre a sequência. Isso evita que o debate cronológico fragmentize o que a doutrina une.</li>
-        </ul>
+    <h2 class="prof">Diferenciação por Perfil de Turma</h2>
+    <div class="dif-grid">
+        <div class="dif-cell dif-enlutado">
+            <div class="dif-tipo">Turma com enlutados</div>
+            <div class="dif-acao">Priorize Fp 1:23 e o estado intermediário antes de qualquer debate cronológico. Dê espaço para silêncio. Ancore na esperança pastoral antes de avançar para a teologia sistemática.</div>
+        </div>
+        <div class="dif-cell dif-jovem">
+            <div class="dif-tipo">Turma jovem e curiosa</div>
+            <div class="dif-acao">O debate sobre Ap 20 e a "primeira ressurreição" pode ser muito estimulante. Apresente os dois lados com respeito; encoraje pesquisa pessoal nos textos como lição de casa.</div>
+        </div>
+        <div class="dif-cell dif-mista">
+            <div class="dif-tipo">Turma mista de tradições</div>
+            <div class="dif-acao">Enfatize o consenso — ressurreição corporal, identidade preservada, corpo glorificado — antes da divergência sobre a sequência. Isso evita que o debate cronológico fragmente o que a doutrina une.</div>
+        </div>
+        <div class="dif-cell dif-ansiosa">
+            <div class="dif-tipo">Turma ansiosa ou resistente</div>
+            <div class="dif-acao">Não force o tema da morte. Use a ressurreição como entrada positiva: "O que Deus promete fazer com o seu corpo?" Redirecione o foco de perda para promessa antes de explorar a doutrina completa.</div>
+        </div>
+    </div>
+    <div class="sep"><span>✦</span></div>
+    <h2 class="prof">Avaliação Formativa Rápida</h2>
+    <div class="aval-form">
+        <div class="bk">Checklist de Objetivos — ao final da lição</div>
+        <div class="aval-check"><div class="aval-box"></div><div class="aval-txt">O aluno distingue ressurreição bíblica de imortalidade da alma e de reencarnação com pelo menos um argumento cada</div></div>
+        <div class="aval-check"><div class="aval-box"></div><div class="aval-txt">O aluno cita Cristo como "primícias" da ressurreição e compreende o que isso implica para a própria esperança</div></div>
+        <div class="aval-check"><div class="aval-box"></div><div class="aval-txt">O aluno aplica a analogia do grão para explicar continuidade e transformação do corpo ressurreto</div></div>
+        <div class="aval-check"><div class="aval-box"></div><div class="aval-txt">O aluno demonstra pelo menos uma implicação ética concreta da doutrina da ressurreição para o presente</div></div>
+        <div class="aval-check"><div class="aval-box"></div><div class="aval-txt">O aluno consegue identificar o ponto de consenso entre as tradições pentecostal e reformada sobre a ressurreição</div></div>
     </div>
     <div class="sep"><span>✦</span></div>
     <h2 class="prof">Gestão de Tensões</h2>
@@ -966,6 +1198,10 @@ h2.prof{
         <span class="ph-prof-r">Edição Docente</span>
     </div>
     <h2 class="prof">Respostas Sugeridas — Questões da Pg. 7</h2>
+    <div class="bloco-gabarito">
+        <div class="bk">Orientação sobre o Uso do Gabarito</div>
+        <p>As respostas abaixo são <em>orientativas</em>, não prescritivas. Respostas pessoais que conectam a doutrina com experiência vivida têm igual valor teológico — às vezes mais. Valorize o aluno que cita um texto bíblico corretamente; valorize igualmente o aluno que demonstra que a doutrina tocou sua vida concreta. O critério não é reprodução do gabarito, mas evidência de que a esperança da ressurreição foi compreendida e apropriada pessoalmente.</p>
+    </div>
     <div class="bloco-resp">
         <div class="bk">Gabarito Orientativo</div>
         <div class="resp-item">
@@ -1012,6 +1248,26 @@ h2.prof{
         <div class="mat-item">
             <span class="mat-tipo site">Digital</span>
             <span class="mat-info">thegospelcoalition.org/pt — artigo "O que acontece quando morremos?" Panorama acessível do estado intermediário, da ressurreição e da nova criação para indicar aos alunos.</span>
+        </div>
+    </div>
+    <div class="sep"><span>✦</span></div>
+    <div class="bloco-seguimento">
+        <div class="bk">Seguimento Pós-Lição — Semana 3</div>
+        <div class="seg-item">
+            <div class="seg-num">1</div>
+            <div class="seg-txt">Envie uma mensagem ao grupo da turma com 1 Co 15:58 e uma pergunta de reflexão: "O que você vai fazer de diferente esta semana à luz da esperança da ressurreição?"</div>
+        </div>
+        <div class="seg-item">
+            <div class="seg-num">2</div>
+            <div class="seg-txt">Se houver aluno enlutado, faça contato pessoal durante a semana — não para dar uma aula, mas para presença pastoral. A doutrina ensinada precisa ser encarnada no cuidado.</div>
+        </div>
+        <div class="seg-item">
+            <div class="seg-num">3</div>
+            <div class="seg-txt">Prepare a abertura da Lição 10 (O Juízo Final) conectando-a com o que foi aprendido: "Se todos ressuscitarão, o que acontece depois? A Bíblia tem uma resposta solene..."</div>
+        </div>
+        <div class="seg-item">
+            <div class="seg-num">4</div>
+            <div class="seg-txt">Avalie se o Checklist de Objetivos (P3) foi cumprido. Para objetivos não alcançados, reserve os primeiros 5 minutos da Lição 10 para uma recapitulação rápida antes de avançar.</div>
         </div>
     </div>
     <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P4</span></div>
