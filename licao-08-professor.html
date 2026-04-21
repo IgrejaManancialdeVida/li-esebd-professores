@@ -272,6 +272,146 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     p{font-size:9pt;}
     .btn{padding:5px 8px;font-size:7pt;}
 }
+
+/* ══════════════════════════════════════════
+   BLOCOS DO ALUNO
+══════════════════════════════════════════ */
+.baluno{border-radius:3px;padding:9px 12px;margin-top:12px;margin-bottom:2px;position:relative;}
+.baluno-ico{font-size:10pt;margin-right:5px;vertical-align:middle;}
+.baluno-tag{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:4px;}
+.baluno-corpo{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:var(--ct);}
+.baluno-linha{border-bottom:1px solid rgba(0,0,0,0.12);height:22px;margin-top:6px;}
+.ba-refletir{background:rgba(144,64,160,0.06);border-left:3px solid var(--cor);}
+.ba-refletir .baluno-tag{color:var(--cor);}
+.ba-biblica{background:rgba(201,168,76,0.07);border-left:3px solid var(--ouro);}
+.ba-biblica .baluno-tag{color:#8a6a20;}
+.ba-sabia{background:rgba(60,120,180,0.06);border-left:3px solid #5080b0;}
+.ba-sabia .baluno-tag{color:#4060a0;}
+.ba-pense{background:rgba(144,64,160,0.04);border:1px dashed rgba(144,64,160,0.30);border-left:3px solid var(--cor);}
+.ba-pense .baluno-tag{color:var(--cor);}
+.ba-vida{background:linear-gradient(135deg,rgba(144,64,160,0.05),rgba(201,168,76,0.06));border:1px solid rgba(201,168,76,0.30);border-left:3px solid var(--ouro);}
+.ba-vida .baluno-tag{color:#8a6a20;}
+@media (max-width:768px){.baluno{padding:8px 10px;}.baluno-corpo{font-size:9.5pt;}}
+@media print{.baluno{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}
+
+/* ══════════════════════════════════════════
+   ANOTAÇÃO DO PROFESSOR NOS BLOCOS DO ALUNO
+══════════════════════════════════════════ */
+.baluno-nota-prof{margin-top:8px;padding:6px 10px;background:rgba(106,32,128,0.07);border-left:2px solid #6a2080;border-radius:2px;}
+.baluno-nota-prof .bnp-tag{font-family:'Oswald',sans-serif;font-size:6.5pt;letter-spacing:2px;text-transform:uppercase;color:#6a2080;margin-bottom:3px;display:flex;align-items:center;gap:4px;}
+.baluno-nota-prof .bnp-tag::before{content:"▶ PROF";font-size:5.5pt;}
+.baluno-nota-prof .bnp-txt{font-family:'EB Garamond',serif;font-size:9.5pt;color:#300840;line-height:1.5;font-style:italic;}
+
+/* ══════════════════════════════════════════
+   MELHORIAS PEDAGÓGICAS — P1
+   Mapa de Competências + Fio Condutor
+══════════════════════════════════════════ */
+.mapa-comp{margin:10px 0;}
+.mapa-comp .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#6a2080;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.mapa-comp .bk::before{content:"◈";font-size:9pt;}
+.mapa-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+.mapa-cel{border-radius:3px;padding:8px 10px;position:relative;}
+.mapa-cel-tit{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:4px;}
+.mapa-cel-txt{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.45;color:#20082a;}
+.mc-conhecimento{background:rgba(106,32,128,0.07);border:1px solid rgba(106,32,128,0.2);}
+.mc-conhecimento .mapa-cel-tit{color:#6a2080;}
+.mc-habilidade{background:rgba(46,107,79,0.07);border:1px solid rgba(46,107,79,0.2);}
+.mc-habilidade .mapa-cel-tit{color:#2e6b4f;}
+.mc-atitude{background:rgba(201,168,76,0.09);border:1px solid rgba(201,168,76,0.25);}
+.mc-atitude .mapa-cel-tit{color:#8a6a20;}
+.mc-avaliacao{background:rgba(59,94,138,0.07);border:1px solid rgba(59,94,138,0.2);}
+.mc-avaliacao .mapa-cel-tit{color:#3b5e8a;}
+
+.fio-condutor{background:linear-gradient(135deg,rgba(106,32,128,0.06),rgba(201,168,76,0.05));border:1px solid rgba(106,32,128,0.2);border-radius:3px;padding:9px 12px;margin:10px 0;}
+.fio-condutor .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#6a2080;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.fio-condutor .bk::before{content:"⟶";font-size:10pt;}
+.fio-linha{display:flex;align-items:center;gap:6px;margin-bottom:4px;flex-wrap:wrap;}
+.fio-no{font-family:'Oswald',sans-serif;font-size:7.5pt;background:#6a2080;color:#fff;padding:2px 8px;border-radius:1px;white-space:nowrap;}
+.fio-no.atual{background:#9040a0;outline:2px solid #c9a84c;outline-offset:1px;}
+.fio-seta{color:#c9a84c;font-size:10pt;flex-shrink:0;}
+.fio-nota{font-family:'EB Garamond',serif;font-size:9.5pt;color:#300840;font-style:italic;margin-top:4px;line-height:1.45;}
+
+/* ══════════════════════════════════════════
+   MELHORIAS PEDAGÓGICAS — P2
+   Escada de Perguntas Socráticas
+══════════════════════════════════════════ */
+.escada-socratica{margin:10px 0;}
+.escada-socratica .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#6a2080;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.escada-socratica .bk::before{content:"▲";font-size:7pt;}
+.escada-degrau{border-radius:3px;padding:8px 11px;margin-bottom:6px;position:relative;padding-left:36px;}
+.escada-num{position:absolute;left:10px;top:8px;font-family:'Cinzel',serif;font-size:13pt;font-weight:900;line-height:1;opacity:0.18;}
+.escada-nivel{font-family:'Oswald',sans-serif;font-size:6.5pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:3px;}
+.escada-pergunta{font-family:'EB Garamond',serif;font-size:10pt;color:#20082a;line-height:1.5;margin-bottom:4px;font-style:italic;}
+.escada-resposta{font-family:'EB Garamond',serif;font-size:9pt;color:#555;line-height:1.45;}
+.escada-resposta strong{color:#20082a;}
+.ed-diagnostico{background:rgba(59,94,138,0.07);border-left:3px solid #3b5e8a;}
+.ed-diagnostico .escada-nivel{color:#3b5e8a;}
+.ed-diagnostico .escada-num{color:#3b5e8a;}
+.ed-conceitual{background:rgba(106,32,128,0.07);border-left:3px solid #6a2080;}
+.ed-conceitual .escada-nivel{color:#6a2080;}
+.ed-conceitual .escada-num{color:#6a2080;}
+.ed-aplicacao{background:rgba(46,107,79,0.07);border-left:3px solid #2e6b4f;}
+.ed-aplicacao .escada-nivel{color:#2e6b4f;}
+.ed-aplicacao .escada-num{color:#2e6b4f;}
+
+/* ══════════════════════════════════════════
+   MELHORIAS PEDAGÓGICAS — P3
+   Diferenciação por Perfil + Avaliação Formativa
+══════════════════════════════════════════ */
+.diferenciacao{margin:10px 0;}
+.diferenciacao .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#6a2080;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.diferenciacao .bk::before{content:"◉";font-size:8pt;}
+.dif-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px;}
+.dif-cel{border-radius:3px;padding:7px 9px;border:1px solid rgba(0,0,0,0.1);}
+.dif-tipo{font-family:'Oswald',sans-serif;font-size:6.5pt;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;margin-bottom:3px;display:flex;align-items:center;gap:4px;}
+.dif-tipo::before{content:"●";font-size:5pt;}
+.dif-acao{font-family:'EB Garamond',serif;font-size:9.5pt;color:#20082a;line-height:1.4;}
+.dif-cel:nth-child(1){background:rgba(106,32,128,0.06);}.dif-cel:nth-child(1) .dif-tipo{color:#6a2080;}
+.dif-cel:nth-child(2){background:rgba(46,107,79,0.06);}.dif-cel:nth-child(2) .dif-tipo{color:#2e6b4f;}
+.dif-cel:nth-child(3){background:rgba(201,168,76,0.07);}.dif-cel:nth-child(3) .dif-tipo{color:#8a6a20;}
+.dif-cel:nth-child(4){background:rgba(59,94,138,0.07);}.dif-cel:nth-child(4) .dif-tipo{color:#3b5e8a;}
+.dif-cel:nth-child(5){background:rgba(139,26,26,0.06);grid-column:span 2;}.dif-cel:nth-child(5) .dif-tipo{color:#8b1a1a;}
+
+.aval-formativa{background:#f5eafa;border:1px solid rgba(106,32,128,0.2);border-radius:3px;padding:9px 12px;margin:10px 0;}
+.aval-formativa .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#6a2080;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.aval-formativa .bk::before{content:"✓";font-size:9pt;font-weight:900;}
+.aval-item{display:flex;align-items:flex-start;gap:8px;padding:4px 0;border-bottom:1px solid rgba(106,32,128,0.1);}
+.aval-item:last-child{border-bottom:none;}
+.aval-check{width:13px;height:13px;border:1px solid rgba(106,32,128,0.4);border-radius:2px;flex-shrink:0;margin-top:2px;background:#fff;}
+.aval-txt{font-family:'EB Garamond',serif;font-size:9.5pt;color:#20082a;line-height:1.4;}
+.aval-txt em{font-size:8.5pt;color:#6a2080;font-style:normal;font-family:'Oswald',sans-serif;letter-spacing:1px;}
+
+/* ══════════════════════════════════════════
+   MELHORIAS PEDAGÓGICAS — P4
+   Uso do Gabarito + Seguimento Pós-Lição
+══════════════════════════════════════════ */
+.uso-gabarito{background:#fffdf0;border:1px solid rgba(201,168,76,0.3);border-left:4px solid #c9a84c;border-radius:3px;padding:9px 12px;margin:10px 0;}
+.uso-gabarito .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.uso-gabarito .bk::before{content:"◑";font-size:8pt;}
+.uso-gabarito p{font-family:'EB Garamond',serif;font-size:10pt;color:#4a3a10;line-height:1.55;margin-bottom:5px;}
+.uso-gabarito p:last-child{margin-bottom:0;}
+
+.seguimento{background:linear-gradient(135deg,rgba(46,107,79,0.06),rgba(106,32,128,0.05));border:1px solid rgba(46,107,79,0.25);border-radius:3px;padding:9px 12px;margin:10px 0;}
+.seguimento .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#2e6b4f;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.seguimento .bk::before{content:"↗";font-size:10pt;}
+.seg-item{display:flex;gap:10px;align-items:flex-start;padding:5px 0;border-bottom:1px solid rgba(46,107,79,0.1);}
+.seg-item:last-child{border-bottom:none;}
+.seg-dia{font-family:'Oswald',sans-serif;font-size:7pt;color:#fff;background:#2e6b4f;padding:2px 7px;border-radius:1px;letter-spacing:1px;text-transform:uppercase;flex-shrink:0;margin-top:2px;white-space:nowrap;}
+.seg-acao{font-family:'EB Garamond',serif;font-size:9.5pt;color:#1e4535;line-height:1.4;}
+
+@media (max-width:768px){
+    .mapa-grid,.dif-grid{grid-template-columns:1fr;}
+    .dif-cel:nth-child(5){grid-column:span 1;}
+    .fio-linha{gap:4px;}
+    .fio-no{font-size:6.5pt;padding:2px 6px;}
+}
+@media print{
+    .mapa-grid,.dif-grid{grid-template-columns:1fr 1fr;}
+    .dif-cel:nth-child(5){grid-column:span 2;}
+    .baluno,.mapa-comp,.escada-socratica,.diferenciacao,.aval-formativa,.uso-gabarito,.seguimento,.fio-condutor{
+        -webkit-print-color-adjust:exact;print-color-adjust:exact;
+    }
+}
 </style>
 </head>
 <body>
@@ -345,6 +485,16 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="sep"><span>✦</span></div>
   <p>O Credo Apostólico confessa: "de onde há de vir a julgar os vivos e os mortos." O Credo Niceno acrescenta: "e virá outra vez em glória para julgar os vivos e os mortos, e o seu reino não terá fim." Essa esperança sustentou mártires, missionários e fiéis em cada geração — e continua sendo o fundamento mais sólido da fé cristã diante da morte e do sofrimento.</p>
   <p>Nos tópicos seguintes, examinaremos o conceito bíblico da Parusia, seus desdobramentos na ressurreição e no julgamento, e o ponto central de debate entre pentecostais e reformados: uma ou duas fases na vinda de Cristo?</p>
+  <div class="baluno ba-refletir">
+    <div class="baluno-tag"><span class="baluno-ico">&#9670;</span> Para você refletir</div>
+    <div class="baluno-corpo">A esperança do retorno de Cristo muda a forma como você enxerga o presente? De que maneira essa certeza afeta suas decisões, seus medos e sua motivação para servir hoje?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-nota-prof">
+      <div class="bnp-tag">&nbsp;— orientação docente</div>
+      <div class="bnp-txt">Deixe a pergunta aberta antes de qualquer exposição. Respostas honestas criam o solo para a aula. Não corrija prematuramente — ouça com atenção e use as respostas como gancho para o fio condutor: esperança ativa vs. passividade especulativa.</div>
+    </div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -361,6 +511,16 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="bver">"Porque o próprio Senhor descerá do céu com alarido, e com voz de arcanjo, e com a trombeta de Deus." <cite>1 Tessalonicenses 4:16</cite></div>
   <h3>Uma Vinda ou Duas?</h3>
   <p>O dispensacionalismo distingue dois eventos separados: o arrebatamento secreto — a parousia para a Igreja — e a Segunda Vinda pública, após a Tribulação. A teologia da aliança e o premilenismo histórico entendem esses textos como referências a um único evento glorioso e universal, sem divisão em duas fases separadas por anos. O debate hermenêutico sobre esse ponto será aprofundado no Tópico III.</p>
+  <div class="baluno ba-biblica">
+    <div class="baluno-tag"><span class="baluno-ico">&#9998;</span> Conexão Bíblica</div>
+    <div class="baluno-corpo">Leia Atos 1:9-11 e Mateus 24:30. Quais palavras nesses versículos reforçam as quatro características da vinda de Cristo — pessoal, corporal, visível e gloriosa? Anote abaixo os termos que mais chamaram sua atenção.</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-nota-prof">
+      <div class="bnp-tag">&nbsp;— orientação docente</div>
+      <div class="bnp-txt">Valorize respostas que identifiquem palavras específicas do texto — "este mesmo Jesus" (pessoal), "como o vistes ir" (corporal), "todo olho o verá" (visível), "com poder e grande glória" (gloriosa). Pergunte: <em>"Qual dessas quatro a cultura atual mais ignora ou nega?"</em></div>
+    </div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -380,6 +540,14 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <h3>A Renovação de Todas as Coisas</h3>
   <p>A Parusia inaugura também a renovação cósmica — o que Pedro chama de "restauração de todas as coisas" (At 3:21) e Paulo de "libertação da escravidão da corrupção" (Rm 8:21). O cosmos criado por Deus não será destruído e substituído, mas transformado e glorificado. A nova criação é continuidade com transformação, não aniquilação e substituição total.</p>
   <p>Ressurreição, julgamento e renovação da criação formam um único movimento da consumação: Cristo vem, vence publicamente todo mal, vindica o seu povo e estabelece a plenitude do seu Reino. A esperança cristã é integral — alcançando o corpo, a história e toda a criação. Enfatize isso ao encerrar esta seção: o Evangelho não é apenas sobre almas; é sobre a redenção de tudo.</p>
+  <div class="baluno ba-sabia">
+    <div class="baluno-tag"><span class="baluno-ico">&#9654;</span> Sabia que?</div>
+    <div class="baluno-corpo">A palavra grega <em>apokatastasis</em> ("restauração de todas as coisas", At 3:21) era usada na antiguidade para descrever a renovação total de um organismo vivo — não sua destruição. Isso reforça que a nova criação é transformação, não aniquilamento. A esperança cristã é radicalmente material e histórica.</div>
+    <div class="baluno-nota-prof">
+      <div class="bnp-tag">&nbsp;— orientação docente</div>
+      <div class="bnp-txt">Use essa curiosidade para combater o dualismo espiritualista comum na turma: a ideia de que "o mundo vai acabar e só as almas importam". Pergunte: <em>"Se a criação será restaurada, como isso muda nossa responsabilidade com o meio ambiente, com a arte, com o trabalho?"</em> — a escatologia bíblica é ecológica, estética e política.</div>
+    </div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -401,6 +569,16 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="sep"><span>✦</span></div>
   <p>O núcleo confessional comum é inabalável: Jesus Cristo voltará pessoalmente, corporalmente e gloriosamente. Toda a Igreja de todos os séculos confessa essa esperança — ela é o fundamento da adoração, da missão e da perseverança cristã diante do sofrimento e da morte.</p>
   <p>O cristão pode sustentar convicções firmes sobre a ordem dos eventos escatológicos, mas não deve permitir que pontos secundários obscureçam a certeza principal: o Cristo que veio em humilhação virá novamente em glória. Essa verdade comum é maior do que as divergências entre os sistemas.</p>
+  <div class="baluno ba-pense">
+    <div class="baluno-tag"><span class="baluno-ico">&#8857;</span> Pense nisso</div>
+    <div class="baluno-corpo">Pentecostais e reformados discordam sobre o arrebatamento, mas concordam que Cristo voltará pessoalmente. Essa convergência é suficiente para a unidade da Igreja? Onde você traçaria a linha entre divergência secundária e erro essencial na escatologia?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-nota-prof">
+      <div class="bnp-tag">&nbsp;— orientação docente</div>
+      <div class="bnp-txt">Essa pergunta tende a acender debates. Conduza com firmeza: o critério não é a tradição da sua denominação, mas o peso confessional histórico — o que os credos afirmam e o que dividiu mártires de hereges. Arrebatamento pré ou pós-trib é exegese; negação do retorno corporal de Cristo é heresia. Mostre essa diferença de categoria com clareza.</div>
+    </div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -421,6 +599,16 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>C.S. Lewis escreveu: "Se você ler a história, descobrirá que os cristãos que mais fizeram pelo mundo presente foram justamente aqueles que mais pensaram no mundo vindouro." Isso contradiz o chavão de que a esperança escatológica torna o cristão inútil no presente. Como a certeza do retorno de Cristo pode ser o maior motivador para o serviço, a criatividade e o amor ao próximo hoje?</p>
   <div class="bver">"Aguardando a bendita esperança e a manifestação da glória do grande Deus e Salvador nosso Jesus Cristo, o qual se entregou a si mesmo por nós." <cite>Tito 2:13-14</cite></div>
   <p>Na próxima lição estudaremos a doutrina fundamental que acompanha a Parusia: <strong>A Ressurreição dos Mortos</strong> — o que nos espera além da morte.</p>
+  <div class="baluno ba-vida">
+    <div class="baluno-tag"><span class="baluno-ico">&#10022;</span> Leve para a vida</div>
+    <div class="baluno-corpo">Esta semana, escolha uma atitude concreta motivada pela esperança da volta de Cristo: uma reconciliação adiada, um serviço esquecido, uma palavra de esperança a alguém que vive no medo. Anote aqui o que você vai fazer:</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-nota-prof">
+      <div class="bnp-tag">&nbsp;— orientação docente</div>
+      <div class="bnp-txt">Reserve os últimos 3 minutos para que cada aluno escreva em silêncio. Não peça para compartilhar — isso cria pressão social. O compromisso é entre o aluno e Deus. Se quiser, sugira que eles fotografem o que escreveram para se lembrarem durante a semana. Retome na próxima aula: <em>"Na semana passada, vocês escreveram algo para fazer. Aconteceu?"</em></div>
+    </div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -501,6 +689,43 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">Atenção — O Perigo da Passividade Escatológica</div>
     <p>Se algum aluno expressar que "não adianta planejar nada porque Cristo pode voltar a qualquer momento", redirecione com cuidado: <em>"Os dois anjos em Atos 1:11 fizeram exatamente o oposto — tiraram os discípulos da contemplação passiva e os mandaram agir. A esperança bíblica sempre gera missão, não paralisia."</em></p>
   </div>
+
+  <div class="mapa-comp">
+    <div class="bk">Mapa de Competências — Lição 08</div>
+    <div class="mapa-grid">
+      <div class="mapa-cel mc-conhecimento">
+        <div class="mapa-cel-tit">Conhecimento</div>
+        <div class="mapa-cel-txt">Identificar o significado de <em>parousia</em> e as 4 características irredutíveis da Segunda Vinda; distinguir as posições dispensacionalista e reformada.</div>
+      </div>
+      <div class="mapa-cel mc-habilidade">
+        <div class="mapa-cel-tit">Habilidade</div>
+        <div class="mapa-cel-txt">Usar o contexto cultural greco-romano para interpretar 1 Ts 4:17; comparar textos-suporte de cada posição com critério hermenêutico.</div>
+      </div>
+      <div class="mapa-cel mc-atitude">
+        <div class="mapa-cel-tit">Atitude</div>
+        <div class="mapa-cel-txt">Sustentar convicções firmes sem sectarismo; conectar esperança escatológica com ação concreta — vigilância, santidade e missão.</div>
+      </div>
+      <div class="mapa-cel mc-avaliacao">
+        <div class="mapa-cel-tit">Avaliação</div>
+        <div class="mapa-cel-txt">O aluno consegue articular o núcleo confessional comum e nomear uma ação concreta motivada pela esperança do retorno de Cristo?</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fio-condutor">
+    <div class="bk">Fio Condutor da Série — Posição desta Lição</div>
+    <div class="fio-linha">
+      <span class="fio-no">L06 · Arrebatamento</span>
+      <span class="fio-seta">→</span>
+      <span class="fio-no">L07 · Milênio</span>
+      <span class="fio-seta">→</span>
+      <span class="fio-no atual">L08 · Parusia ◂ aqui</span>
+      <span class="fio-seta">→</span>
+      <span class="fio-no">L09 · Ressurreição</span>
+    </div>
+    <div class="fio-nota">Esta lição é o <strong>ponto de convergência máxima</strong> da série: enquanto L06 e L07 expuseram divergências, L08 afirma o núcleo que todos confessam. Use isso para reconstruir a unidade antes de avançar para L09.</div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P1</span></div>
 </div>
 
@@ -561,6 +786,29 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     "A Segunda Vinda não é um evento técnico numa cronologia profética — é a irrupção do Rei na história, transformando tudo de uma vez. Ressurreição, julgamento e nova criação não são estações separadas de um trem; são a chegada simultânea do Reino."
     <cite>— Anthony Hoekema, <em>A Bíblia e o Futuro</em></cite>
   </div>
+
+  <div class="escada-socratica">
+    <div class="bk">Escada de Perguntas Socráticas — 3 Níveis</div>
+    <div class="escada-degrau ed-diagnostico">
+      <div class="escada-num">1</div>
+      <div class="escada-nivel">Nível 1 · Diagnóstico — o que a turma já sabe</div>
+      <div class="escada-pergunta">"O que vocês aprenderam sobre a Segunda Vinda antes de entrar nesta série? Qual era a imagem que tinham?"</div>
+      <div class="escada-resposta"><strong>Resposta esperada:</strong> Respostas variadas — arrebatamento secreto, Cristo descendo nas nuvens, juízo final, fim do mundo. Mapeie o que a turma traz. Não corrija ainda — registre mentalmente os pontos de tensão.</div>
+    </div>
+    <div class="escada-degrau ed-conceitual">
+      <div class="escada-num">2</div>
+      <div class="escada-nivel">Nível 2 · Conceitual — aprofundamento bíblico</div>
+      <div class="escada-pergunta">"Se a palavra <em>apantesis</em> em 1 Ts 4:17 descreve cidadãos saindo para conduzir um rei de volta à cidade — o que isso implica sobre o destino final dos crentes e da criação? Vamos para o céu, ou o céu vem até nós?"</div>
+      <div class="escada-resposta"><strong>Resposta esperada:</strong> A nova criação é o destino — não uma fuga para o além, mas a restauração do cosmos. O movimento bíblico é descendente: Deus habitando com os homens (Ap 21:3). Isso impacta toda a teologia da criação e da missão.</div>
+    </div>
+    <div class="escada-degrau ed-aplicacao">
+      <div class="escada-num">3</div>
+      <div class="escada-nivel">Nível 3 · Aplicação — transformação de vida</div>
+      <div class="escada-pergunta">"Se ressurreição, julgamento e nova criação acontecem juntos na vinda de Cristo — como isso muda a forma como você trata seu corpo, seu trabalho criativo, suas relações, o ambiente em que vive?"</div>
+      <div class="escada-resposta"><strong>Resposta esperada:</strong> Nada é descartável — corpo, cultura, criação. O cristão que espera a nova criação não abandona o presente; ele o trabalha com fidelidade, porque cada ato fiel é antecipação do Reino. Use 1 Co 15:58 para selar: "O vosso trabalho não é vão no Senhor."</div>
+    </div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P2</span></div>
 </div>
 
@@ -622,6 +870,42 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
       <li>Anuncie a Lição 09: <em>A Ressurreição dos Mortos — o que nos espera além da morte</em></li>
     </ul>
   </div>
+
+  <div class="diferenciacao">
+    <div class="bk">Diferenciação por Perfil de Turma</div>
+    <div class="dif-grid">
+      <div class="dif-cel">
+        <div class="dif-tipo">Turma iniciante</div>
+        <div class="dif-acao">Concentre-se nas 4 características e no consenso dos credos. Omita o debate <em>apantesis</em> — introduza apenas na lição seguinte quando a turma tiver mais vocabulário.</div>
+      </div>
+      <div class="dif-cel">
+        <div class="dif-tipo">Turma avançada</div>
+        <div class="dif-acao">Aprofunde o debate exegético de 1 Ts 4:17 usando a Pg. P2. Peça que comparem Mt 24:30-31 com 2 Ts 1:7-10 e proponham sua leitura fundamentada.</div>
+      </div>
+      <div class="dif-cel">
+        <div class="dif-tipo">Turma pentecostal majoritária</div>
+        <div class="dif-acao">Inicie pelo consenso confessional — os credos. Mostre que o arrebatamento é exegese interna ao premilenismo, não dogma histórico universal. Evite caricatura.</div>
+      </div>
+      <div class="dif-cel">
+        <div class="dif-tipo">Turma reformada majoritária</div>
+        <div class="dif-acao">Apresente o argumento dispensacionalista com justiça antes de oferecer a contra-argumentação reformada. Mostre respeito intelectual pela posição adversária.</div>
+      </div>
+      <div class="dif-cel">
+        <div class="dif-tipo">Turma ansiosa / ansiedade escatológica</div>
+        <div class="dif-acao">Ancore a aula em Filipenses 4:5-7 desde o início: <em>"O Senhor está próximo — portanto, não andeis ansiosos."</em> A proximidade de Cristo é antídoto à ansiedade, não gatilho. Conduza com ritmo calmo e encerre com oração de paz.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="aval-formativa">
+    <div class="bk">Avaliação Formativa Rápida — Checklist de Objetivos</div>
+    <div class="aval-item"><div class="aval-check"></div><div class="aval-txt">O aluno sabe o que é <em>parousia</em> e seu contexto greco-romano <em>→ Pg. 3</em></div></div>
+    <div class="aval-item"><div class="aval-check"></div><div class="aval-txt">O aluno enumera as 4 características (pessoal, corporal, visível, gloriosa) <em>→ Questão 02</em></div></div>
+    <div class="aval-item"><div class="aval-check"></div><div class="aval-txt">O aluno distingue os desdobramentos da Parusia (ressurreição / julgamento / nova criação) <em>→ Pg. 4</em></div></div>
+    <div class="aval-item"><div class="aval-check"></div><div class="aval-txt">O aluno compreende a diferença entre as posições dispensacionalista e reformada <em>→ Pg. 5 + Tabela P2</em></div></div>
+    <div class="aval-item"><div class="aval-check"></div><div class="aval-txt">O aluno conecta esperança escatológica com ação concreta no presente <em>→ Bloco "Leve para a vida" Pg. 6</em></div></div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P3</span></div>
 </div>
 
@@ -662,6 +946,34 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="mat-item"><span class="mat-tipo audio">Podcast</span><span class="mat-info">Ligonier Ministries — série <em>The Last Things</em> com R.C. Sproul. Spotify / ligonier.org. Aborda ressurreição, julgamento e Segunda Vinda com precisão reformada — útil para o professor consolidar a exegese.</span></div>
     <div class="mat-item"><span class="mat-tipo site">Digital</span><span class="mat-info">thegospelcoalition.org — artigo <em>"What Does the Bible Say About the Second Coming?"</em> (Kevin DeYoung). Síntese clara e equilibrada das posições em inglês — boa ferramenta de preparação para o professor.</span></div>
   </div>
+
+  <div class="uso-gabarito">
+    <div class="bk">Como Usar Este Gabarito em Sala</div>
+    <p>Este gabarito é orientativo — não um roteiro de correção. As questões desta lição são deliberadamente abertas para provocar reflexão pessoal, não para produzir respostas únicas certas. O professor deve valorizar respostas que demonstrem raciocínio bíblico coerente, mesmo que cheguem a conclusões diferentes das sugeridas.</p>
+    <p>Para as questões 01 a 03, o critério é a qualidade do argumento textual. Para a questão 04, o critério é a concretude e a honestidade da resposta pessoal. Uma resposta que diz "não sei como a esperança afeta minha vida" é mais valiosa do que uma resposta piadosa e vaga — porque abre espaço para o Espírito agir.</p>
+    <p>Se a turma apresentar respostas muito homogêneas e sem tensão, provoque: <em>"Alguém pensa diferente? Qual texto você usaria para questionar essa leitura?"</em></p>
+  </div>
+
+  <div class="seguimento">
+    <div class="bk">Seguimento Pós-Lição — Ações para a Semana</div>
+    <div class="seg-item">
+      <span class="seg-dia">Dia 1</span>
+      <span class="seg-acao">Envie pelo grupo da turma Tito 2:11-14 com uma pergunta simples: <em>"O que Paulo conecta diretamente à esperança da vinda de Cristo?"</em> — sem resposta, só a pergunta. Deixe fermentar.</span>
+    </div>
+    <div class="seg-item">
+      <span class="seg-dia">Dia 3</span>
+      <span class="seg-acao">Compartilhe a citação de C.S. Lewis da Conclusão e pergunte: <em>"Você conhece alguém que exemplifica isso — que vive melhor por esperar mais?"</em> Incentive respostas no grupo.</span>
+    </div>
+    <div class="seg-item">
+      <span class="seg-dia">Dia 5</span>
+      <span class="seg-acao">Relembre o compromisso do "Leve para a vida" (Pg. 6): <em>"O que você escreveu na aula — aconteceu? Estamos na torcida."</em> Sem cobrança, só encorajamento.</span>
+    </div>
+    <div class="seg-item">
+      <span class="seg-dia">Pré-aula</span>
+      <span class="seg-acao">Leia 1 Coríntios 15:35-58 como preparação pessoal para a Lição 09 — A Ressurreição dos Mortos. A Parusia (L08) e a Ressurreição (L09) são inseparáveis: prepare a ponte entre as duas.</span>
+    </div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P4</span></div>
 </div>
 
