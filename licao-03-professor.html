@@ -239,6 +239,72 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
 .rod-prof .rt{font-family:"Oswald",sans-serif;font-size:7pt;color:#2e7a54;letter-spacing:1px;text-transform:uppercase;}
 .rod-prof .rn{font-family:"Cinzel",serif;font-size:9pt;color:#2e7a54;}
 
+/* ===== BLOCOS-ALUNO (replicados do material do aluno) ===== */
+.bloco-aluno{border-left:4px solid var(--cor);background:rgba(58,154,106,0.05);border-radius:0 3px 3px 0;padding:10px 12px;margin:12px 0;}
+.bloco-aluno .ba-titulo{font-family:"Oswald",sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-aluno .ba-titulo::before{content:"✦";font-size:7pt;color:var(--cor);}
+.bloco-aluno p,.bloco-aluno .ba-txt{font-family:"EB Garamond",serif;font-size:10pt;line-height:1.6;color:var(--ct);margin-bottom:0;}
+.bloco-aluno .ba-nota{font-family:"Oswald",sans-serif;font-size:7pt;letter-spacing:1px;text-transform:uppercase;color:#888;margin-top:6px;padding-top:6px;border-top:1px solid rgba(58,154,106,0.2);}
+
+/* ===== MAPA DE COMPETÊNCIAS (P1) ===== */
+.mapa-comp{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.mapa-celula{border:1px solid rgba(46,122,84,0.25);border-radius:3px;padding:8px 10px;background:#f3fbf7;}
+.mapa-celula .mc-titulo{font-family:"Oswald",sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:#2e7a54;margin-bottom:4px;}
+.mapa-celula .mc-txt{font-family:"EB Garamond",serif;font-size:9.5pt;color:#1a3a28;line-height:1.45;}
+
+/* ===== FIO CONDUTOR (P1) ===== */
+.bloco-fio{background:linear-gradient(135deg,rgba(46,122,84,0.07),rgba(201,168,76,0.07));border:1px dashed rgba(46,122,84,0.35);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-fio .bk{font-family:"Oswald",sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#2e7a54;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-fio .bk::before{content:"⟶";font-size:9pt;}
+.bloco-fio p{font-family:"EB Garamond",serif;font-size:10pt;line-height:1.6;color:#1a3a28;margin-bottom:0;}
+
+/* ===== ESCADA SOCRÁTICA (P2) ===== */
+.escada-socratica{margin:10px 0;}
+.escada-degrau{padding:8px 12px;margin-bottom:6px;border-radius:3px;position:relative;padding-left:48px;}
+.escada-degrau .ed-num{position:absolute;left:10px;top:50%;transform:translateY(-50%);font-family:"Cinzel",serif;font-size:14pt;font-weight:900;line-height:1;}
+.escada-degrau .ed-nivel{font-family:"Oswald",sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.escada-degrau .ed-pergunta{font-family:"EB Garamond",serif;font-size:10pt;font-style:italic;line-height:1.5;color:#0a2015;margin-bottom:4px;}
+.escada-degrau .ed-resp{font-family:"EB Garamond",serif;font-size:9pt;color:#444;line-height:1.4;}
+.escada-degrau.d1{background:#edf7f2;border-left:3px solid #2e7a54;}
+.escada-degrau.d1 .ed-num{color:rgba(46,122,84,0.25);}
+.escada-degrau.d1 .ed-nivel{color:#2e7a54;}
+.escada-degrau.d2{background:#e6f4ed;border-left:3px solid #1a5c3a;}
+.escada-degrau.d2 .ed-num{color:rgba(26,92,58,0.25);}
+.escada-degrau.d2 .ed-nivel{color:#1a5c3a;}
+.escada-degrau.d3{background:#d8f0e4;border-left:3px solid #0f3d24;}
+.escada-degrau.d3 .ed-num{color:rgba(15,61,36,0.25);}
+.escada-degrau.d3 .ed-nivel{color:#0f3d24;}
+
+/* ===== DIFERENCIAÇÃO POR PERFIL (P3) ===== */
+.diferenciacao{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.dif-item{border:1px solid rgba(46,122,84,0.2);border-radius:3px;padding:8px 10px;background:#f5fbf8;}
+.dif-tipo{font-family:"Oswald",sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#2e7a54;margin-bottom:4px;}
+.dif-acao{font-family:"EB Garamond",serif;font-size:9.5pt;color:#1a3a28;line-height:1.4;}
+
+/* ===== AVALIAÇÃO FORMATIVA (P3) ===== */
+.aval-form{background:#f0f8f3;border:1px solid rgba(46,122,84,0.3);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.aval-form .bk{font-family:"Oswald",sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#2e7a54;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.aval-form .bk::before{content:"☑";font-size:9pt;}
+.aval-check{display:flex;align-items:flex-start;gap:8px;padding:3px 0;border-bottom:1px solid rgba(46,122,84,0.1);}
+.aval-check:last-child{border-bottom:none;}
+.aval-check .ac-box{width:14px;height:14px;border:1.5px solid #2e7a54;border-radius:2px;flex-shrink:0;margin-top:2px;}
+.aval-check .ac-txt{font-family:"EB Garamond",serif;font-size:9.5pt;color:#1a3a28;line-height:1.4;}
+
+/* ===== SEGUIMENTO PÓS-LIÇÃO (P4) ===== */
+.bloco-seg{background:#fffdf5;border:1px solid rgba(201,168,76,0.35);border-left:4px solid #c9a84c;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-seg .bk{font-family:"Oswald",sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-seg .bk::before{content:"↗";font-size:10pt;font-weight:900;}
+.bloco-seg ul{list-style:none;padding:0;}
+.bloco-seg ul li{font-family:"EB Garamond",serif;font-size:10pt;color:#4a3a10;padding:3px 0 3px 16px;position:relative;line-height:1.45;border-bottom:1px solid rgba(201,168,76,0.1);}
+.bloco-seg ul li:last-child{border-bottom:none;}
+.bloco-seg ul li::before{content:"◆";position:absolute;left:0;color:#c9a84c;font-size:5pt;top:7px;}
+
+/* ===== BLOCO GABARITO USO (P4) ===== */
+.bloco-gabarito-uso{background:#eef7f2;border:1px solid rgba(46,122,84,0.3);border-left:4px solid #2e7a54;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-gabarito-uso .bk{font-family:"Oswald",sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#2e7a54;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-gabarito-uso .bk::before{content:"◐";font-size:8pt;}
+.bloco-gabarito-uso p{font-family:"EB Garamond",serif;font-size:10pt;line-height:1.6;color:#1a3a28;margin-bottom:0;}
+
 /* tabela comparativa */
 .tabela-comp{width:100%;border-collapse:collapse;margin:10px 0;font-size:9pt;}
 .tabela-comp th{font-family:"Oswald",sans-serif;font-size:7.5pt;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:#2e7a54;padding:6px 8px;text-align:left;}
@@ -376,6 +442,11 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Filmes e séries populares consolidaram no imaginário evangélico a ideia de um arrebatamento secreto, repentino e pré-tribulacional. Mas essa imagem tem apenas dois séculos de história teológica — o que torna o estudo de suas bases bíblicas ainda mais urgente e necessário.</p>
   <p>Na condução da aula, vale alertar a classe para a diferença entre imaginário evangélico popular e formulação doutrinária. Muitos alunos chegam ao tema com imagens já prontas, mas sem perceber de onde elas vieram. O professor deve acolher esse repertório, porém conduzi-lo de volta ao texto bíblico.</p>
   <p>Também convém destacar que o assunto toca áreas sensíveis da fé cristã, como morte, sofrimento, perseverança e esperança futura. Por isso, o tom da aula precisa ser pastoral, e não apenas polêmico.</p>
+  <div class="bloco-aluno">
+    <div class="ba-titulo">Para Você Refletir — O que é o Arrebatamento?</div>
+    <div class="ba-txt">A palavra <em>arrebatamento</em> vem do latim <em>rapturo</em> — tradução de <em>harpazo</em>, que significa "tomar com força". Paulo não usou essa palavra para explicar um calendário profético, mas para curar a dor de quem chorava. O que você esperava encontrar neste estudo — e o que a Bíblia realmente oferece?</div>
+    <div class="ba-nota">✦ Bloco para o aluno · Pg. 2 — Introdução</div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -393,6 +464,11 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Antes de Darby, a tradição cristã histórica — dos pais da Igreja aos reformadores — não distinguia o arrebatamento da Segunda Vinda como dois eventos separados. Esse dado histórico não invalida o pré-tribulacionismo, mas exige que ele seja avaliado com o mesmo rigor exegético que qualquer posição.</p>
   <p>Para o professor, esse ponto é estratégico: mostrar que uma posição recente não é automaticamente falsa, mas também não deve ser aceita sem exame. Isso ajuda a turma a distinguir tradição recebida de argumento bíblico demonstrado.</p>
   <p>Ao explorar as passagens centrais, procure mostrar a função própria de cada texto. Em 1 Tessalonicenses 4, o foco é consolar; em João 14, sustentar a esperança dos discípulos; em 1 Coríntios 15, afirmar a transformação final. Essa distinção evita que um único versículo carregue sozinho todo o peso do sistema doutrinário.</p>
+  <div class="bloco-aluno">
+    <div class="ba-titulo">Conexão Bíblica — O Fio da Esperança</div>
+    <div class="ba-txt">Três textos, três contextos, um único fio: 1 Tessalonicenses 4 consola o luto; João 14 sustenta a fé antes da cruz; 1 Coríntios 15 proclama a vitória sobre a morte. A Bíblia não monta um cronograma — ela tece uma esperança. Antes de perguntar <em>quando</em>, pergunte: <em>em quem?</em></div>
+    <div class="ba-nota">✦ Bloco para o aluno · Pg. 3 — Base Bíblica e Origem Histórica</div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -413,6 +489,11 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Neste ponto, o professor pode ajudar a turma a perceber que as três posições tentam responder honestamente ao mesmo conjunto de textos. Em vez de simplificar caricaturas, convém apresentar o melhor argumento de cada lado. Isso amadurece a classe e reduz polarização.</p>
   <p>Uma boa estratégia é perguntar: qual problema cada posição procura resolver? O pré-tribulacionismo enfatiza o livramento da ira; o mid-tribulacionismo tenta harmonizar proteção e sofrimento; o pós-tribulacionismo enfatiza a unidade da vinda de Cristo. Esse exercício ajuda os alunos a enxergarem a lógica interna de cada proposta.</p>
   <div class="bver">"Logo após a tribulação daqueles dias... ele enviará os seus anjos com grande clamor de trombeta, e eles ajuntarão os seus escolhidos." <cite>Mateus 24:29-31</cite></div>
+  <div class="bloco-aluno">
+    <div class="ba-titulo">Sabia Que? — As Posições e a Humildade Teológica</div>
+    <div class="ba-txt">O pré-tribulacionismo tem menos de 200 anos. O mid-tribulacionismo surgiu no século XX. O pós-tribulacionismo é a posição mais antiga, presente nos pais da Igreja. Isso não decide o debate — mas mostra que nenhuma posição é "a interpretação óbvia" da Bíblia. Todas exigem exegese cuidadosa. E todas concordam: Cristo voltará.</div>
+    <div class="ba-nota">✦ Bloco para o aluno · Pg. 4 — As Três Posições Cronológicas</div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -435,6 +516,11 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>O terreno comum e inegociável: Cristo voltará para buscar os seus, os mortos em Cristo ressuscitarão, e haverá uma reunião gloriosa entre o Senhor e sua Igreja. Esta esperança consola a todos — independente da posição cronológica.</p>
   <p>Esse ponto deve ser sublinhado com força no fechamento da discussão comparativa. Sem ele, a aula corre o risco de transformar uma doutrina de esperança em mera disputa de calendário. O professor precisa mostrar que a unidade da fé cristã não está em resolver todos os detalhes, mas em permanecer firme na promessa do retorno de Cristo.</p>
   <p>Esse também é o melhor momento para reforçar postura cristã no debate: firmeza sem agressividade, convicção sem arrogância, zelo bíblico sem espírito faccioso.</p>
+  <div class="bloco-aluno">
+    <div class="ba-titulo">Pense Nisso — O Que Une e o Que Divide</div>
+    <div class="ba-txt">Pentecostais e reformados discordam no <em>quando</em> — mas concordam no <em>quê</em>: Cristo voltará, os mortos em Cristo ressuscitarão, e haverá um encontro glorioso com o Senhor. O que é fundamento e o que é interpretação? Saber essa diferença é sinal de maturidade teológica — e de amor ao próximo.</div>
+    <div class="ba-nota">✦ Bloco para o aluno · Pg. 5 — Visões em Diálogo</div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -456,6 +542,11 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Na próxima lição, examinaremos o período mais sombrio da profecia bíblica: <strong>A Grande Tribulação</strong> — sua natureza, duração e propósito redentor.</p>
   <p>Como aplicação final, leve a classe a perceber que a doutrina do arrebatamento deve produzir preparo espiritual. A expectativa da vinda de Cristo não foi dada para alimentar curiosidade cronológica, mas para sustentar perseverança, santidade e esperança diante da morte.</p>
   <p>Se houver tempo, encerre perguntando: “O estudo de hoje me deixou mais ansioso sobre eventos futuros ou mais confiante em Cristo?” Essa pergunta ajuda a medir se a aula cumpriu sua função pastoral.</p>
+  <div class="bloco-aluno">
+    <div class="ba-titulo">Leve Para a Vida — A Esperança que Consola</div>
+    <div class="ba-txt">Paulo encerrou o texto com uma ordem pastoral: <em>"Consolai-vos uns aos outros com estas palavras"</em> (1 Ts 4:18). A doutrina do arrebatamento não foi dada para produzir debates — foi dada para curar o luto. Esta semana, procure alguém enlutado ou ansioso e leve a essa pessoa a esperança do encontro com Cristo.</div>
+    <div class="ba-nota">✦ Bloco para o aluno · Pg. 6 — Aplicação Prática</div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -532,6 +623,29 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">Atenção — Alta Carga Emocional</div>
     <p>Nunca use a origem darbista para ridicularizar o pré-tribulacionismo. A resposta correta quando um aluno disser "meu pastor ensina isso há anos": <em>"Seu pastor tem bases sérias para essa posição — ela domina a maioria das igrejas evangélicas. O que estamos fazendo é entender de onde vem e o que a Bíblia diz diretamente sobre o tema."</em></p>
   </div>
+  <h2 class="prof" style="margin-top:12px;">Mapa de Competências</h2>
+  <div class="mapa-comp">
+    <div class="mapa-celula">
+      <div class="mc-titulo">Conhecimento</div>
+      <div class="mc-txt">Identificar as três posições cronológicas e sua base bíblica; reconhecer a origem histórica do pré-tribulacionismo darbista</div>
+    </div>
+    <div class="mapa-celula">
+      <div class="mc-titulo">Habilidade</div>
+      <div class="mc-txt">Comparar posições escatológicas sem caricaturá-las; usar o argumento histórico como contextualização, não como refutação</div>
+    </div>
+    <div class="mapa-celula">
+      <div class="mc-titulo">Atitude</div>
+      <div class="mc-txt">Debater com humildade teológica; priorizar a função consolatória da doutrina sobre a disputa cronológica</div>
+    </div>
+    <div class="mapa-celula">
+      <div class="mc-titulo">Avaliação</div>
+      <div class="mc-txt">Responder às questões da Pg. 7 com argumento bíblico explícito; demonstrar autoavaliação honesta na Q4</div>
+    </div>
+  </div>
+  <div class="bloco-fio">
+    <div class="bk">Fio Condutor — Lição 03 na Série</div>
+    <p>Lição 01 definiu escatologia; Lição 02 estabeleceu a Segunda Vinda como eixo. <strong>Lição 03</strong> aprofunda o debate sobre o <em>quando</em> do arrebatamento — introduzindo a tensão entre posições que percorrerá toda a série. A Lição 04 (Grande Tribulação) depende da clareza conquistada aqui sobre Israel, Igreja e cronologia profética.</p>
+  </div>
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P1</span></div>
 </div>
 
@@ -540,6 +654,27 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
 <div class="pag int-prof">
   <div class="wm-prof">PROF</div>
   <div class="ph-prof"><span class="ph-prof-l">Lição 03 · Tabela &amp; Teologia</span><span class="ph-prof-r">Edição Docente</span></div>
+  <h2 class="prof">Escada de Perguntas Socráticas — Pg. 2 (Introdução)</h2>
+  <div class="escada-socratica">
+    <div class="escada-degrau d1">
+      <div class="ed-num">1</div>
+      <div class="ed-nivel">Diagnóstico — o que o aluno já sabe</div>
+      <div class="ed-pergunta">"Quando você ouve a palavra arrebatamento, qual imagem vem primeiro à cabeça?"</div>
+      <div class="ed-resp"><strong>Resposta esperada:</strong> filmes Left Behind, voos esvaziando, carros sem motorista — imaginário popular pré-tribulacionista. Anote no quadro: isso mede o ponto de partida da turma.</div>
+    </div>
+    <div class="escada-degrau d2">
+      <div class="ed-num">2</div>
+      <div class="ed-nivel">Conceitual — o que o texto diz</div>
+      <div class="ed-pergunta">"Por que Paulo escreve 1 Tessalonicenses 4:13-18? Qual problema pastoral ele está resolvendo?"</div>
+      <div class="ed-resp"><strong>Resposta esperada:</strong> cristãos em luto por mortos antes da vinda. Paulo escreve para consolar, não para montar um calendário profético (v.13 e v.18 são a moldura do texto).</div>
+    </div>
+    <div class="escada-degrau d3">
+      <div class="ed-num">3</div>
+      <div class="ed-nivel">Aplicação — o que o aluno faz com isso</div>
+      <div class="ed-pergunta">"Se Paulo deu essa doutrina para curar luto, o que isso muda na forma como você a usa no dia a dia?"</div>
+      <div class="ed-resp"><strong>Resposta esperada:</strong> uso consolatório em vez de argumentativo; levar 1 Ts 4 a quem está enlutado antes de levá-lo ao debate cronológico.</div>
+    </div>
+  </div>
   <h2 class="prof">Tabela Comparativa das Três Posições</h2>
   <table class="tabela-comp">
     <tr>
@@ -635,13 +770,31 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
       <li>Esse é o terreno comum que deve encerrar o debate</li>
     </ul>
   </div>
-  <div class="bloco-dica">
-    <div class="bk">Adaptações por Perfil de Turma</div>
-    <ul>
-      <li><strong>Turma majoritariamente pentecostal:</strong> apresente o pós-tribulacionismo como posição de George Ladd — um evangélico conservador, não um liberal. Isso reduz a resistência inicial.</li>
-      <li><strong>Turma mais reformada:</strong> apresente o pré-tribulacionismo com seus melhores argumentos antes de apontar suas fragilidades. Evite o tom de "finalmente a verdade".</li>
-      <li><strong>Turma mista:</strong> use o exercício de trocar de posição — cada grupo defende a posição oposta à sua. Força escuta real e reduz polarização.</li>
-    </ul>
+  <h2 class="prof">Diferenciação por Perfil de Turma</h2>
+  <div class="diferenciacao">
+    <div class="dif-item">
+      <div class="dif-tipo">Turma Pentecostal</div>
+      <div class="dif-acao">Apresente Ladd como evangélico conservador do Fuller Seminary — não como liberal. Isso reduz resistência antes de começar o argumento.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-tipo">Turma Reformada</div>
+      <div class="dif-acao">Apresente o pré-tribulacionismo com seus melhores argumentos <em>antes</em> de apontar fragilidades. Evite o tom de "finalmente a verdade".</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-tipo">Turma Mista</div>
+      <div class="dif-acao">Use o exercício de inversão: cada grupo defende a posição oposta à sua. Força escuta real e reduz polarização.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-tipo">Turma Ansiosa</div>
+      <div class="dif-acao">Reoriente para a soberania de Deus: "Israel atravessou as pragas sem ser atingido — proteção não depende de ausência de tribulação." Ancore na confiança, não na cronologia.</div>
+    </div>
+  </div>
+  <div class="aval-form">
+    <div class="bk">Avaliação Formativa Rápida — Cheque ao Final da Aula</div>
+    <div class="aval-check"><div class="ac-box"></div><div class="ac-txt">O aluno consegue nomear as três posições e citar um texto bíblico para cada uma?</div></div>
+    <div class="aval-check"><div class="ac-box"></div><div class="ac-txt">O aluno diferenciou argumento histórico (Darby) de argumento exegético?</div></div>
+    <div class="aval-check"><div class="ac-box"></div><div class="ac-txt">O aluno identificou o propósito consolatório de 1 Ts 4:18 como distinto do debate cronológico?</div></div>
+    <div class="aval-check"><div class="ac-box"></div><div class="ac-txt">O aluno demonstrou postura de humildade no debate — firmeza sem arrogância?</div></div>
   </div>
   <div class="alerta">
     <div class="bk">Situação Comum — "Então vou sofrer a tribulação?"</div>
@@ -684,6 +837,10 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
       <div class="resp-txt">Resposta pessoal e de consciência. O objetivo é provocar autoavaliação honesta. Qualquer resposta que reconheça a distância entre o uso pastoral original (consolo ao luto) e o uso atual (debate de cronologia) é excelente. A questão mais transformadora: o aluno conhece alguém enlutado a quem poderia levar 1 Ts 4:13-18 como palavra de esperança esta semana?</div>
     </div>
   </div>
+  <div class="bloco-gabarito-uso">
+    <div class="bk">Como Usar o Gabarito</div>
+    <p>As respostas sugeridas são <em>orientativas</em>, não prescritivas. Para as questões 1–3, valorize qualquer resposta que cite o texto bíblico explicitamente — o argumento importa mais que a conclusão. Para a questão 4 (uso consolatório vs. debate), trate como consciência pessoal: acolha respostas honestas mesmo que incomodem. A pergunta transformadora é sempre: <em>"O aluno conhece alguém enlutado a quem poderia levar 1 Ts 4:13-18 ainda esta semana?"</em></p>
+  </div>
   <div class="sep"><span>✦</span></div>
   <h2 class="prof">Materiais Complementares</h2>
   <div class="bloco-mat">
@@ -694,6 +851,15 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="mat-item"><span class="mat-tipo video">Vídeo</span><span class="mat-info">BibleProject — série <em>Apocalíptico</em> e vídeo sobre 1 Tessalonicenses. YouTube, legendado em PT. Contextualiza o gênero e a função pastoral de 1 Ts 4.</span></div>
     <div class="mat-item"><span class="mat-tipo audio">Podcast</span><span class="mat-info">Ligonier Ministries — episódios sobre o arrebatamento com R.C. Sproul e outros. Spotify / ligonier.org. Perspectiva reformada pós-tribulacionista.</span></div>
     <div class="mat-item"><span class="mat-tipo site">Digital</span><span class="mat-info">thegospelcoalition.org/pt — artigo "O Arrebatamento: o que a Bíblia Ensina". Panorama acessível das três posições com linguagem para leigos.</span></div>
+  </div>
+  <div class="bloco-seg">
+    <div class="bk">Seguimento Pós-Lição — Ações para a Semana</div>
+    <ul>
+      <li>Envie ao grupo da turma 1 Ts 4:18 com a pergunta: <em>"Você já usou esse versículo para consolar alguém esta semana?"</em></li>
+      <li>Sugira a leitura devocional: 1 Ts 4:13-18 + Jo 14:1-6 + Tito 2:13 — lidos como consolo pastoral, não como mapa cronológico</li>
+      <li>Se houver alunos em luto na turma, entre em contato pessoal durante a semana e ofereça a esperança de 1 Ts 4:16-17</li>
+      <li>Prepare a introdução da Lição 04 (Grande Tribulação) conectando ao terreno comum conquistado aqui: <em>Cristo voltará — esse é o fundamento, independente do cronograma</em></li>
+    </ul>
   </div>
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P4</span></div>
 </div>
