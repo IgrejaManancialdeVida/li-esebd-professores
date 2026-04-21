@@ -312,6 +312,72 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
     p{font-size:9pt;}
     .btn{padding:5px 8px;font-size:7pt;}
 }
+
+/* ===== BLOCOS-ALUNO (replicados do material do aluno) ===== */
+.bloco-aluno{border-left:4px solid var(--cor);background:rgba(192,96,32,0.05);border-radius:0 3px 3px 0;padding:10px 12px;margin:12px 0;}
+.bloco-aluno .ba-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-aluno .ba-titulo::before{content:'✦';font-size:7pt;color:var(--cor);}
+.bloco-aluno .ba-txt{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:var(--ct);margin-bottom:0;}
+.bloco-aluno .ba-nota{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1px;text-transform:uppercase;color:#888;margin-top:6px;padding-top:6px;border-top:1px solid rgba(192,96,32,0.2);}
+
+/* ===== MAPA DE COMPETÊNCIAS (P1) ===== */
+.mapa-comp{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.mapa-celula{border:1px solid rgba(160,78,24,0.25);border-radius:3px;padding:8px 10px;background:#fdf6ee;}
+.mapa-celula .mc-titulo{font-family:"Oswald",sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:#a04e18;margin-bottom:4px;}
+.mapa-celula .mc-txt{font-family:"EB Garamond",serif;font-size:9.5pt;color:#3a1a08;line-height:1.45;}
+
+/* ===== FIO CONDUTOR (P1) ===== */
+.bloco-fio{background:linear-gradient(135deg,rgba(160,78,24,0.07),rgba(201,168,76,0.07));border:1px dashed rgba(160,78,24,0.35);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-fio .bk{font-family:"Oswald",sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#a04e18;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-fio .bk::before{content:"⟶";font-size:9pt;}
+.bloco-fio p{font-family:"EB Garamond",serif;font-size:10pt;line-height:1.6;color:#3a1a08;margin-bottom:0;}
+
+/* ===== ESCADA SOCRÁTICA (P2) ===== */
+.escada-socratica{margin:10px 0;}
+.escada-degrau{padding:8px 12px;margin-bottom:6px;border-radius:3px;position:relative;padding-left:48px;}
+.escada-degrau .ed-num{position:absolute;left:10px;top:50%;transform:translateY(-50%);font-family:"Cinzel",serif;font-size:14pt;font-weight:900;line-height:1;}
+.escada-degrau .ed-nivel{font-family:"Oswald",sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.escada-degrau .ed-pergunta{font-family:"EB Garamond",serif;font-size:10pt;font-style:italic;line-height:1.5;color:#281408;margin-bottom:4px;}
+.escada-degrau .ed-resp{font-family:"EB Garamond",serif;font-size:9pt;color:#444;line-height:1.4;}
+.escada-degrau.d1{background:#fdf2ea;border-left:3px solid #a04e18;}
+.escada-degrau.d1 .ed-num{color:rgba(160,78,24,0.2);}
+.escada-degrau.d1 .ed-nivel{color:#a04e18;}
+.escada-degrau.d2{background:#fae9d8;border-left:3px solid #8a3a10;}
+.escada-degrau.d2 .ed-num{color:rgba(138,58,16,0.2);}
+.escada-degrau.d2 .ed-nivel{color:#8a3a10;}
+.escada-degrau.d3{background:#f5dfc8;border-left:3px solid #6a2a08;}
+.escada-degrau.d3 .ed-num{color:rgba(106,42,8,0.2);}
+.escada-degrau.d3 .ed-nivel{color:#6a2a08;}
+
+/* ===== DIFERENCIAÇÃO POR PERFIL (P3) ===== */
+.diferenciacao{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.dif-item{border:1px solid rgba(160,78,24,0.2);border-radius:3px;padding:8px 10px;background:#fdf6ee;}
+.dif-tipo{font-family:"Oswald",sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#a04e18;margin-bottom:4px;}
+.dif-acao{font-family:"EB Garamond",serif;font-size:9.5pt;color:#3a1a08;line-height:1.4;}
+
+/* ===== AVALIAÇÃO FORMATIVA (P3) ===== */
+.aval-form{background:#fdf2ea;border:1px solid rgba(160,78,24,0.3);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.aval-form .bk{font-family:"Oswald",sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#a04e18;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.aval-form .bk::before{content:"☑" !important;font-size:9pt;}
+.aval-check{display:flex;align-items:flex-start;gap:8px;padding:3px 0;border-bottom:1px solid rgba(160,78,24,0.1);}
+.aval-check:last-child{border-bottom:none;}
+.aval-check .ac-box{width:14px;height:14px;border:1.5px solid #a04e18;border-radius:2px;flex-shrink:0;margin-top:2px;}
+.aval-check .ac-txt{font-family:"EB Garamond",serif;font-size:9.5pt;color:#3a1a08;line-height:1.4;}
+
+/* ===== GABARITO USO (P4) ===== */
+.bloco-gabarito-uso{background:#fdf2ea;border:1px solid rgba(160,78,24,0.3);border-left:4px solid #a04e18;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-gabarito-uso .bk{font-family:"Oswald",sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#a04e18;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-gabarito-uso .bk::before{content:"◐" !important;font-size:8pt;}
+.bloco-gabarito-uso p{font-family:"EB Garamond",serif;font-size:10pt;line-height:1.6;color:#3a1a08;margin-bottom:0;}
+
+/* ===== SEGUIMENTO PÓS-LIÇÃO (P4) ===== */
+.bloco-seg{background:#fffdf5;border:1px solid rgba(201,168,76,0.35);border-left:4px solid #c9a84c;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-seg .bk{font-family:"Oswald",sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-seg .bk::before{content:"↗" !important;font-size:10pt;font-weight:900;}
+.bloco-seg ul{list-style:none;padding:0;}
+.bloco-seg ul li{font-family:"EB Garamond",serif;font-size:10pt;color:#4a3a10;padding:3px 0 3px 16px;position:relative;line-height:1.45;border-bottom:1px solid rgba(201,168,76,0.1);}
+.bloco-seg ul li:last-child{border-bottom:none;}
+.bloco-seg ul li::before{content:"◆" !important;position:absolute;left:0;color:#c9a84c;font-size:5pt;top:7px;}
 </style>
 </head>
 <body>
@@ -389,6 +455,11 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Acrescente à exposição que a Tribulação também revela a seriedade com que Deus trata o pecado na história. Em sala, isso ajuda a combater a noção de que o juízo divino é incompatível com o amor de Deus. A Escritura mostra o contrário: o mesmo Deus que salva em Cristo também julga com justiça aquilo que se levanta contra sua santidade.</p>
   <p>Convém ainda ressaltar que o tema deve produzir vigilância espiritual e compaixão pastoral. Quanto mais o aluno compreende a gravidade do juízo, mais deve crescer em temor reverente, intercessão e urgência evangelística.</p>
 
+<div class="bloco-aluno">
+<div class="ba-titulo">Para Você Refletir — O que é a Grande Tribulação?</div>
+<div class="ba-txt">A Bíblia não apresenta a Grande Tribulação como um espetáculo profético para curiosos, mas como o palco do julgamento justo de Deus e da misericórdia que ainda convida ao arrependimento. Antes de perguntar <em>quando</em> ela ocorrerá, pergunte: <em>o que ela revela sobre Deus</em> — e sobre o coração humano?</div>
+<div class="ba-nota">✦ Bloco para o aluno · Pg. 2 — Introdução</div>
+</div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -410,6 +481,11 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Ao trabalhar esse ponto, procure distinguir entre tipologia, cumprimento parcial e consumação final. Essa distinção evita simplificações e ajuda a classe a perceber que a linguagem profética pode operar em camadas, sem perder sua verdade histórica nem sua expectativa futura.</p>
   <p>Também é útil lembrar que a expressão de Jesus em Mateus 24 retoma Daniel para interpretar o futuro à luz da revelação anterior. Isso reforça a unidade da Escritura e mostra que a escatologia bíblica deve ser lida em conexão entre Antigo e Novo Testamento.</p>
 
+<div class="bloco-aluno">
+<div class="ba-titulo">Conexão Bíblica — O Fio Profético do AT ao NT</div>
+<div class="ba-txt">Jeremias, Daniel, Joel, Jesus e João descrevem o mesmo horizonte com linguagens distintas. A "angústia de Jacó", as "setenta semanas", o "Dia do Senhor" e a "grande tribulação" não são profecias isoladas — são elos de uma corrente que revela a coerência do plano redentor de Deus ao longo de toda a Escritura.</div>
+<div class="ba-nota">✦ Bloco para o aluno · Pg. 3 — Base Profética</div>
+</div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -434,6 +510,11 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Nesta seção, vale enfatizar que os juízos apocalípticos não são descontrolados nem caprichosos. Eles obedecem à soberania divina e revelam uma ordem moral no universo: o mal não permanecerá impune, e a história caminha para uma prestação de contas diante do Senhor.</p>
   <p>Do ponto de vista pastoral, essa verdade consola os crentes que sofrem injustiça. A doutrina da Tribulação, corretamente ensinada, recorda que Deus vê a violência, conhece a opressão e responderá em justiça perfeita.</p>
 
+<div class="bloco-aluno">
+<div class="ba-titulo">Sabia Que? — A Tribulação Tem Propósito Redentor</div>
+<div class="ba-txt">Os julgamentos da Tribulação não são arbitrários: servem para julgar a rebeldia humana <em>e</em> para purificar e converter o remanescente de Israel (Zc 13:9). Deus não envia o juízo sem propósito — mesmo no período mais sombrio da história, há uma misericórdia que convida ao arrependimento (Ap 9:20-21).</div>
+<div class="ba-nota">✦ Bloco para o aluno · Pg. 4 — Propósitos e Duração</div>
+</div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -459,6 +540,11 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Você pode ainda mostrar que a divergência entre as tradições não nasce, em primeiro lugar, de maior ou menor respeito pela Bíblia, mas de diferentes maneiras de ler o gênero apocalíptico e a relação entre Israel, Igreja e cumprimento profético. Essa observação reduz polarizações desnecessárias e qualifica o debate.</p>
   <p>Se houver tempo, peça à turma que identifique o que permanece inegociável nas duas leituras: a soberania de Deus, a realidade do juízo, a perseverança dos santos e a vitória final do Cordeiro. Esse exercício ajuda a distinguir núcleo doutrinário de sistema interpretativo.</p>
 
+<div class="bloco-aluno">
+<div class="ba-titulo">Pense Nisso — O Que Une e o Que Divide</div>
+<div class="ba-txt">Pentecostais e reformados divergem profundamente na <em>leitura</em> da Tribulação — literal ou simbólica, futura ou parcialmente cumprida. Mas ambos concordam no essencial: Deus é soberano sobre a história, a iniquidade será julgada, e os escolhidos serão preservados. Maturidade teológica é saber discernir onde está o fundamento e onde está a interpretação.</div>
+<div class="ba-nota">✦ Bloco para o aluno · Pg. 5 — Visões em Diálogo</div>
+</div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -483,6 +569,11 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
 
   <div class="bver">"Estas são as que vieram da grande tribulação, e lavaram as suas vestes e as alvejaram no sangue do Cordeiro." <cite>Apocalipse 7:14</cite></div>
   <p>Na próxima lição, identificaremos o personagem central desse período: <strong>O Anticristo</strong> — sua identidade, ascensão e queda definitiva.</p>
+<div class="bloco-aluno">
+<div class="ba-titulo">Leve Para a Vida — Compaixão, não Especulação</div>
+<div class="ba-txt">O conhecimento da Tribulação não foi dado para nos tornar curiosos proféticos, mas para nos tornar mais compassivos e fiéis. Hoje mesmo existem cristãos que vivem o que esta doutrina descreve — perseguição, perda, pressão extrema. A resposta correta ao estudo da Tribulação é <em>intercessão</em> e <em>solidariedade</em>, não fascínio especulativo.</div>
+<div class="ba-nota">✦ Bloco para o aluno · Pg. 6 — Conclusão e Aplicação</div>
+</div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -562,6 +653,30 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">Atenção — O Perigo do Espetáculo Profético</div>
     <p>Se algum aluno demonstrar entusiasmo com os julgamentos descritos no Apocalipse, redirecione gentilmente: <em>"Ap 6:10 mostra os mártires clamando por justiça — não por curiosidade. O texto convida à intercessão, não ao fascínio. Cristãos que vivem sob perseguição hoje não leem o Apocalipse como entretenimento."</em></p>
   </div>
+
+  <h2 class="prof" style="margin-top:12px;">Mapa de Competências</h2>
+  <div class="mapa-comp">
+    <div class="mapa-celula">
+      <div class="mc-titulo">Conhecimento</div>
+      <div class="mc-txt">Identificar as raízes veterotestamentárias da Tribulação; conhecer a estrutura das setenta semanas (Dn 9) e os dois propósitos bíblicos do período</div>
+    </div>
+    <div class="mapa-celula">
+      <div class="mc-titulo">Habilidade</div>
+      <div class="mc-txt">Comparar as leituras literal e simbólica do Apocalipse; distinguir hermenêutica profética (Dn 9) de sistema teológico (dispensacionalismo vs. amilenismo)</div>
+    </div>
+    <div class="mapa-celula">
+      <div class="mc-titulo">Atitude</div>
+      <div class="mc-txt">Substituir fascínio especulativo por compaixão pastoral; reconhecer que cristãos perseguidos hoje vivem algo próximo ao descrito na Tribulação</div>
+    </div>
+    <div class="mapa-celula">
+      <div class="mc-titulo">Avaliação</div>
+      <div class="mc-txt">Responder às questões da Pg. 7 com argumentos bíblicos explícitos; na Q4, demonstrar mudança de postura — de espectador a intercessor</div>
+    </div>
+  </div>
+  <div class="bloco-fio">
+    <div class="bk">Fio Condutor — Lição 04 na Série</div>
+    <p>A Lição 03 estabeleceu o debate sobre o <em>quando</em> do arrebatamento em relação à Tribulação. <strong>Lição 04</strong> entra no interior desse período: sua origem profética, seus propósitos e sua interpretação. A Lição 05 (O Anticristo) depende da clareza conquistada aqui sobre o papel da "besta", os 144.000 e a hermenêutica do Apocalipse.</p>
+  </div>
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P1</span></div>
 </div>
 
@@ -570,6 +685,27 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
 <div class="pag int-prof">
   <div class="wm-prof">PROF</div>
   <div class="ph-prof"><span class="ph-prof-l">Lição 04 · Exegese &amp; Comparação</span><span class="ph-prof-r">Edição Docente</span></div>
+  <h2 class="prof">Escada de Perguntas Socráticas — Pg. 2 (Introdução)</h2>
+  <div class="escada-socratica">
+    <div class="escada-degrau d1">
+      <div class="ed-num">1</div>
+      <div class="ed-nivel">Diagnóstico — o que o aluno já sabe</div>
+      <div class="ed-pergunta">"Quando você ouve a expressão 'Grande Tribulação', qual imagem vem à mente? De onde ela vem?"</div>
+      <div class="ed-resp"><strong>Resposta esperada:</strong> filmes, pregações sobre fim dos tempos, imagens de catástrofe. Anote no quadro — isso mapeia o imaginário popular antes de abrir o texto.</div>
+    </div>
+    <div class="escada-degrau d2">
+      <div class="ed-num">2</div>
+      <div class="ed-nivel">Conceitual — o que o texto diz</div>
+      <div class="ed-pergunta">"Quais são os dois propósitos que a Bíblia atribui ao período tribulacional? Cite ao menos um texto para cada."</div>
+      <div class="ed-resp"><strong>Resposta esperada:</strong> (1) julgamento da humanidade rebelde — Ap 9:20-21; (2) purificação e conversão de Israel — Zc 13:8-9 e Rm 11:25-27. A Tribulação não é arbitrária: tem finalidade moral e redentora.</div>
+    </div>
+    <div class="escada-degrau d3">
+      <div class="ed-num">3</div>
+      <div class="ed-nivel">Aplicação — o que o aluno faz com isso</div>
+      <div class="ed-pergunta">"Se a Tribulação visa provocar arrependimento e os homens ainda assim endurecem (Ap 9:21), o que isso nos ensina sobre o coração humano — e sobre como evangelizamos hoje?"</div>
+      <div class="ed-resp"><strong>Resposta esperada:</strong> a depravação humana é mais profunda do que julgamos; o Evangelho não pode depender de pressão ou medo — precisa da obra do Espírito. Urgência missionária sem manipulação.</div>
+    </div>
+  </div>
   <h2 class="prof">As Setenta Semanas de Daniel 9 — Para o Professor</h2>
   <div class="linha-tempo">
     <div class="lt-titulo">Daniel 9:24-27 — Estrutura das 70 "Semanas" (shabua = períodos de 7)</div>
@@ -681,14 +817,31 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
       <li>Apresente as duas interpretações da "semana final" com igual respeito antes de apontar as tensões</li>
     </ul>
   </div>
-  <div class="bloco-dica">
-    <div class="bk">Conectando com a Realidade — Cristãos Perseguidos</div>
-    <ul>
-      <li>Mencione países como Coreia do Norte, Eritreia, Síria ou Nigéria onde cristãos vivem sob perseguição intensa</li>
-      <li>Pergunte: <em>"Como você acha que um cristão nigeriano que perdeu a família para o Boko Haram lê Ap 7:14 — 'os que vieram da grande tribulação'?"</em></li>
-      <li>Essa conexão evita que a Tribulação seja apenas objeto de especulação e a coloca como realidade pastoral presente</li>
-      <li>Fonte útil: relatório anual da Open Doors (Portas Abertas) sobre perseguição cristã — disponível em portasabertas.org.br</li>
-    </ul>
+  <h2 class="prof">Diferenciação por Perfil de Turma</h2>
+  <div class="diferenciacao">
+    <div class="dif-item">
+      <div class="dif-tipo">Turma Pentecostal</div>
+      <div class="dif-acao">Não questione o pré-tribulacionismo diretamente. Comece pelos propósitos da Tribulação — os dois pontos são comuns a todas as posições — antes de entrar nas diferenças hermenêuticas.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-tipo">Turma Reformada</div>
+      <div class="dif-acao">Apresente o literalismo dispensacionalista com os seus melhores argumentos antes de apontar as fragilidades. Evite o tom de "finalmente a leitura correta".</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-tipo">Turma Mista</div>
+      <div class="dif-acao">Use a tabela comparativa (Pg. P2) como terreno neutro. Deixe que os próprios alunos identifiquem pontos fortes e fraquezas de cada posição antes de o professor concluir.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-tipo">Turma Ansiosa</div>
+      <div class="dif-acao">Reoriente para a soberania de Deus: <em>"Deus preservou Israel nas pragas do Egito sem retirá-los do contexto. Proteção divina não depende de ausência de sofrimento."</em> Ancore na confiança, não na cronologia.</div>
+    </div>
+  </div>
+  <div class="aval-form">
+    <div class="bk">Avaliação Formativa Rápida — Cheque ao Final da Aula</div>
+    <div class="aval-check"><div class="ac-box"></div><div class="ac-txt">O aluno consegue citar pelo menos um texto do AT que antecipa a Tribulação?</div></div>
+    <div class="aval-check"><div class="ac-box"></div><div class="ac-txt">O aluno distingue os dois propósitos bíblicos do período — julgamento e purificação?</div></div>
+    <div class="aval-check"><div class="ac-box"></div><div class="ac-txt">O aluno compreende que a divergência entre posições está na hermenêutica, não apenas na cronologia?</div></div>
+    <div class="aval-check"><div class="ac-box"></div><div class="ac-txt">O aluno demonstrou postura de compaixão — e não de fascínio especulativo — ao tratar do sofrimento descrito?</div></div>
   </div>
   <div class="alerta">
     <div class="bk">Situação Comum — "Qual das posições é a verdadeira?"</div>
@@ -731,6 +884,10 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
       <div class="resp-txt">Resposta pessoal e de consciência. Espere: solidariedade concreta com cristãos perseguidos; oração de intercessão em vez de fascínio profético; rejeição da postura de "espectador" da tribulação alheia; generosidade com organizações de auxílio às vítimas de conflito. A pergunta mais transformadora: o aluno já fez algo concreto pela realidade de sofrimento que existe hoje — ou apenas debate sobre o sofrimento futuro?</div>
     </div>
   </div>
+  <div class="bloco-gabarito-uso">
+    <div class="bk">Como Usar o Gabarito</div>
+    <p>As respostas sugeridas são <em>orientativas</em>, não prescritivas. Para Q1–Q3, valorize qualquer resposta que cite o texto bíblico explicitamente e identifique a questão hermenêutica de base. Para Q4 (postura diante do sofrimento), trate como resposta de consciência — acolha honestidade mesmo que incomode. A pergunta mais transformadora: <em>"O aluno já fez algo concreto pelo sofrimento que existe hoje — ou apenas debate sobre o sofrimento futuro?"</em></p>
+  </div>
   <div class="sep"><span>✦</span></div>
   <h2 class="prof">Materiais Complementares</h2>
   <p>Ao sugerir materiais extras, oriente a classe a priorizar obras que tratem o tema com fidelidade bíblica e equilíbrio pastoral. Nem todo conteúdo escatológico disponível ajuda a formar discernimento; muito dele apenas intensifica medo ou especulação.</p>
@@ -744,6 +901,16 @@ h2.prof{font-family:"Oswald",sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="mat-item"><span class="mat-tipo video">Vídeo</span><span class="mat-info">BibleProject — série <em>Apocalipse</em> e vídeo <em>Gênero Literário: Apocalíptico</em>. YouTube, PT. Explica a linguagem simbólica do Apocalipse para uso em sala ou como pré-aula.</span></div>
     <div class="mat-item"><span class="mat-tipo audio">Podcast</span><span class="mat-info">Ligonier Ministries — série <em>Daniel</em> com R.C. Sproul. Spotify / ligonier.org. Excelente para o professor entender Daniel 9 na perspectiva reformada antes de ensinar.</span></div>
     <div class="mat-item"><span class="mat-tipo site">Digital</span><span class="mat-info">portasabertas.org.br — Relatório Mundial de Perseguição (Open Doors). Dados reais sobre cristãos perseguidos; use para contextualizar a Tribulação no presente.</span></div>
+  </div>
+
+  <div class="bloco-seg">
+    <div class="bk">Seguimento Pós-Lição — Ações para a Semana</div>
+    <ul>
+      <li>Envie ao grupo da turma Apocalipse 7:14 com a pergunta: <em>"Você conhece alguém que está vivendo sua 'grande tribulação' hoje? O que você pode fazer por essa pessoa esta semana?"</em></li>
+      <li>Sugira a leitura devocional: Dn 9:24-27 + Mt 24:15-31 + Ap 6–7 — lidos com foco nos propósitos de Deus, não em cronogramas</li>
+      <li>Indique o Relatório Mundial de Perseguição da Open Doors (portasabertas.org.br) como instrumento de intercessão informada</li>
+      <li>Prepare a introdução da Lição 05 (O Anticristo) conectando ao debate hermenêutico conquistado aqui: <em>a identidade da "besta" depende de como lemos o Apocalipse — literal ou simbólico</em></li>
+    </ul>
   </div>
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P4</span></div>
 </div>
