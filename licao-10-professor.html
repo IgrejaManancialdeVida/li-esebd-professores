@@ -328,6 +328,37 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
 .checklist li{font-family:'EB Garamond',serif;font-size:10pt;color:#1a1a3a;padding:3px 0 3px 20px;position:relative;line-height:1.4;}
 .checklist li::before{content:"□" !important;position:absolute;left:0;color:#3b5e8a;font-size:10pt;}
 
+/* ── BLOCOS DO ALUNO (espelhados na edição do professor) ── */
+.baluno{border-radius:3px;padding:9px 12px;margin-top:12px;margin-bottom:2px;position:relative;}
+.baluno-ico{font-size:10pt;margin-right:6px;vertical-align:middle;}
+.baluno-tag{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:4px;}
+.baluno-corpo{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:var(--ct);}
+.baluno-linha{border-bottom:1px solid rgba(0,0,0,0.12);height:22px;margin-top:6px;}
+.ba-refletir{background:rgba(128,48,32,0.06);border-left:3px solid var(--cor);}
+.ba-refletir .baluno-tag{color:var(--cor);}
+.ba-biblica{background:rgba(201,168,76,0.07);border-left:3px solid var(--ouro);}
+.ba-biblica .baluno-tag{color:#8a6a20;}
+.ba-sabia{background:rgba(80,50,30,0.06);border-left:3px solid #7a5030;}
+.ba-sabia .baluno-tag{color:#6a4020;}
+.ba-pense{background:rgba(128,48,32,0.04);border:1px dashed rgba(128,48,32,0.30);border-left:3px solid var(--cor);}
+.ba-pense .baluno-tag{color:var(--cor);}
+.ba-vida{background:linear-gradient(135deg,rgba(128,48,32,0.05),rgba(201,168,76,0.06));border:1px solid rgba(201,168,76,0.30);border-left:3px solid var(--ouro);}
+.ba-vida .baluno-tag{color:#8a6a20;}
+/* Nota do professor contextualiza cada bloco do aluno */
+.nota-prof-bloco{background:rgba(122,32,16,0.06);border:1px dashed rgba(122,32,16,0.35);border-radius:3px;padding:6px 10px;margin-top:4px;margin-bottom:10px;}
+.nota-prof-bloco .np-label{font-family:'Oswald',sans-serif;font-size:6.5pt;letter-spacing:2px;text-transform:uppercase;color:#7a2010;margin-bottom:3px;display:flex;align-items:center;gap:5px;}
+.nota-prof-bloco .np-label::before{content:"📝";font-size:8pt;}
+.nota-prof-bloco p{font-family:'EB Garamond',serif;font-size:9.5pt;color:#3a0800;line-height:1.5;margin-bottom:0;}
+@media (max-width:768px){
+  .baluno{padding:8px 10px;}
+  .baluno-corpo,.baluno-linha{font-size:9.5pt;}
+  .nota-prof-bloco{padding:5px 8px;}
+}
+@media print{
+  .baluno{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .nota-prof-bloco{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+
 /* Uso do gabarito e Seguimento — P4 */
 .bloco-gabarito{background:#fffef0;border:1px solid rgba(201,168,76,0.35);border-left:4px solid #c9a84c;border-radius:3px;padding:10px 12px;margin:10px 0;}
 .bloco-gabarito .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
@@ -401,6 +432,17 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>O julgamento não é vingança divina — é a afirmação pública e definitiva da justiça de Deus diante de toda a criação. Para os crentes, é a revelação da graça; para os incrédulos, é a condenação que eles próprios escolheram ao rejeitar o Salvador. Nenhum ser humano comparecerá ao tribunal de Cristo por acidente.</p>
   <p>Por isso, falar do Juízo Final não é abandonar a linguagem do amor, mas afirmar que o amor de Deus jamais é indiferente ao mal. Um Deus que não julga a perversidade não consola verdadeiramente as vítimas nem vindica sua própria santidade. O juízo é a face pública da justiça divina.</p>
   <p>Ao mesmo tempo, essa verdade impede tanto o desespero quanto a presunção. Desespero, porque nenhum mal ficará sem resposta; presunção, porque ninguém escapará do exame perfeito de Deus. Diante do trono, toda máscara cai e toda vida é trazida à luz.</p>
+  <!-- BLOCO DO ALUNO: Para você refletir (Pg 2 do aluno) -->
+  <div class="baluno ba-refletir">
+    <div class="baluno-tag"><span class="baluno-ico">&#9670;</span> Para você refletir</div>
+    <div class="baluno-corpo">Em uma cultura que relativiza o julgamento moral, como a certeza do Juízo Final muda o modo como você entende a justiça — tanto a injustiça que você sofre quanto a que você pratica? O que você sente ao saber que nenhuma ação humana ficará definitivamente sem resposta?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+  <div class="nota-prof-bloco">
+    <div class="np-label">Nota para o professor</div>
+    <p>Este bloco aparece ao final da Pg 2 do aluno. Use-o como abertura de diálogo antes de prosseguir para o Tópico I. Deixe 2–3 minutos para reflexão silenciosa individual; depois convide um ou dois alunos a compartilhar voluntariamente. Não force respostas — a pergunta é intencionalmente pessoal e pode mobilizar emoções reais. Se a turma demonstrar ansiedade ou medo, ancore imediatamente em Romanos 8:1.</p>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -419,6 +461,17 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Dois tipos de registros são abertos em Apocalipse 20:12: "os livros" — o registro das obras de cada ser humano — e "o Livro da Vida" — o registro dos redimidos. As obras não salvam, mas testemunham. A sentença final depende do Livro da Vida: quem não está nele é lançado no lago de fogo (Ap 20:15). Gratidão e temor reverente são as respostas adequadas a essa realidade.</p>
   <p>A cena do Grande Trono Branco revela que o juízo final não será caótico nem arbitrário. Nada ficará oculto, nada será esquecido e nada será relativizado. O que os tribunais humanos não alcançaram, o Juiz perfeito trará à plena luz.</p>
   <p>Há profundo consolo nisso para o povo de Deus. A fé cristã não ensina que os sofrimentos da história são irrelevantes, mas que todos serão finalmente avaliados diante daquele que conhece perfeitamente intenções, contextos e consequências. O juízo final é a resposta divina à impunidade aparente do mundo presente.</p>
+  <!-- BLOCO DO ALUNO: Conexão Bíblica (Pg 3 do aluno) -->
+  <div class="baluno ba-biblica">
+    <div class="baluno-tag"><span class="baluno-ico">&#9998;</span> Conexão Bíblica</div>
+    <div class="baluno-corpo">Leia Apocalipse 20:11-15 e João 5:22-29. Quais palavras descrevem a <em>universalidade</em> do julgamento — quem comparece, sem exceção? O que a presença do "Livro da Vida" ao lado dos "livros de obras" revela sobre a base final da sentença?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+  <div class="nota-prof-bloco">
+    <div class="np-label">Nota para o professor</div>
+    <p>Este bloco está ao final da Pg 3 do aluno. Incentive a leitura dos dois textos em voz alta antes de solicitar as respostas. Palavras-chave esperadas para "universalidade": "todos", "grandes e pequenos", "os mortos", "nenhum deles" (Ap 20:13). A distinção entre "livros" e "Livro da Vida" é o eixo teológico central da página — certifique-se de que os alunos perceberam que a sentença final depende do Livro da Vida, não das obras registradas nos outros livros.</p>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -438,6 +491,15 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Para os que rejeitaram o evangelho, o julgamento é condenação — proporcional ao conhecimento que tiveram e às obras que praticaram (Lc 12:47-48; Rm 2:6-11). Há graus de condenação assim como há graus de recompensa. Deus não é arbitrário: "cada um será remunerado segundo as suas obras" (Rm 2:6). A condenação é justa precisamente porque cada ser humano teve oportunidade de responder ao testemunho geral de Deus na criação (Rm 1:19-20) e ao testemunho especial do evangelho onde este chegou.</p>
   <p>Essa distinção ajuda a preservar duas verdades bíblicas ao mesmo tempo: a salvação é inteiramente pela graça, e a vida do crente possui responsabilidade real diante de Deus. As obras não compram a redenção, mas evidenciam a realidade da fé e serão trazidas à memória para louvor da justiça e da misericórdia divinas.</p>
   <p>Do lado dos incrédulos, o juízo final demonstra que a condenação não será genérica nem impessoal. Cada caso será perfeitamente julgado, e a sentença corresponderá à verdade integral da vida de cada um. Isso exclui qualquer ideia de injustiça em Deus e reforça a urgência do arrependimento enquanto dura o tempo da graça.</p>
+  <!-- BLOCO DO ALUNO: Sabia que? (Pg 4 do aluno) -->
+  <div class="baluno ba-sabia">
+    <div class="baluno-tag"><span class="baluno-ico">&#9654;</span> Sabia que?</div>
+    <div class="baluno-corpo">A palavra grega <em>bema</em> ("tribunal", usada em 2 Co 5:10) designava a plataforma elevada onde um magistrado romano proferia julgamentos ou onde um árbitro olímpico anunciava resultados e distribuía prêmios. Paulo usa esse termo para o julgamento dos crentes — não o banco dos réus, mas o estrado de premiação onde obras são avaliadas por Cristo.</div>
+  </div>
+  <div class="nota-prof-bloco">
+    <div class="np-label">Nota para o professor</div>
+    <p>Este bloco está ao final da Pg 4 do aluno. O dado sobre o <em>bema</em> é altamente eficaz para desfazer a associação automática entre "tribunal" e "condenação". Use-o como gancho oral: peça que imaginem um estádio grego e um árbitro entregando coroas de louros, não algemas. Isso abre espaço para a distinção entre salvação (garantida pela graça) e recompensa (avaliação fiel das obras). Se houver alunos com formação histórica, eles podem enriquecer o comentário sobre o contexto romano e olímpico do termo.</p>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -460,6 +522,17 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="sep"><span>✦</span></div>
   <p>Mesmo onde há diferença de cronologia, permanece o mesmo testemunho: ninguém escapará da justiça de Deus e ninguém que esteja em Cristo será lançado fora. O juízo final não ameaça a segurança do salvo; antes, manifesta publicamente a eficácia da obra redentora de Jesus em favor do seu povo.</p>
   <p>Essa convergência é importante para a vida da igreja. Ela impede tanto a indiferença moral quanto o sensacionalismo escatológico. O foco das Escrituras não é alimentar especulação, mas chamar todos os homens ao arrependimento, à fé e à sobriedade diante daquele que julgará o mundo com justiça.</p>
+  <!-- BLOCO DO ALUNO: Pense nisso (Pg 5 do aluno) -->
+  <div class="baluno ba-pense">
+    <div class="baluno-tag"><span class="baluno-ico">&#8857;</span> Pense nisso</div>
+    <div class="baluno-corpo">Pentecostais e reformados divergem sobre a cronologia dos julgamentos, mas convergem no essencial: Cristo é o Juiz, as obras serão avaliadas, nenhuma injustiça ficará sem resposta. Essa convergência é suficiente para a unidade cristã? O debate sobre sequência muda algo na forma como você vive agora?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+  <div class="nota-prof-bloco">
+    <div class="np-label">Nota para o professor</div>
+    <p>Este bloco está ao final da Pg 5 do aluno, após a apresentação das duas perspectivas. Ele funciona como síntese reflexiva do debate. A pergunta "muda algo na forma como você vive agora?" é deliberadamente prática: evita que o debate escatológico fique apenas no nível especulativo. Encoraje os alunos a distinguir o que é doutrina central (convergente) do que é debate periférico (cronologia). Se houver tensão na turma entre alunos das duas tradições, use a linha de convergência da tabela comparativa (Pg P3) como ponto de apoio para o diálogo respeitoso.</p>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -482,6 +555,17 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Nas próximas duas lições contemplaremos os dois destinos finais da humanidade: <strong>O Inferno</strong> e <strong>O Céu e a Nova Jerusalém</strong> — as duas realidades eternas que o Juízo Final determina.</p>
   <p>Em conclusão, o Juízo Final deve conduzir o crente a uma vida de sobriedade, reconciliação e perseverança. Quem sabe que Deus julgará o mundo não precisa viver dominado pela ansiedade de resolver tudo com as próprias mãos, mas também não pode tratar o pecado como algo leve ou indiferente.</p>
   <p>A doutrina do juízo final, portanto, não foi dada para alimentar pavor estéril, e sim para ordenar a vida diante de Deus. Ela chama a Igreja a andar em santidade, a anunciar o evangelho com urgência e a descansar na certeza de que a justiça perfeita do Senhor prevalecerá no fim.</p>
+  <!-- BLOCO DO ALUNO: Leve para a vida (Pg 6 do aluno) -->
+  <div class="baluno ba-vida">
+    <div class="baluno-tag"><span class="baluno-ico">&#10022;</span> Leve para a vida</div>
+    <div class="baluno-corpo">Esta semana, escolha uma atitude concreta motivada pela certeza do Juízo Final: libere alguém que te fez mal entregando ao Juiz justo (Rm 12:19); examine uma área da sua vida à luz de 1 Co 3:12-15; ou compartilhe o evangelho com alguém, sabendo que o tempo da graça é limitado. Anote aqui o que você vai fazer:</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+  <div class="nota-prof-bloco">
+    <div class="np-label">Nota para o professor</div>
+    <p>Este bloco é o encerramento prático da Pg 6 do aluno — o ponto de chegada de toda a lição. Leia-o em voz alta para a turma e conceda um minuto de silêncio para que cada aluno escreva individualmente. Não solicite que compartilhem o que escreveram — o compromisso é pessoal. Você pode encerrar com uma oração breve que incorpore os três eixos propostos: perdão/entrega, avaliação das obras e urgência missionária. Esse momento de escrita transforma a doutrina em decisão e é o principal veículo de mudança comportamental desta lição.</p>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
