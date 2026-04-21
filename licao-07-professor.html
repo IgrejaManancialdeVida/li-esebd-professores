@@ -274,6 +274,82 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     p{font-size:9pt;}
     .btn{padding:5px 8px;font-size:7pt;}
 }
+
+/* ===== BLOCOS-ALUNO (espelhados da edição do aluno) ===== */
+.bloco-aluno{border-left:4px solid var(--cor);background:rgba(32,128,160,0.05);border-radius:0 3px 3px 0;padding:10px 12px;margin:12px 0;}
+.bloco-aluno .ba-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-aluno .ba-titulo::before{content:'✦';font-size:7pt;color:var(--cor);}
+.bloco-aluno .ba-txt{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:var(--ct);margin-bottom:0;}
+.bloco-aluno .ba-nota{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1px;text-transform:uppercase;color:#888;margin-top:6px;padding-top:6px;border-top:1px solid rgba(32,128,160,0.2);}
+
+/* ===== BLOCOS PEDAGÓGICOS DO PROFESSOR ===== */
+/* Mapa de Competências */
+.bloco-competencias{border:1px solid rgba(26,92,120,0.3);border-radius:3px;margin:10px 0;overflow:hidden;}
+.bloco-competencias .bc-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#fff;background:#1a5c78;padding:6px 12px;display:flex;align-items:center;gap:6px;}
+.bloco-competencias .bc-titulo::before{content:'◈';font-size:8pt;}
+.bc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+.bc-cel{padding:9px 11px;border-right:1px solid rgba(26,92,120,0.15);border-bottom:1px solid rgba(26,92,120,0.15);}
+.bc-cel:nth-child(2n){border-right:none;}
+.bc-cel:nth-last-child(-n+2){border-bottom:none;}
+.bc-cel-label{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:#1a5c78;margin-bottom:4px;}
+.bc-cel-txt{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.5;color:#0a1e2a;}
+
+/* Fio Condutor */
+.bloco-fio{background:linear-gradient(135deg,rgba(26,92,120,0.07),rgba(201,168,76,0.07));border:1px solid rgba(201,168,76,0.3);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-fio .bf-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:7px;display:flex;align-items:center;gap:6px;}
+.bloco-fio .bf-titulo::before{content:'⟶';font-size:9pt;color:#c9a84c;}
+.bf-linha{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
+.bf-licao{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#fff;background:#1a5c78;padding:2px 7px;border-radius:1px;white-space:nowrap;flex-shrink:0;}
+.bf-seta{color:rgba(201,168,76,0.6);font-size:9pt;flex-shrink:0;}
+.bf-desc{font-family:'EB Garamond',serif;font-size:9.5pt;color:#3a2a00;line-height:1.4;}
+
+/* Escada Socrática */
+.bloco-socratico{border:1px solid rgba(26,92,120,0.25);border-radius:3px;margin:10px 0;overflow:hidden;}
+.bloco-socratico .bs-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#fff;background:#1a5c78;padding:6px 12px;display:flex;align-items:center;gap:6px;}
+.bloco-socratico .bs-titulo::before{content:'?';font-family:'Cinzel',serif;font-weight:900;font-size:9pt;}
+.bs-nivel{padding:9px 12px;border-bottom:1px solid rgba(26,92,120,0.1);}
+.bs-nivel:last-child{border-bottom:none;}
+.bs-nivel-topo{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;}
+.bs-tag{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#fff;padding:2px 7px;border-radius:1px;flex-shrink:0;}
+.bs-tag.n1{background:#2080a0;}.bs-tag.n2{background:#1a5c78;}.bs-tag.n3{background:#082838;}
+.bs-pergunta{font-family:'EB Garamond',serif;font-size:10pt;font-style:italic;color:#0a1e2a;line-height:1.5;}
+.bs-resposta{font-family:'EB Garamond',serif;font-size:9.5pt;color:#3a5a6a;line-height:1.45;padding-left:10px;border-left:2px solid rgba(32,128,160,0.25);margin-top:4px;}
+.bs-resposta::before{content:'Esperado: ';font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1px;text-transform:uppercase;color:#1a5c78;}
+
+/* Diferenciação por Perfil */
+.bloco-perfil{border:1px solid rgba(46,107,79,0.25);border-radius:3px;margin:10px 0;overflow:hidden;}
+.bloco-perfil .bp-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#fff;background:#2e6b4f;padding:6px 12px;display:flex;align-items:center;gap:6px;}
+.bloco-perfil .bp-titulo::before{content:'◉';font-size:7pt;}
+.bp-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+.bp-cel{padding:8px 11px;border-right:1px solid rgba(46,107,79,0.12);border-bottom:1px solid rgba(46,107,79,0.12);}
+.bp-cel:nth-child(2n){border-right:none;}
+.bp-cel:nth-last-child(-n+2){border-bottom:none;}
+.bp-cel-tipo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#2e6b4f;margin-bottom:3px;}
+.bp-cel-acao{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.45;color:#1e4535;}
+
+/* Avaliação Formativa */
+.bloco-avaliacao{background:#fffdf5;border:1px solid rgba(201,168,76,0.3);border-left:4px solid #c9a84c;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-avaliacao .bav-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-avaliacao .bav-titulo::before{content:'✓';font-size:9pt;font-weight:900;color:#c9a84c;}
+.bav-item{display:flex;align-items:flex-start;gap:8px;padding:4px 0;border-bottom:1px solid rgba(201,168,76,0.1);}
+.bav-item:last-child{border-bottom:none;}
+.bav-check{width:13px;height:13px;border:1px solid rgba(201,168,76,0.5);border-radius:2px;flex-shrink:0;margin-top:2px;}
+.bav-txt{font-family:'EB Garamond',serif;font-size:9.5pt;color:#3a2a00;line-height:1.45;}
+
+/* Gabarito — orientação de uso */
+.bloco-uso-gabarito{background:#f0f7fa;border:1px solid rgba(26,92,120,0.25);border-left:4px solid #2080a0;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-uso-gabarito .bug-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#1a5c78;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-uso-gabarito .bug-titulo::before{content:'▶';font-size:6pt;color:#2080a0;}
+.bloco-uso-gabarito p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:#0a1e2a;}
+
+/* Seguimento Pós-Lição */
+.bloco-seguimento{background:#e8f4fa;border:1px solid rgba(26,92,120,0.3);border-left:4px solid #1a5c78;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-seguimento .bseg-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#1a5c78;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-seguimento .bseg-titulo::before{content:'↗';font-size:9pt;color:#1a5c78;}
+.bseg-item{padding:5px 0;border-bottom:1px solid rgba(26,92,120,0.08);display:flex;gap:10px;align-items:flex-start;}
+.bseg-item:last-child{border-bottom:none;}
+.bseg-semana{font-family:'Oswald',sans-serif;font-size:7pt;color:#fff;background:#1a5c78;padding:2px 7px;border-radius:1px;white-space:nowrap;flex-shrink:0;margin-top:1px;letter-spacing:1px;text-transform:uppercase;}
+.bseg-acao{font-family:'EB Garamond',serif;font-size:9.5pt;color:#0a1e2a;line-height:1.45;}
 </style>
 </head>
 <body>
@@ -347,6 +423,12 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>É possível que cristãos sinceros, que amam as Escrituras e confessam a mesma fé, cheguem a conclusões diferentes sobre o milênio. O que não é opcional é a certeza do reino eterno de Cristo — independentemente de sua forma e cronologia.</p>
   <p>Por isso, esta lição não deve ser lida como convite à rivalidade entre escolas escatológicas, mas como chamado à reverência diante do texto bíblico. Quando a Igreja trata essas diferenças com maturidade, ela preserva a unidade da fé sem abrir mão do rigor doutrinário.</p>
   <p>Também é importante perceber que a discussão sobre o milênio afeta a forma como o cristão enxerga a história. Dependendo da leitura adotada, mudam a expectativa quanto ao sofrimento, o entendimento da missão da Igreja e a maneira de esperar o retorno de Cristo.</p>
+
+  <div class="bloco-aluno">
+    <div class="ba-titulo">Para Você Refletir — Sua Posição Vem da Bíblia ou da Denominação?</div>
+    <div class="ba-txt">A maioria dos evangélicos brasileiros cresceu ouvindo que Cristo voltará <em>antes</em> de um reino literal de mil anos — o premilenismo dispensacionalista. Mas essa convicção foi formada por uma leitura cuidadosa de Apocalipse 20, ou pelos hinos, pregações e filmes que você consumiu desde criança? Esta lição não pede que você troque de posição: pede que você saiba <em>por que</em> a sustenta. Texto antes de tradição.</div>
+    <div class="ba-nota">✦ Bloco para o aluno · Pg. 2 — Introdução</div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -355,7 +437,7 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
 <div class="pag int">
   <div class="wm">3</div>
   <div class="ph"><span class="phl">Lição 07</span><span class="pht">O Milênio</span></div>
-  <h2>I — O Premilenismo</h2>
+  <h2>I-O Premilenismo</h2>
   <p>O premilenismo afirma que Cristo voltará <em>antes</em> do milênio para estabelecer um reino literal de mil anos na terra. É a posição mais antiga documentada na história da Igreja — presente em Justino Mártir, Ireneu de Lião e Tertuliano nos séculos II e III — e a mais difundida no evangelicalismo e no pentecostalismo contemporâneos.</p>
   <h3>Premilenismo Histórico</h3>
   <p>O premilenismo histórico — defendido por George Ladd, Henry Alford e Millard Erickson — entende que a Igreja passará pela Tribulação (pós-tribulacionismo) e será arrebatada no retorno de Cristo, que então reinará por mil anos literais sobre a terra renovada. Israel e a Igreja são um único povo de Deus, sem programas proféticos separados. Os mil anos são literais, mas não estritamente dispensacionalistas.</p>
@@ -364,6 +446,12 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <h3>Premilenismo Dispensacionalista</h3>
   <p>O dispensacionalismo — sistematizado por Darby e popularizado por Scofield — acrescenta ao premilenismo a separação entre Israel e Igreja como dois povos distintos. Cristo reinará literalmente em Jerusalém, no trono de Davi, durante mil anos, com Israel restaurado no centro do programa divino. O Templo será reconstruído e o culto sacrificial retomado em caráter comemorativo. É a posição dominante no pentecostalismo brasileiro.</p>
   <p>Ainda dentro do próprio premilenismo, é necessário distinguir cuidadosamente o histórico do dispensacionalista para evitar generalizações. Ambos afirmam o retorno de Cristo antes do milênio, mas divergem em pontos importantes, sobretudo na relação entre Israel e Igreja e na leitura das promessas do Antigo Testamento.</p>
+
+  <div class="bloco-aluno">
+    <div class="ba-titulo">Conexão Bíblica — Sequência ou Símbolo em Ap 19–20?</div>
+    <div class="ba-txt">O argumento mais forte do premilenismo é a sequência narrativa: Cristo retorna em glória em Apocalipse 19, e <em>então</em> vem o milênio em Apocalipse 20. Mas o próprio Apocalipse usa recapitulação — a mesma cena narrada sob ângulos distintos. Antes de concluir que a sequência é cronológica, pergunte: o restante do livro segue ordem linear? A resposta à essa pergunta hermenêutica determina muito da sua conclusão final sobre o milênio.</div>
+    <div class="ba-nota">✦ Bloco para o aluno · Pg. 3 — O Premilenismo</div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -372,7 +460,7 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
 <div class="pag int">
   <div class="wm">4</div>
   <div class="ph"><span class="phl">Lição 07</span><span class="pht">O Milênio</span></div>
-  <h2>II — O Amilenismo</h2>
+  <h2>II-O Amilenismo</h2>
   <p>O amilenismo — do grego <em>a</em> (não) + <em>milênio</em> — não nega o milênio, mas interpreta os mil anos de Apocalipse 20 como um período simbólico que representa a era presente entre a primeira e a segunda vinda de Cristo. É a posição histórica predominante na tradição reformada, luterana, anglicana e católica.</p>
   <h3>Os Mil Anos Como Era Presente</h3>
   <p>Para o amilenismo, Satanás foi "amarrado" pelo ministério e obra de Cristo — especialmente pela cruz e ressurreição (Jo 12:31; Cl 2:15) — de modo que o evangelho pode avançar livremente entre todas as nações. O reino de Deus já é presente e real na Igreja, embora ainda não consumado. A "primeira ressurreição" é a regeneração espiritual (Jo 5:24-25) ou a entrada do crente na glória após a morte.</p>
@@ -382,6 +470,12 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>O pós-milenismo afirma que Cristo voltará <em>após</em> um período de prosperidade e avanço do Reino de Deus na história — o "milênio" — promovido pela pregação do evangelho e pela transformação das sociedades. É a posição de teólogos como Jonathan Edwards, B.B. Warfield e, mais recentemente, R.J. Rushdoony e os teonomistas.</p>
   <h3>O Reino que Avança</h3>
   <p>Para o pós-milenismo, a Grande Comissão (Mt 28:18-20) e o crescimento da mostarda (Mt 13:31-32) indicam que o evangelho transformará progressivamente as culturas e nações antes do retorno de Cristo. O mundo não terminará em catástrofe, mas em glória — a Igreja triunfante entregando o reino ao Pai (1 Co 15:24-28). Essa visão gera otimismo missionário e engajamento cultural intensos.</p>
+
+  <div class="bloco-aluno">
+    <div class="ba-titulo">Sabia Que? — "Primeira Ressurreição" Não É Consenso</div>
+    <div class="ba-txt">Apocalipse 20:5-6 menciona a "primeira ressurreição" — e esse é um dos versículos mais disputados da escatologia. Para o premilenismo, é uma ressurreição corporal literal dos santos antes do milênio. Para o amilenismo, é a regeneração espiritual ou a entrada do crente na glória após a morte. Para o pós-milenismo, aponta para a vitalidade espiritual da Igreja missionária. Três posições sérias, três leituras distintas do mesmo texto. O versículo exige estudo — não apenas memória de catecismo.</div>
+    <div class="ba-nota">✦ Bloco para o aluno · Pg. 4 — Amilenismo e Pós-Milenismo</div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -390,7 +484,7 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
 <div class="pag int">
   <div class="wm">5</div>
   <div class="ph"><span class="phl">Lição 07</span><span class="pht">O Milênio</span></div>
-  <h2>III — Visões em Diálogo</h2>
+  <h2>III-Visões em Diálogo</h2>
   <p>Nesta lição, as três posições merecem representação equânime — pois todas são defendidas por teólogos conservadores e comprometidos com a autoridade das Escrituras.</p>
   <div class="bvp">
     <div class="vl">✦ Perspectiva Pentecostal — Premilenismo Dispensacionalista</div>
@@ -408,6 +502,12 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>O consenso inegociável das três posições: Cristo reina, seu reino é real e consumará a história, e sua vitória sobre o mal é absoluta e eterna. Isso é suficiente para a adoração e a missão — independentemente da posição milenista adotada.</p>
   <p>Esse ponto de convergência precisa ser valorizado em sala de aula e na vida da Igreja. Quando o debate sobre o milênio se torna motivo de divisão carnal, perde-se justamente aquilo que o texto de Apocalipse deseja fortalecer: a esperança perseverante no triunfo final do Cordeiro.</p>
   <p>Por isso, o estudo comparado das posições não deve produzir arrogância doutrinária, mas humildade. O cristão fiel pode sustentar convicções firmes e, ao mesmo tempo, reconhecer que irmãos igualmente piedosos chegaram a conclusões diferentes ao lidar com um texto reconhecidamente difícil.</p>
+
+  <div class="bloco-aluno">
+    <div class="ba-titulo">Pense Nisso — Sua Escatologia Molda Sua Missão</div>
+    <div class="ba-txt">A posição milenista que você adota não é neutra. O premilenista que crê no colapso iminente do mundo pode investir pouco em transformação cultural — "para que reformar o que vai queimar?" O pós-milenista, confiante no avanço do reino, pode subestimar o sofrimento real da Igreja. O amilenista corre o risco do quietismo passivo. Nenhuma posição é isenta de riscos práticos. A pergunta não é só "qual é a certa?" — é também: "qual fidelidade esta posição está produzindo em mim?"</div>
+    <div class="ba-nota">✦ Bloco para o aluno · Pg. 5 — Visões em Diálogo</div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -429,6 +529,12 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Em conclusão, o estudo do milênio deve conduzir menos à ansiedade cronológica e mais à confiança no governo soberano de Cristo. Ainda que haja divergência quanto à ordem dos eventos finais, a Igreja permanece unida na convicção de que Jesus vencerá definitivamente, julgará com justiça e consumará seu Reino.</p>
   <p>Assim, a resposta mais madura da fé não é a especulação vazia, mas a vigilância, a santidade e a perseverança. Qualquer posição milenista que não produza reverência, esperança e compromisso com a missão precisa ser reavaliada à luz do próprio Senhor da história.</p>
   <p>Na próxima lição, contemplaremos o evento central de toda a escatologia: <strong>A Segunda Vinda de Cristo</strong> — a Parusia gloriosa que encerrará a história e inaugurará a eternidade.</p>
+
+  <div class="bloco-aluno">
+    <div class="ba-titulo">Leve Para a Vida — Reine Agora Onde Você Está</div>
+    <div class="ba-txt">Em 1 Coríntios 15:25, Paulo escreve: <em>"É necessário que ele reine, até que haja posto todos os inimigos debaixo dos seus pés."</em> Cristo já reina — e você reina com ele (Ap 20:6; Ef 2:6). Independente da sua posição sobre o milênio, isso não é futuro incerto: é realidade presente. A melhor resposta ao estudo de hoje não é resolver o debate, mas viver como súdito fiel do rei que já governa. Onde você pode exercer esse reinado — em sua família, trabalho, comunidade — ainda esta semana?</div>
+    <div class="ba-nota">✦ Bloco para o aluno · Pg. 6 — Conclusão e Aplicação</div>
+  </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -510,6 +616,37 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">Atenção — Não Transforme a Aula em Defesa de uma Posição</div>
     <p>Se sua convicção pessoal for claramente premilenista (como é a de muitos pastores e professores brasileiros), resista à tentação de tratar o amilenismo e o pós-milenismo como posições menores. Agostinho, Calvino, Lutero, Berkhof e Hoekema eram amilenistas. Jonathan Edwards e B.B. Warfield eram pós-milenistas. Apresente as posições pelo que elas são: tradições exegéticas respeitáveis, sustentadas por mentes brilhantes e corações devotos.</p>
   </div>
+
+  <div class="bloco-competencias">
+    <div class="bc-titulo">Mapa de Competências — O que o Aluno Deve Sair Sabendo</div>
+    <div class="bc-grid">
+      <div class="bc-cel">
+        <div class="bc-cel-label">Conhecimento</div>
+        <div class="bc-cel-txt">As três posições milenistas, seus principais representantes históricos e os textos bíblicos centrais de cada uma</div>
+      </div>
+      <div class="bc-cel">
+        <div class="bc-cel-label">Habilidade</div>
+        <div class="bc-cel-txt">Identificar a decisão hermenêutica prévia que condiciona cada posição (literal vs. simbólico em Apocalipse)</div>
+      </div>
+      <div class="bc-cel">
+        <div class="bc-cel-label">Atitude</div>
+        <div class="bc-cel-txt">Sustentar sua posição com humildade, reconhecendo que irmãos comprometidos com as Escrituras chegaram a conclusões distintas</div>
+      </div>
+      <div class="bc-cel">
+        <div class="bc-cel-label">Avaliação</div>
+        <div class="bc-cel-txt">Conectar sua escatologia a uma postura prática diante da missão e do engajamento com o mundo — sem escapismo nem arrogância</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco-fio">
+    <div class="bf-titulo">Fio Condutor da Série — Onde Esta Lição Se Encaixa</div>
+    <div class="bf-linha"><span class="bf-licao">Lição 05</span><span class="bf-seta">→</span><span class="bf-desc">A Grande Tribulação — sofrimento, fidelidade e discernimento dos sinais</span></div>
+    <div class="bf-linha"><span class="bf-licao">Lição 06</span><span class="bf-seta">→</span><span class="bf-desc">Israel e a Profecia — papel do povo judeu no plano escatológico</span></div>
+    <div class="bf-linha"><span class="bf-licao">Lição 07</span><span class="bf-seta">→</span><span class="bf-desc"><strong>O Milênio</strong> — como Cristo reina e como o cristão vive essa realidade agora</span></div>
+    <div class="bf-linha"><span class="bf-licao">Lição 08</span><span class="bf-seta">→</span><span class="bf-desc">A Segunda Vinda — a Parusia que encerrará a história e inaugurará a eternidade</span></div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P1</span></div>
 </div>
 
@@ -577,6 +714,26 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     "O milênio de Apocalipse 20 não é a resposta à pergunta 'quando Cristo voltará', mas à pergunta 'o que acontece com os mártires?' — e a resposta é: eles reinam com Cristo."
     <cite>— Anthony Hoekema, <em>A Bíblia e o Futuro</em></cite>
   </div>
+
+  <div class="bloco-socratico">
+    <div class="bs-titulo">Escada de Perguntas Socráticas — Três Níveis para a Aula</div>
+    <div class="bs-nivel">
+      <div class="bs-nivel-topo"><span class="bs-tag n1">Nível 1 · Diagnóstico</span></div>
+      <div class="bs-pergunta">"Antes de explicar qualquer coisa: o que você entende quando ouve 'o milênio'? Já tem uma posição? Como ela foi formada?"</div>
+      <div class="bs-resposta">Respostas variadas — registre no quadro. Objetivo: mapear o ponto de partida da turma e mostrar que a maioria carrega convicções não examinadas.</div>
+    </div>
+    <div class="bs-nivel">
+      <div class="bs-nivel-topo"><span class="bs-tag n2">Nível 2 · Conceitual</span></div>
+      <div class="bs-pergunta">"Apocalipse usa claramente linguagem simbólica em outros capítulos — dragão, mulher, cordeiro. Por que o capítulo 20 seria diferente? Qual critério você usa para decidir?"</div>
+      <div class="bs-resposta">O aluno deve identificar que não há um critério automático: é uma decisão hermenêutica sobre o gênero do livro inteiro. Isso é o coração do debate.</div>
+    </div>
+    <div class="bs-nivel">
+      <div class="bs-nivel-topo"><span class="bs-tag n3">Nível 3 · Aplicação</span></div>
+      <div class="bs-pergunta">"Se Cristo já reina agora — como o amilenismo afirma — o que muda concretamente em como você enfrenta a injustiça, o sofrimento e o trabalho cotidiano?"</div>
+      <div class="bs-resposta">Resposta ideal: a escatologia não é só futura — ela transforma a ética presente. O reino já inaugurado exige fidelidade ativa, não passividade aguardando o arrebatamento.</div>
+    </div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P2</span></div>
 </div>
 
@@ -628,6 +785,38 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">Situação Comum — "Mas Apocalipse 20 é claro: mil anos literais!"</div>
     <p>Resposta sugerida: <em>"Apocalipse também fala de uma mulher grávida perseguida por um dragão vermelho com sete cabeças (Ap 12), de um cordeiro com sete chifres e sete olhos (Ap 5:6), e de uma cidade que é 'Babilônia' mas claramente representa Roma. Como você decide o que é literal e o que é simbólico nesses casos? Esse é o critério hermenêutico que precisa ser definido antes de ler o capítulo 20 — e é exatamente isso que as três posições fazem de forma diferente."</em></p>
   </div>
+
+  <div class="bloco-perfil">
+    <div class="bp-titulo">Diferenciação por Perfil de Turma</div>
+    <div class="bp-grid">
+      <div class="bp-cel">
+        <div class="bp-cel-tipo">Turma Pentecostal Convicta</div>
+        <div class="bp-cel-acao">Não questione a posição; mostre que o amilenismo tem defensores como Calvino e Agostinho. Pergunte: "Você saberia defender sua posição sem citar Hal Lindsey?"</div>
+      </div>
+      <div class="bp-cel">
+        <div class="bp-cel-tipo">Turma com Formação Reformada</div>
+        <div class="bp-cel-acao">Apresente o premilenismo histórico (Ladd) em seu melhor nível — evite que o amilenismo seja tratado como a posição "óbvia dos letrados". Promova humildade bilateral.</div>
+      </div>
+      <div class="bp-cel">
+        <div class="bp-cel-tipo">Turma com Interesse Intelectual</div>
+        <div class="bp-cel-acao">Aprofunde a questão do gênero apocalíptico. Distribua a tabela da Pg. P2. Proponha a leitura de um capítulo de Hoekema e de um de Ladd como tarefa comparativa.</div>
+      </div>
+      <div class="bp-cel">
+        <div class="bp-cel-tipo">Turma Ansiosa / Sensível</div>
+        <div class="bp-cel-acao">Comece com o ponto de convergência: "Cristo vence — isso não está em debate." Evite narrativas que gerem medo apocalíptico. Encerre com adoração, não com cronologia.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco-avaliacao">
+    <div class="bav-titulo">Avaliação Formativa Rápida — Checklist de Objetivos</div>
+    <div class="bav-item"><div class="bav-check"></div><div class="bav-txt">O aluno consegue nomear as três posições milenistas e citar ao menos um teólogo de cada tradição?</div></div>
+    <div class="bav-item"><div class="bav-check"></div><div class="bav-txt">O aluno identificou a decisão hermenêutica prévia (literal vs. simbólico) que condiciona toda posição milenista?</div></div>
+    <div class="bav-item"><div class="bav-check"></div><div class="bav-txt">O aluno distingue premilenismo histórico de dispensacionalista — mesmo que não concorde com nenhum dos dois?</div></div>
+    <div class="bav-item"><div class="bav-check"></div><div class="bav-txt">O aluno conectou sua posição escatológica a uma postura prática (engajamento, escapismo, otimismo missionário)?</div></div>
+    <div class="bav-item"><div class="bav-check"></div><div class="bav-txt">O aluno demonstrou capacidade de discordar de outras posições sem caricaturá-las ou descartá-las como "heresia"?</div></div>
+  </div>
+
   <div class="bloco-guia">
     <div class="bk">Encerramento Ideal da Aula</div>
     <ul>
@@ -668,6 +857,12 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="sep"><span>✦</span></div>
   <h2 class="prof">Materiais Complementares</h2>
   <p>Ao sugerir recursos, oriente a classe a buscar obras que apresentem as posições em seu melhor nível — há muita literatura popular que caricaturiza o amilenismo e o pós-milenismo sem compreendê-los. O critério é sempre: o autor lida honestamente com as objeções à sua posição?</p>
+
+  <div class="bloco-uso-gabarito">
+    <div class="bug-titulo">Como Usar Este Gabarito em Sala</div>
+    <p>As respostas acima são orientativas, não definitivas. As questões 01, 03 e 04 desta lição não têm resposta certa única — são questões de raciocínio exegético e aplicação pessoal. Valorize respostas que mostrem <strong>consciência do critério hermenêutico usado</strong>, não apenas a posição adotada. Um aluno premilenista que sabe <em>por que</em> lê Apocalipse 20 literalmente merece mais elogio do que um amilenista que repete a posição sem fundamento. Evite corriger posições; corrija raciocínios incompletos ou caricaturas das outras tradições.</p>
+  </div>
+
   <div class="bloco-mat">
     <div class="bk">Recursos Recomendados ao Professor</div>
     <div class="mat-item"><span class="mat-tipo livro">Livro</span><span class="mat-info">Anthony Hoekema — <em>A Bíblia e o Futuro</em>. Cultura Cristã. O tratamento mais completo e rigoroso do amilenismo em português — essencial para o professor desta lição, independentemente de sua posição.</span></div>
@@ -677,6 +872,15 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="mat-item"><span class="mat-tipo audio">Podcast</span><span class="mat-info">Ligonier Ministries — série <em>Revelation</em> com R.C. Sproul. Spotify / ligonier.org. Perspectiva amilenista reformada clara e acessível — útil para o professor preparar a exegese antes de ensinar.</span></div>
     <div class="mat-item"><span class="mat-tipo site">Digital</span><span class="mat-info">thegospelcoalition.org — artigo "Amillennialism 101" (em inglês). Apresentação concisa e respeitosa do amilenismo — útil para professores que desejam entender a posição antes de apresentá-la à turma.</span></div>
   </div>
+
+  <div class="bloco-seguimento">
+    <div class="bseg-titulo">Seguimento Pós-Lição — Ações para a Semana Seguinte</div>
+    <div class="bseg-item"><span class="bseg-semana">Antes da aula</span><span class="bseg-acao">Envie ao grupo da turma o link do vídeo BibleProject sobre Apocalipse 17-22 como aquecimento visual para a discussão hermenêutica</span></div>
+    <div class="bseg-item"><span class="bseg-semana">Durante a semana</span><span class="bseg-acao">Desafie os alunos a anotarem situações do cotidiano em que percebem "Cristo reinando" — e situações em que parece que o mal prevalece; traga para a abertura da Lição 08</span></div>
+    <div class="bseg-item"><span class="bseg-semana">Conexão L08</span><span class="bseg-acao">A Lição 08 (Segunda Vinda) depende diretamente desta: a posição milenista do aluno determina como ele espera a Parusia — retome o debate brevemente ao abrir a próxima lição</span></div>
+    <div class="bseg-item"><span class="bseg-semana">Para alunos avançados</span><span class="bseg-acao">Sugira a leitura do cap. 1 de <em>Three Views on the Millennium</em> (Bock, org.) para comparação direta das posições em diálogo; discuta na semana seguinte se houver abertura</span></div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P4</span></div>
 </div>
 
