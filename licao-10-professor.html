@@ -271,7 +271,76 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     h2{font-size:10pt;letter-spacing:1px;}
     p{font-size:9pt;}
     .btn{padding:5px 8px;font-size:7pt;}
-}  
+}
+
+/* ===== BLOCOS PEDAGÓGICOS ADICIONADOS ===== */
+
+/* Mapa de Competências — P1 */
+.mapa-comp{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.comp-celula{border:1px solid rgba(122,32,16,0.25);border-radius:3px;padding:8px 10px;background:#fff9f8;}
+.comp-celula .comp-titulo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:#7a2010;margin-bottom:4px;font-weight:600;}
+.comp-celula .comp-desc{font-family:'EB Garamond',serif;font-size:9.5pt;color:#2a0800;line-height:1.45;}
+.comp-celula.conhecimento{border-left:3px solid #7a2010;}
+.comp-celula.habilidade{border-left:3px solid #c9a84c;}
+.comp-celula.atitude{border-left:3px solid #2e6b4f;}
+.comp-celula.avaliacao{border-left:3px solid #3b5e8a;}
+
+/* Fio Condutor — P1 */
+.bloco-fio{background:linear-gradient(135deg,rgba(122,32,16,0.05),rgba(201,168,76,0.05));border:1px solid rgba(122,32,16,0.3);border-top:3px solid var(--ouro);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-fio .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-fio .bk::before{content:"⟿";font-size:10pt;color:var(--ouro);}
+.bloco-fio p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:#2a0800;}
+
+/* Escada Socrática — P2 */
+.escada-socratica{margin:10px 0;}
+.degrau{display:flex;gap:10px;margin-bottom:6px;padding:8px 10px;border-radius:3px;border:1px solid transparent;}
+.degrau.diagnostico{background:rgba(59,94,138,0.06);border-color:rgba(59,94,138,0.25);border-left:3px solid #3b5e8a;}
+.degrau.conceitual{background:rgba(122,32,16,0.06);border-color:rgba(122,32,16,0.25);border-left:3px solid #7a2010;}
+.degrau.aplicacao-d{background:rgba(46,107,79,0.06);border-color:rgba(46,107,79,0.25);border-left:3px solid #2e6b4f;}
+.degrau-num{font-family:'Cinzel',serif;font-size:14pt;font-weight:900;line-height:1;margin-top:2px;flex-shrink:0;width:18px;}
+.degrau.diagnostico .degrau-num{color:#3b5e8a;}
+.degrau.conceitual .degrau-num{color:#7a2010;}
+.degrau.aplicacao-d .degrau-num{color:#2e6b4f;}
+.degrau-corpo{}
+.degrau-nivel{font-family:'Oswald',sans-serif;font-size:6.5pt;letter-spacing:2px;text-transform:uppercase;margin-bottom:2px;}
+.degrau.diagnostico .degrau-nivel{color:#3b5e8a;}
+.degrau.conceitual .degrau-nivel{color:#7a2010;}
+.degrau.aplicacao-d .degrau-nivel{color:#2e6b4f;}
+.degrau-pergunta{font-family:'EB Garamond',serif;font-size:10pt;font-style:italic;color:#1a0800;line-height:1.45;margin-bottom:3px;}
+.degrau-resposta{font-family:'EB Garamond',serif;font-size:9pt;color:#555;line-height:1.4;}
+.degrau-resposta strong{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1px;text-transform:uppercase;}
+
+/* Diferenciação por Perfil — P3 */
+.grid-perfil{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.perfil-card{border:1px solid rgba(0,0,0,0.1);border-radius:3px;padding:8px 10px;background:#fafafa;}
+.perfil-tipo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:#7a2010;margin-bottom:3px;font-weight:600;}
+.perfil-acao{font-family:'EB Garamond',serif;font-size:9.5pt;color:#2a2a2a;line-height:1.4;}
+.perfil-card.ansioso{border-left:3px solid #c9a84c;background:#fffcf0;}
+.perfil-card.intelectual{border-left:3px solid #7a2010;background:#fff9f8;}
+.perfil-card.pratico{border-left:3px solid #2e6b4f;background:#f0f8f4;}
+.perfil-card.resistente{border-left:3px solid #3b5e8a;background:#f0f4f8;}
+
+/* Avaliação Formativa — P3 */
+.bloco-aval{background:#f8f5ff;border:1px solid rgba(59,94,138,0.25);border-left:4px solid #3b5e8a;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-aval .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#3b5e8a;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-aval .bk::before{content:"☑" !important;font-size:9pt;}
+.checklist{list-style:none;padding:0;margin:0;}
+.checklist li{font-family:'EB Garamond',serif;font-size:10pt;color:#1a1a3a;padding:3px 0 3px 20px;position:relative;line-height:1.4;}
+.checklist li::before{content:"□" !important;position:absolute;left:0;color:#3b5e8a;font-size:10pt;}
+
+/* Uso do gabarito e Seguimento — P4 */
+.bloco-gabarito{background:#fffef0;border:1px solid rgba(201,168,76,0.35);border-left:4px solid #c9a84c;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-gabarito .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-gabarito .bk::before{content:"📋" !important;font-size:8pt;}
+.bloco-gabarito p{font-family:'EB Garamond',serif;font-size:10pt;color:#3a2a00;line-height:1.6;}
+
+.bloco-seguimento{background:#f0f8f4;border:1px solid rgba(46,107,79,0.3);border-left:4px solid #2e6b4f;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-seguimento .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#2e6b4f;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-seguimento .bk::before{content:"↗" !important;font-size:10pt;}
+.seguimento-item{display:flex;gap:8px;padding:4px 0;border-bottom:1px solid rgba(46,107,79,0.1);}
+.seguimento-item:last-child{border-bottom:none;}
+.seg-dia{font-family:'Oswald',sans-serif;font-size:8pt;color:#2e6b4f;font-weight:600;min-width:50px;flex-shrink:0;}
+.seg-acao{font-family:'EB Garamond',serif;font-size:9.5pt;color:#1e3a2a;line-height:1.4;}
 </style>
 </head>
 <body>
@@ -482,6 +551,36 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">Sensibilidade Pastoral</div>
     <p>Alguns alunos podem carregar ansiedade espiritual sobre sua própria salvação. A doutrina do juízo, mal trabalhada, pode intensificar esse peso desnecessariamente. Comece e termine afirmando: para quem está em Cristo, o julgamento é revelação de graça, não ameaça de condenação. A liberdade do crente diante do trono é fundada na obra perfeita de Cristo — não no desempenho pessoal.</p>
   </div>
+
+  <!-- BLOCO ADICIONADO: Mapa de Competências -->
+  <div class="bloco-guia">
+    <div class="bk">Mapa de Competências da Lição</div>
+  </div>
+  <div class="mapa-comp">
+    <div class="comp-celula conhecimento">
+      <div class="comp-titulo">Conhecimento</div>
+      <div class="comp-desc">O aluno será capaz de identificar os textos-chave do Juízo Final (Ap 20:11-15; Jo 5:22,27; 2 Co 5:10; Rm 8:1) e enunciar os dois aspectos do julgamento (crentes e incrédulos).</div>
+    </div>
+    <div class="comp-celula habilidade">
+      <div class="comp-titulo">Habilidade</div>
+      <div class="comp-desc">O aluno será capaz de articular a distinção entre salvação pela graça e avaliação das obras, e de comparar as posições dispensacionalista e amilenista com argumentos bíblicos.</div>
+    </div>
+    <div class="comp-celula atitude">
+      <div class="comp-titulo">Atitude</div>
+      <div class="comp-desc">O aluno demonstrará disposição para entregar ressentimentos e desejos de vingança ao Juiz divino (Rm 12:19) e para viver com sobriedade ética diante do julgamento futuro.</div>
+    </div>
+    <div class="comp-celula avaliacao">
+      <div class="comp-titulo">Avaliação</div>
+      <div class="comp-desc">Observar participação na dinâmica de abertura, qualidade das respostas escritas e abertura pessoal nas questões 01 e 04 da Pg 7. Ver checklist na Pg P3.</div>
+    </div>
+  </div>
+
+  <!-- BLOCO ADICIONADO: Fio Condutor -->
+  <div class="bloco-fio">
+    <div class="bk">Fio Condutor — Conexão com a Série</div>
+    <p>Esta lição é o eixo moral da série Eschaton: conecta a Ressurreição (L9) à destinação eterna (L11 — O Inferno; L12 — O Céu). Se a ressurreição responde "o quê acontece com o corpo", o Juízo Final responde "para quê ressuscitamos". A lição seguinte (O Inferno) pressupõe que o aluno compreendeu que a condenação é proporcional, justa e definitiva — não arbitrária. Reforce essa conexão ao encerrar.</p>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor · Lição 10</span><span class="rn">P1</span></div>
 </div>
 
@@ -511,6 +610,38 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">Como Conduzir o Debate</div>
     <p>Quando a turma debater a questão acima, oriente para a distinção paulina clássica: a justificação é pela fé, pelo mérito de Cristo, sem obras; a glorificação e as recompensas eternas são distintas da salvação, mas respondem à fidelidade e às obras do crente na vida cristã. Não são duas formas de salvação — são duas dimensões da vida coram Deo.</p>
   </div>
+
+  <!-- BLOCO ADICIONADO: Escada de Perguntas Socráticas -->
+  <div class="bloco-guia">
+    <div class="bk">Escada de Perguntas Socráticas</div>
+  </div>
+  <div class="escada-socratica">
+    <div class="degrau diagnostico">
+      <div class="degrau-num">1</div>
+      <div class="degrau-corpo">
+        <div class="degrau-nivel">Nível 1 — Diagnóstico</div>
+        <div class="degrau-pergunta">"Quando você pensa na palavra 'julgamento', qual é o primeiro sentimento que surge — medo, alívio, raiva, indiferença? Por quê?"</div>
+        <div class="degrau-resposta"><strong>Resposta esperada:</strong> Respostas variadas e pessoais. O objetivo é revelar a bagagem emocional de cada aluno com o tema e criar abertura para a abordagem bíblica.</div>
+      </div>
+    </div>
+    <div class="degrau conceitual">
+      <div class="degrau-num">2</div>
+      <div class="degrau-corpo">
+        <div class="degrau-nivel">Nível 2 — Conceitual</div>
+        <div class="degrau-pergunta">"Se Deus é onisciente e já sabe o resultado de cada vida, por que as Escrituras descrevem um julgamento público com livros abertos e testemunhos — e não simplesmente uma sentença privada?"</div>
+        <div class="degrau-resposta"><strong>Resposta esperada:</strong> O julgamento público vincula a justiça de Deus diante de toda a criação; não é para informar Deus, mas para declarar publicamente que cada sentença é perfeita e incontestável — vindicação da santidade divina.</div>
+      </div>
+    </div>
+    <div class="degrau aplicacao-d">
+      <div class="degrau-num">3</div>
+      <div class="degrau-corpo">
+        <div class="degrau-nivel">Nível 3 — Aplicação</div>
+        <div class="degrau-pergunta">"Romanos 12:19 diz que a vingança pertence a Deus. Há alguma situação concreta — um relacionamento rompido, uma injustiça sofrida — onde acreditar no Juízo Final muda sua forma de agir esta semana?"</div>
+        <div class="degrau-resposta"><strong>Resposta esperada:</strong> Respostas pessoais. O professor não deve forçar confissão pública, mas pode abrir espaço para quem quiser compartilhar. A resposta adequada é qualquer reconhecimento de que o Juiz eterno libera da necessidade de ser executor da própria justiça.</div>
+      </div>
+    </div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor · Lição 10</span><span class="rn">P2</span></div>
 </div>
 
@@ -560,6 +691,42 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">⚠ Atenção ao Ensinar</div>
     <p>A diferença mais sensível é a leitura de Mateus 25:31-46. O dispensacionalismo interpreta "estes meus irmãos" como judeus da Tribulação; a leitura reformada vê o povo de Deus em geral. Apresente ambas as leituras com respeito, mostrando os argumentos exegéticos de cada lado, sem desqualificar nenhuma tradição.</p>
   </div>
+
+  <!-- BLOCO ADICIONADO: Diferenciação por Perfil -->
+  <div class="bloco-guia">
+    <div class="bk">Diferenciação por Perfil de Turma</div>
+  </div>
+  <div class="grid-perfil">
+    <div class="perfil-card ansioso">
+      <div class="perfil-tipo">Turma Ansiosa</div>
+      <div class="perfil-acao">Inicie e encerre com Rm 8:1. Reduza o tempo nas imagens de condenação e amplie a segurança do crente. Evite linguagem sensacionalista. Cheque individualmente após a aula quem parece perturbado.</div>
+    </div>
+    <div class="perfil-card intelectual">
+      <div class="perfil-tipo">Perfil Intelectual</div>
+      <div class="perfil-acao">Aprofunde a tabela comparativa. Indique Bavinck e Carson para leitura independente. Proponha a pergunta de debate da Pg P2 como exercício escrito para casa.</div>
+    </div>
+    <div class="perfil-card pratico">
+      <div class="perfil-tipo">Perfil Prático</div>
+      <div class="perfil-acao">Foque na dinâmica de abertura e na aplicação de Rm 12:19. Convide relatos concretos de situações onde a crença no julgamento de Deus libertou alguém da vingança pessoal.</div>
+    </div>
+    <div class="perfil-card resistente">
+      <div class="perfil-tipo">Perfil Resistente / Cético</div>
+      <div class="perfil-acao">Aborde o argumento moral: sem julgamento final, a história é absurda (Dostoiévski). Use a cenário da dinâmica (ditador impune) como ponto de entrada — a resistência ao juízo muitas vezes coexiste com desejo profundo de justiça.</div>
+    </div>
+  </div>
+
+  <!-- BLOCO ADICIONADO: Avaliação Formativa Rápida -->
+  <div class="bloco-aval">
+    <div class="bk">Avaliação Formativa Rápida — Checklist de Objetivos</div>
+    <ul class="checklist">
+      <li>O aluno distinguiu o Tribunal de Cristo (recompensa) do Grande Trono Branco (condenação)?</li>
+      <li>O aluno compreendeu que Rm 8:1 e 2 Co 5:10 não se contradizem?</li>
+      <li>O aluno identificou pelo menos um texto de suporte de cada tradição (dispensacionalismo e amilenismo)?</li>
+      <li>O aluno conectou a doutrina à libertação da vingança pessoal (Rm 12:19)?</li>
+      <li>O aluno demonstrou abertura para avaliar sua própria vida à luz de 1 Co 3:12-15?</li>
+    </ul>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor · Lição 10</span><span class="rn">P3</span></div>
 </div>
 
@@ -593,6 +760,34 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="tempo-linha"><span class="tempo-min">7 min</span><span class="tempo-desc">Tópico III — Visões em Diálogo (Pg 5)</span></div>
     <div class="tempo-linha"><span class="tempo-min">5 min</span><span class="tempo-desc">Conclusão e aplicação (Pg 6)</span></div>
   </div>
+
+  <!-- BLOCO ADICIONADO: Uso do Gabarito -->
+  <div class="bloco-gabarito">
+    <div class="bk">Orientação para o Uso do Gabarito (Pg P6)</div>
+    <p>As respostas sugeridas na Pg P6 são orientadoras, não prescritivas. O objetivo do professor não é conduzir a turma a reproduzir a "resposta certa", mas a aprofundar o raciocínio próprio. Respostas pessoais e honestas — mesmo que incompletas ou tentativas — têm valor pedagógico superior a respostas tecnicamente corretas mas impessoais. Ao valorizar uma resposta pessoal, o professor fortalece a internalização da doutrina. Corrija apenas erros factuais (ex.: confundir o Tribunal de Cristo com condenação); o restante, acolha e aprofunde com perguntas de seguimento da Escada Socrática (Pg P2).</p>
+  </div>
+
+  <!-- BLOCO ADICIONADO: Seguimento Pós-Lição -->
+  <div class="bloco-seguimento">
+    <div class="bk">Seguimento Pós-Lição — Ações para a Semana</div>
+    <div class="seguimento-item">
+      <span class="seg-dia">Dia 1–2</span>
+      <span class="seg-acao">Envie uma mensagem ao grupo lembrando Romanos 12:19 e convidando a uma reflexão silenciosa sobre alguém a quem precisam "entregar ao Juiz".</span>
+    </div>
+    <div class="seguimento-item">
+      <span class="seg-dia">Dia 3–4</span>
+      <span class="seg-acao">Compartilhe uma frase curta de Bavinck ou Carson (use a Pg P7) com o grupo como leitura devocional rápida.</span>
+    </div>
+    <div class="seguimento-item">
+      <span class="seg-dia">Dia 5</span>
+      <span class="seg-acao">Leia pessoalmente Apocalipse 20:11-15 em voz alta, devagar, como oração de preparação para a Lição 11 (O Inferno).</span>
+    </div>
+    <div class="seguimento-item">
+      <span class="seg-dia">Pré-L11</span>
+      <span class="seg-acao">Avise a turma que a próxima lição abordará o Inferno — tema difícil que exige maturidade. Sugira que leiam 2 Ts 1:6-10 e Lc 16:19-31 antes da aula.</span>
+    </div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor · Lição 10</span><span class="rn">P4</span></div>
 </div>
 
