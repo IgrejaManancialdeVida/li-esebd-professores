@@ -225,6 +225,124 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
 .tabela-comp td{font-family:'EB Garamond',serif;font-size:9.5pt;color:#2a2a2a;padding:5px 8px;border-bottom:1px solid rgba(0,0,0,0.06);vertical-align:top;line-height:1.4;}
 .tabela-comp tr:nth-child(even) td{background:rgba(64,160,64,0.04);}
 .tabela-comp td:first-child{font-family:'Oswald',sans-serif;font-size:8pt;color:#2e6b30;font-weight:600;letter-spacing:1px;white-space:nowrap;}
+/* tabela responsiva — cards empilhados no mobile */
+@media screen and (max-width:768px){
+  .tabela-comp thead{display:none;}
+  .tabela-comp,.tabela-comp tbody,.tabela-comp tr,.tabela-comp td{display:block;width:100%;box-sizing:border-box;}
+  .tabela-comp tr{margin-bottom:12px;border:1px solid rgba(46,107,48,0.25);border-radius:4px;overflow:hidden;}
+  .tabela-comp td{padding:8px 10px;border-bottom:1px solid rgba(0,0,0,0.07);white-space:normal!important;font-size:9pt;line-height:1.45;}
+  .tabela-comp td:first-child{background:#2e6b30!important;color:#fff!important;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;text-transform:uppercase;white-space:normal!important;}
+  .tabela-comp td:nth-child(2)::before{content:"Infernalismo Eterno";display:block;font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#2e6b30;margin-bottom:3px;}
+  .tabela-comp td:nth-child(3)::before{content:"Aniquilacionismo";display:block;font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#8a6a20;margin-bottom:3px;}
+  .tabela-comp td:nth-child(4)::before{content:"Universalismo";display:block;font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#3b5e8a;margin-bottom:3px;}
+  .tabela-comp td[colspan]{font-style:italic;text-align:center;background:rgba(46,107,48,0.04)!important;color:#2e6b30!important;}
+  .tabela-comp td[colspan]::before{display:none!important;}
+  .tabela-comp tr:nth-child(even) td{background:rgba(64,160,64,0.04);}
+  .tabela-comp tr:nth-child(even) td:first-child{background:#2e6b30!important;}
+}
+/* ── BLOCOS DO ALUNO (espelhados na edição do professor) ── */
+.baluno{border-radius:3px;padding:9px 12px;margin-top:12px;margin-bottom:2px;position:relative;}
+.baluno-ico{font-size:10pt;margin-right:6px;vertical-align:middle;}
+.baluno-tag{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:4px;}
+.baluno-corpo{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:var(--ct);}
+.baluno-linha{border-bottom:1px solid rgba(0,0,0,0.12);height:22px;margin-top:6px;}
+/* Paleta verde/ouro da lição 11 */
+.ba-refletir{background:rgba(64,160,64,0.06);border-left:3px solid var(--cor);}
+.ba-refletir .baluno-tag{color:var(--cor);}
+.ba-biblica{background:rgba(201,168,76,0.07);border-left:3px solid var(--ouro);}
+.ba-biblica .baluno-tag{color:#8a6a20;}
+.ba-sabia{background:rgba(30,60,30,0.06);border-left:3px solid #2e5e2e;}
+.ba-sabia .baluno-tag{color:#2e5e2e;}
+.ba-pense{background:rgba(64,160,64,0.04);border:1px dashed rgba(64,160,64,0.32);border-left:3px solid var(--cor);}
+.ba-pense .baluno-tag{color:var(--cor);}
+.ba-vida{background:linear-gradient(135deg,rgba(64,160,64,0.05),rgba(201,168,76,0.06));border:1px solid rgba(201,168,76,0.30);border-left:3px solid var(--ouro);}
+.ba-vida .baluno-tag{color:#8a6a20;}
+/* Nota do professor para cada bloco do aluno */
+.nota-prof-bloco{background:rgba(46,107,48,0.05);border:1px dashed rgba(46,107,48,0.35);border-radius:3px;padding:6px 10px;margin-top:4px;margin-bottom:10px;}
+.nota-prof-bloco .np-label{font-family:'Oswald',sans-serif;font-size:6.5pt;letter-spacing:2px;text-transform:uppercase;color:#2e6b30;margin-bottom:3px;display:flex;align-items:center;gap:5px;}
+.nota-prof-bloco .np-label::before{content:"📝";font-size:8pt;}
+.nota-prof-bloco p{font-family:'EB Garamond',serif;font-size:9.5pt;color:#0a2008;line-height:1.5;margin-bottom:0;}
+
+/* ── MELHORIAS PEDAGÓGICAS ── */
+
+/* Mapa de Competências — P1 */
+.mapa-comp{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.comp-celula{border:1px solid rgba(46,107,48,0.25);border-radius:3px;padding:8px 10px;background:#f5fff5;}
+.comp-celula .comp-titulo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:#2e6b30;margin-bottom:4px;font-weight:600;}
+.comp-celula .comp-desc{font-family:'EB Garamond',serif;font-size:9.5pt;color:#0a2008;line-height:1.45;}
+.comp-celula.conhecimento{border-left:3px solid #2e6b30;}
+.comp-celula.habilidade{border-left:3px solid #c9a84c;}
+.comp-celula.atitude{border-left:3px solid #40a040;}
+.comp-celula.avaliacao{border-left:3px solid #3b5e8a;}
+
+/* Fio Condutor — P1 */
+.bloco-fio{background:linear-gradient(135deg,rgba(46,107,48,0.05),rgba(201,168,76,0.05));border:1px solid rgba(46,107,48,0.3);border-top:3px solid var(--ouro);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-fio .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-fio .bk::before{content:"⟿";font-size:10pt;color:var(--ouro);}
+.bloco-fio p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:#0a2008;}
+
+/* Escada Socrática — P2 */
+.escada-socratica{margin:10px 0;}
+.degrau{display:flex;gap:10px;margin-bottom:6px;padding:8px 10px;border-radius:3px;border:1px solid transparent;}
+.degrau.diagnostico{background:rgba(59,94,138,0.06);border-color:rgba(59,94,138,0.25);border-left:3px solid #3b5e8a;}
+.degrau.conceitual{background:rgba(46,107,48,0.06);border-color:rgba(46,107,48,0.25);border-left:3px solid #2e6b30;}
+.degrau.aplicacao-d{background:rgba(201,168,76,0.07);border-color:rgba(201,168,76,0.28);border-left:3px solid #c9a84c;}
+.degrau-num{font-family:'Cinzel',serif;font-size:14pt;font-weight:900;line-height:1;margin-top:2px;flex-shrink:0;width:18px;}
+.degrau.diagnostico .degrau-num{color:#3b5e8a;}
+.degrau.conceitual .degrau-num{color:#2e6b30;}
+.degrau.aplicacao-d .degrau-num{color:#c9a84c;}
+.degrau-nivel{font-family:'Oswald',sans-serif;font-size:6.5pt;letter-spacing:2px;text-transform:uppercase;margin-bottom:2px;}
+.degrau.diagnostico .degrau-nivel{color:#3b5e8a;}
+.degrau.conceitual .degrau-nivel{color:#2e6b30;}
+.degrau.aplicacao-d .degrau-nivel{color:#8a6a20;}
+.degrau-pergunta{font-family:'EB Garamond',serif;font-size:10pt;font-style:italic;color:#0a1a08;line-height:1.45;margin-bottom:3px;}
+.degrau-resposta{font-family:'EB Garamond',serif;font-size:9pt;color:#555;line-height:1.4;}
+.degrau-resposta strong{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1px;text-transform:uppercase;}
+
+/* Diferenciação por Perfil — P3 */
+.grid-perfil{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.perfil-card{border:1px solid rgba(0,0,0,0.1);border-radius:3px;padding:8px 10px;background:#fafafa;}
+.perfil-tipo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:#2e6b30;margin-bottom:3px;font-weight:600;}
+.perfil-acao{font-family:'EB Garamond',serif;font-size:9.5pt;color:#2a2a2a;line-height:1.4;}
+.perfil-card.ansioso{border-left:3px solid #c9a84c;background:#fffcf0;}
+.perfil-card.intelectual{border-left:3px solid #2e6b30;background:#f5fff5;}
+.perfil-card.pratico{border-left:3px solid #40a040;background:#f0fdf0;}
+.perfil-card.resistente{border-left:3px solid #3b5e8a;background:#f0f4f8;}
+
+/* Avaliação Formativa — P3 */
+.bloco-aval{background:#f0f8ff;border:1px solid rgba(59,94,138,0.25);border-left:4px solid #3b5e8a;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-aval .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#3b5e8a;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-aval .bk::before{content:"☑" !important;font-size:9pt;}
+.checklist{list-style:none;padding:0;margin:0;}
+.checklist li{font-family:'EB Garamond',serif;font-size:10pt;color:#0a1a3a;padding:3px 0 3px 20px;position:relative;line-height:1.4;}
+.checklist li::before{content:"□" !important;position:absolute;left:0;color:#3b5e8a;font-size:10pt;}
+
+/* Uso do Gabarito e Seguimento — P4 */
+.bloco-gabarito{background:#fffef0;border:1px solid rgba(201,168,76,0.35);border-left:4px solid #c9a84c;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-gabarito .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-gabarito .bk::before{content:"📋" !important;font-size:8pt;}
+.bloco-gabarito p{font-family:'EB Garamond',serif;font-size:10pt;color:#2a1a00;line-height:1.6;}
+.bloco-seguimento{background:#f0fdf0;border:1px solid rgba(46,107,48,0.3);border-left:4px solid #2e6b30;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-seguimento .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#2e6b30;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-seguimento .bk::before{content:"↗" !important;font-size:10pt;}
+.seguimento-item{display:flex;gap:8px;padding:4px 0;border-bottom:1px solid rgba(46,107,48,0.1);}
+.seguimento-item:last-child{border-bottom:none;}
+.seg-dia{font-family:'Oswald',sans-serif;font-size:8pt;color:#2e6b30;font-weight:600;min-width:50px;flex-shrink:0;}
+.seg-acao{font-family:'EB Garamond',serif;font-size:9.5pt;color:#0a2008;line-height:1.4;}
+
+/* Responsivo mobile — novos blocos */
+@media (max-width:768px){
+  .baluno{padding:8px 10px;}
+  .baluno-corpo{font-size:9.5pt;}
+  .nota-prof-bloco{padding:5px 8px;}
+  .mapa-comp,.grid-perfil{grid-template-columns:1fr;}
+  .degrau{flex-direction:column;gap:4px;}
+  .degrau-num{font-size:11pt;}
+}
+@media print{
+  .baluno,.nota-prof-bloco,.mapa-comp,.bloco-fio,.escada-socratica,.grid-perfil,.bloco-aval,.bloco-gabarito,.bloco-seguimento{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+
 @media print{
   body{background:none;}
   .painel,.lbl,.lbl-prof{display:none!important;}
@@ -334,6 +452,19 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>O pastor e teólogo John Stott, ao fim de sua vida, admitiu hesitar entre o infernalismo eterno e o aniquilacionismo — não por rejeitar a Bíblia, mas por luta exegética genuína. Isso nos convida a estudar o tema com rigor e humildade, sem trivializar nem sensacionalizar.</p>
   <p>A seriedade dessa doutrina impede tanto o sentimentalismo quanto a crueldade. O cristão não estuda o inferno para sentir superioridade moral, mas para reconhecer o peso do pecado, a santidade de Deus e a urgência da redenção oferecida em Cristo. Onde o pecado é banalizado, a cruz perde sua profundidade; onde a condenação é negada, a graça também se torna irrelevante.</p>
   <p>Por isso, a doutrina do inferno precisa ser tratada com lágrimas e com reverência. Ela não foi dada para produzir prazer na condenação alheia, mas para levar a Igreja ao arrependimento, à gratidão e à missão. A mesma Bíblia que fala do juízo eterno também proclama, com igual clareza, a amplitude da misericórdia divina oferecida no evangelho.</p>
+
+  <!-- BLOCO DO ALUNO: Para você refletir (Pg 2) -->
+  <div class="baluno ba-refletir">
+    <div class="baluno-tag"><span class="baluno-ico">&#9670;</span> Para você refletir</div>
+    <div class="baluno-corpo">Jesus falou sobre o inferno com mais frequência do que qualquer outro personagem do Novo Testamento. Por que você acha que essa doutrina é tão rejeitada hoje — inclusive dentro da Igreja? Sua própria reação ao tema é mais de desconforto, indiferença ou gratidão pela graça que o livrou?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+  <div class="nota-prof-bloco">
+    <div class="np-label">Nota para o professor</div>
+    <p>Este bloco está ao final da Pg 2 do aluno. Abra espaço de 2–3 minutos para reflexão silenciosa. Não force partilha pública — a pergunta toca em experiências religiosas pessoais que podem ser dolorosas. Se a turma reagir com ansiedade, reforce imediatamente: estudar o inferno não é para quem já está em Cristo um exercício de medo, mas de gratidão. O tom correto para toda a aula começa aqui.</p>
+  </div>
+
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -342,7 +473,7 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
 <div class="pag int">
   <div class="wm">3</div>
   <div class="ph"><span class="phl">Lição 11</span><span class="pht">O Inferno</span></div>
-  <h2>I — O Vocabulário Bíblico</h2>
+  <h2>I-O Vocabulário Bíblico</h2>
   <p>A Bíblia usa quatro termos distintos frequentemente traduzidos como "inferno" — e confundi-los gera grande parte dos debates desnecessários sobre o tema. Cada palavra tem significado e contexto próprios.</p>
   <p>O professor deve destacar que essa distinção vocabular não é pedantismo acadêmico — é fundamental para que a turma não leia um texto sobre o estado intermediário dos mortos como se fosse descrição do destino final eterno, e vice-versa. Clareza aqui evita tanto exageros quanto omissões no trato pastoral da doutrina.</p>
   <h3>Sheol e Hades: O Reino dos Mortos</h3>
@@ -354,6 +485,19 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>O <em>lago de fogo</em> em Apocalipse 19–20 é o destino eterno dos condenados após o julgamento final — distinto do Hades, que é lançado nele (Ap 20:14). É chamado de "segunda morte" — separação eterna de Deus, que é a fonte de toda vida e bem.</p>
   <p>Essa distinção vocabular também protege a leitura bíblica contra simplificações apressadas. Nem todo texto sobre o estado dos mortos trata diretamente da condenação final, e nem toda referência ao juízo deve ser automaticamente lida como descrição detalhada do lago de fogo. A teologia cuidadosa respeita o desenvolvimento progressivo da revelação e evita confundir estado intermediário com destino eterno.</p>
   <p>Além disso, o uso desses termos mostra que a Bíblia não fala do juízo apenas em categorias abstratas. Há imagens concretas, históricas e morais que comunicam a gravidade da separação de Deus. Jesus escolhe imagens fortes porque o assunto é grave demais para ser reduzido a metáforas inofensivas ou a construções puramente filosóficas.</p>
+
+  <!-- BLOCO DO ALUNO: Conexão Bíblica (Pg 3) -->
+  <div class="baluno ba-biblica">
+    <div class="baluno-tag"><span class="baluno-ico">&#9998;</span> Conexão Bíblica</div>
+    <div class="baluno-corpo">Leia Marcos 9:43-48 e Lucas 16:19-26. Qual dos quatro termos (<em>Sheol</em>, <em>Hades</em>, <em>Geena</em>, lago de fogo) cada passagem utiliza? Jesus está descrevendo o estado intermediário ou a condenação final? O que a especificidade do vocabulário revela sobre a intenção do texto?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+  <div class="nota-prof-bloco">
+    <div class="np-label">Nota para o professor</div>
+    <p>Bloco ao final da Pg 3 do aluno. Incentive a leitura dos dois textos antes de responder. Marcos 9 usa <em>Geena</em> — condenação final. Lucas 16 usa <em>Hades</em> — estado intermediário. Esse exercício prático consolida a distinção vocabular da página e previne a leitura equivocada mais comum: tratar a parábola do rico e Lázaro como descrição do lago de fogo. Se algum aluno perceber a diferença por conta própria, valorize publicamente — é o sinal de que a distinção foi assimilada.</p>
+  </div>
+
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -362,7 +506,7 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
 <div class="pag int">
   <div class="wm">4</div>
   <div class="ph"><span class="phl">Lição 11</span><span class="pht">O Inferno</span></div>
-  <h2>II — As Três Posições Principais</h2>
+  <h2>II-As Três Posições Principais</h2>
   <p>O debate contemporâneo sobre o inferno organiza-se em torno de três posições principais, todas presentes em círculos evangélicos — embora com pesos históricos muito distintos.</p>
   <p>Ao apresentar as três posições, deixe claro à turma que o debate entre infernalismo eterno e aniquilacionismo ocorre dentro do campo evangélico conservador, entre pessoas que aceitam a autoridade da Bíblia. Não se trata de abandono das Escrituras, mas de disputa hermenêutica genuína. O universalismo, por outro lado, entra em conflito direto com passagens claras sobre a condenação eterna e está fora do consenso evangélico.</p>
   <h3>Infernalismo Eterno</h3>
@@ -375,6 +519,17 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Todos os seres humanos serão eventualmente salvos — seja pela graça irresistível de Deus, seja por um processo de purificação pós-morte. Defensores históricos: Orígenes; mais recentemente, Robin Parry (<em>The Evangelical Universalist</em>). Posição minoritária e amplamente rejeitada pelo evangelicalismo conservador, por conflitar com passagens claras sobre a condenação eterna.</p>
   <p>Entre essas posições, o ponto decisivo não é apenas filosófico, mas exegético. A pergunta central é como harmonizar a linguagem de "morte", "destruição" e "fogo eterno" com textos que falam de castigo consciente e permanente. Por isso, qualquer conclusão responsável deve nascer da leitura conjunta de Jesus, Paulo, João e do pano de fundo veterotestamentário, e não de preferências emocionais sobre o que pareceria mais aceitável à sensibilidade moderna.</p>
   <p>Também é importante notar que o debate não diminui a seriedade do juízo. Mesmo onde há divergência sobre a duração ou a forma da punição, permanece a convicção de que rejeitar a graça de Deus tem consequências irreversíveis. O inferno, em qualquer leitura ortodoxa do tema, não é um detalhe periférico, mas parte do testemunho bíblico sobre a santidade divina e a responsabilidade humana.</p>
+
+  <!-- BLOCO DO ALUNO: Sabia que? (Pg 4) -->
+  <div class="baluno ba-sabia">
+    <div class="baluno-tag"><span class="baluno-ico">&#9654;</span> Sabia que?</div>
+    <div class="baluno-corpo">Em Mateus 25:46, o mesmo adjetivo grego <em>aiōnios</em> ("eterno") qualifica tanto o "castigo eterno" dos ímpios quanto a "vida eterna" dos justos — no mesmo versículo. O argumento mais forte do infernalismo eterno é exatamente esse: se a vida eterna dos redimidos é consciente e infinita, o castigo eterno dos condenados teria o mesmo caráter. O aniquilacionismo precisa explicar por que <em>aiōnios</em> teria sentidos diferentes na mesma frase.</div>
+  </div>
+  <div class="nota-prof-bloco">
+    <div class="np-label">Nota para o professor</div>
+    <p>Bloco ao final da Pg 4 do aluno. Use-o como gancho para o argumento central do debate. Escreva no quadro (ou diga em voz alta): "castigo ETERNO — vida ETERNA — mesmo adjetivo, mesmo versículo." Deixe a turma perceber o peso exegético antes de apresentar a resposta aniquilacionista (consequências irreversíveis, não processo contínuo). Consulte a Pg P2 para a orientação completa de como conduzir esse debate com equilíbrio.</p>
+  </div>
+
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -383,7 +538,7 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
 <div class="pag int">
   <div class="wm">5</div>
   <div class="ph"><span class="phl">Lição 11</span><span class="pht">O Inferno</span></div>
-  <h2>III — Visões em Diálogo</h2>
+  <h2>III-Visões em Diálogo</h2>
   <p>Tanto o pentecostalismo quanto a tradição reformada adotam predominantemente o infernalismo eterno como posição confessional. A divergência mais significativa está na ênfase e na abordagem pastoral do tema.</p>
   <div class="bvp">
     <div class="vl">✦ Perspectiva Pentecostal</div>
@@ -397,6 +552,19 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>O núcleo confessional comum: a condenação eterna é real, justa e proporcional; nenhum ser humano vai ao inferno por acidente ou por falta de opção; é o amor de Deus que envia seu Filho para que nenhum pereça (Jo 3:16) — o inferno é a sombra que torna a graça incompreensivelmente gloriosa.</p>
   <p>Apesar das diferenças de ênfase, ambas as tradições reconhecem que a doutrina do inferno não pode ser isolada do caráter de Deus revelado em Cristo. O mesmo Senhor que advertiu sobre o fogo eterno foi aquele que chorou sobre Jerusalém, recebeu pecadores e entregou a própria vida pela salvação dos culpados. A severidade do juízo só é corretamente compreendida à luz da grandeza da misericórdia rejeitada.</p>
   <p>Por isso, a abordagem pastoral mais fiel une firmeza doutrinária e compaixão. Falar do inferno sem dureza de coração, mas também sem omissão, é parte da responsabilidade da Igreja. A verdade sobre a condenação eterna não enfraquece o evangelho; ao contrário, torna ainda mais luminosa a glória da cruz e da salvação graciosa oferecida por Deus.</p>
+
+  <!-- BLOCO DO ALUNO: Pense nisso (Pg 5) -->
+  <div class="baluno ba-pense">
+    <div class="baluno-tag"><span class="baluno-ico">&#8857;</span> Pense nisso</div>
+    <div class="baluno-corpo">Pentecostais e reformados convergem na realidade da condenação eterna, mas divergem na ênfase: medo imediato como motivação para conversão versus sobriedade teológica e compaixão pastoral. Qual dessas abordagens você encontra mais frequentemente? Qual você acha mais fiel ao modelo de Jesus, que chorou sobre Jerusalém antes de anunciar sua destruição (Lc 19:41-44)?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+  <div class="nota-prof-bloco">
+    <div class="np-label">Nota para o professor</div>
+    <p>Bloco ao final da Pg 5 do aluno. Funciona como síntese reflexiva das duas perspectivas. A referência a Lucas 19:41-44 (Jesus chorando sobre Jerusalém) é o eixo: firmeza doutrinária com coração partido. Se houver tensão na turma entre alunos das duas tradições, use essa imagem de Jesus como ponto de convergência antes de qualquer debate. A questão "qual abordagem é mais fiel" não tem resposta única — o objetivo é reflexão sobre o próprio ministério e postura pessoal diante do tema.</p>
+  </div>
+
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -419,6 +587,19 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Na última lição doutrinária desta série, contemplaremos o destino glorioso dos redimidos: <strong>O Céu e a Nova Jerusalém</strong> — a vida eterna na nova criação de Deus.</p>
   <p>Em termos pastorais, essa doutrina também chama o cristão à sobriedade espiritual. Não há espaço para presunção, frieza ou indiferença. Quem compreende o peso do juízo eterno aprende a valorizar mais profundamente a obra de Cristo, a tratar o pecado com seriedade e a olhar o próximo não como adversário ideológico, mas como alguém que precisa da reconciliação com Deus.</p>
   <p>Essa certeza também desemboca em esperança moral: Deus não abandonará sua criação ao caos, nem permitirá que a injustiça permaneça para sempre sem resposta. A existência do juízo final e da condenação eterna afirma que o mal terá fim, que a verdade prevalecerá e que a graça de Cristo é, hoje, a única porta aberta para a vida eterna.</p>
+
+  <!-- BLOCO DO ALUNO: Leve para a vida (Pg 6) -->
+  <div class="baluno ba-vida">
+    <div class="baluno-tag"><span class="baluno-ico">&#10022;</span> Leve para a vida</div>
+    <div class="baluno-corpo">Esta semana, deixe a doutrina do inferno gerar um fruto prático: escolha uma pessoa próxima que ainda não conhece o evangelho e ore por ela todos os dias. Se possível, crie uma oportunidade real de conversa. Anote aqui o nome dessa pessoa e um passo concreto que você vai dar:</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+  <div class="nota-prof-bloco">
+    <div class="np-label">Nota para o professor</div>
+    <p>Bloco de encerramento da Pg 6 do aluno — o ponto de chegada prático de toda a lição. Leia em voz alta e conceda um minuto de silêncio para que cada aluno escreva individualmente. Não solicite que compartilhem o nome. Encerre com uma oração breve e específica: ore por "as pessoas que cada um escreveu neste papel" sem nomear ninguém. Esse gesto transforma a doutrina do inferno em urgência missionária concreta — o objetivo central desta lição.</p>
+  </div>
+
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -474,7 +655,7 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <h2 class="prof">Visão Geral para o Professor</h2>
   <div class="bloco-guia">
     <div class="bk">Contexto na Série</div>
-    <p>A Lição 11 é a penúltima lição doutrinária da série e a mais pastoralmente delicada. Ela trata diretamente de um tema que pode gerar reações intensas: experiências anteriores de pregação abusiva sobre o inferno, dúvidas genuínas sobre a justiça de Deus, ou simplesmente o desconforto natural de confrontar a realidade do julgamento eterno. O professor precisa estar preparado para acolher essas reações sem desviar do conteúdo bíblico.</p>
+    <p>A Lição 11 é a antepenúltima lição doutrinária da série e a mais pastoralmente delicada. Ela trata diretamente de um tema que pode gerar reações intensas: experiências anteriores de pregação abusiva sobre o inferno, dúvidas genuínas sobre a justiça de Deus, ou simplesmente o desconforto natural de confrontar a realidade do julgamento eterno. O professor precisa estar preparado para acolher essas reações sem desviar do conteúdo bíblico.</p>
   </div>
   <div class="bloco-teo">
     <div class="bk">Eixo Teológico</div>
@@ -488,6 +669,36 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">⚠ Atenção</div>
     <p>Pode haver na turma pessoas com histórico de abuso religioso relacionado à pregação do inferno. Sinalize desde o início que esta lição busca fidelidade bíblica com compaixão pastoral, e que dúvidas sinceras são bem-vindas. Isso não significa amenizar o conteúdo, mas tratá-lo com a seriedade e o cuidado que ele exige.</p>
   </div>
+
+  <!-- BLOCO ADICIONADO: Mapa de Competências -->
+  <div class="bloco-guia">
+    <div class="bk">Mapa de Competências da Lição</div>
+  </div>
+  <div class="mapa-comp">
+    <div class="comp-celula conhecimento">
+      <div class="comp-titulo">Conhecimento</div>
+      <div class="comp-desc">O aluno será capaz de distinguir os quatro termos bíblicos (Sheol, Hades, Geena, lago de fogo) e identificar as três posições sobre o destino final dos condenados com seus textos-base.</div>
+    </div>
+    <div class="comp-celula habilidade">
+      <div class="comp-titulo">Habilidade</div>
+      <div class="comp-desc">O aluno será capaz de comparar infernalismo eterno e aniquilacionismo com argumentos exegéticos, e de identificar o argumento central de Mateus 25:46 (<em>aiōnios</em>) para cada posição.</div>
+    </div>
+    <div class="comp-celula atitude">
+      <div class="comp-titulo">Atitude</div>
+      <div class="comp-desc">O aluno demonstrará disposição para falar do inferno com compaixão e urgência missionária — nomeando concretamente alguém em sua vida que precisa do evangelho (bloco "Leve para a vida").</div>
+    </div>
+    <div class="comp-celula avaliacao">
+      <div class="comp-titulo">Avaliação</div>
+      <div class="comp-desc">Observar participação na dinâmica de abertura, clareza na distinção vocabular (Pg 3) e qualidade das respostas às questões 01 e 04 (Pg 7). Ver checklist na Pg P3.</div>
+    </div>
+  </div>
+
+  <!-- BLOCO ADICIONADO: Fio Condutor -->
+  <div class="bloco-fio">
+    <div class="bk">Fio Condutor — Conexão com a Série</div>
+    <p>A Lição 11 é o segundo polo do julgamento: a Lição 10 respondeu "quem julga e como", e a Lição 11 responde "qual o destino dos que são condenados". A Lição 12 — O Céu e a Nova Jerusalém — completará o quadro com o destino dos redimidos. Ao encerrar, reforce essa progressão: o inferno não é o último capítulo da série — a glória eterna é. Isso evita que a aula termine num clima de peso sem esperança.</p>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor · Lição 11</span><span class="rn">P1</span></div>
 </div>
 
@@ -517,6 +728,38 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">Orientação para Conduzir o Debate</div>
     <p>A resposta aniquilacionista clássica é que <em>aiōnios</em> qualifica as consequências, não a duração do processo: a destruição é eterna no sentido de que seus efeitos são irreversíveis, não de que o tormento nunca termina. O infernalista responde que o contexto de Apocalipse 20:10 — "atormentados pelos séculos dos séculos" — vai além de consequências e descreve estado contínuo. Apresente ambos os lados sem forçar uma conclusão.</p>
   </div>
+
+  <!-- BLOCO ADICIONADO: Escada de Perguntas Socráticas -->
+  <div class="bloco-guia">
+    <div class="bk">Escada de Perguntas Socráticas</div>
+  </div>
+  <div class="escada-socratica">
+    <div class="degrau diagnostico">
+      <div class="degrau-num">1</div>
+      <div class="degrau-corpo">
+        <div class="degrau-nivel">Nível 1 — Diagnóstico</div>
+        <div class="degrau-pergunta">"Qual foi a primeira palavra ou imagem que veio à sua mente quando soube que o tema de hoje seria o inferno — e de onde vem essa associação?"</div>
+        <div class="degrau-resposta"><strong>Resposta esperada:</strong> Respostas variadas: fogo, medo, sermões da infância, dúvida, alívio por estar salvo. O objetivo é revelar a bagagem emocional e cultural de cada aluno antes de qualquer argumento, criando abertura para a abordagem bíblica sem pressupostos não examinados.</div>
+      </div>
+    </div>
+    <div class="degrau conceitual">
+      <div class="degrau-num">2</div>
+      <div class="degrau-corpo">
+        <div class="degrau-nivel">Nível 2 — Conceitual</div>
+        <div class="degrau-pergunta">"Se Deus é amor e ninguém vai ao inferno 'por acidente' — como C. S. Lewis propõe que as portas do inferno são trancadas por dentro — o que isso revela sobre a natureza da liberdade humana e da responsabilidade diante de Deus?"</div>
+        <div class="degrau-resposta"><strong>Resposta esperada:</strong> O inferno não é pena arbitrária, mas a consumação eterna de uma escolha persistente de rejeitar a Deus. Isso exige que Deus seja levado a sério como juiz que respeita a liberdade criada — amor e juízo não se opõem, mas se pressupõem.</div>
+      </div>
+    </div>
+    <div class="degrau aplicacao-d">
+      <div class="degrau-num">3</div>
+      <div class="degrau-corpo">
+        <div class="degrau-nivel">Nível 3 — Aplicação</div>
+        <div class="degrau-pergunta">"Se você genuinamente crê que existe inferno e que pessoas ao seu redor estão em risco eterno — o que deveria mudar concretamente na sua forma de viver e se relacionar esta semana?"</div>
+        <div class="degrau-resposta"><strong>Resposta esperada:</strong> Respostas pessoais e concretas. O professor não deve forçar confissão pública. A resposta adequada é qualquer reconhecimento de urgência missionária — uma pessoa nomeada, uma conversa adiada, um relacionamento que precisa de reconciliação e testemunho.</div>
+      </div>
+    </div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor · Lição 11</span><span class="rn">P2</span></div>
 </div>
 
@@ -572,6 +815,42 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">⚠ Como usar esta tabela em aula</div>
     <p>Apresente a tabela sem criar a impressão de que as três posições têm o mesmo peso ou legitimidade dentro do evangelicalismo. O universalismo, apesar de ter defensores históricos, entra em conflito frontal com textos como Mt 25:46, Ap 20:10 e Lc 16:26 (o abismo fixo). O debate sério dentro do campo conservador é entre infernalismo eterno e aniquilacionismo.</p>
   </div>
+
+  <!-- BLOCO ADICIONADO: Diferenciação por Perfil -->
+  <div class="bloco-guia">
+    <div class="bk">Diferenciação por Perfil de Turma</div>
+  </div>
+  <div class="grid-perfil">
+    <div class="perfil-card ansioso">
+      <div class="perfil-tipo">Turma Ansiosa</div>
+      <div class="perfil-acao">Inicie e encerre ancorando em 2 Pedro 3:9 e João 3:16. Reduza o tempo nas imagens de tormento e amplie o tema da misericórdia rejeitada. Cheque individualmente após a aula quem parece perturbado — pode haver histórico de abuso religioso.</div>
+    </div>
+    <div class="perfil-card intelectual">
+      <div class="perfil-tipo">Perfil Intelectual</div>
+      <div class="perfil-acao">Aprofunde o argumento do <em>aiōnios</em> em Mt 25:46. Indique Peterson e Fudge para leitura paralela e independente. Proponha a pergunta do debate da Pg P2 como exercício escrito para casa.</div>
+    </div>
+    <div class="perfil-card pratico">
+      <div class="perfil-tipo">Perfil Prático</div>
+      <div class="perfil-acao">Foque na dinâmica de abertura e no bloco "Leve para a vida". Convide relatos de como a crença no inferno já gerou urgência missionária concreta na vida de alguém da turma.</div>
+    </div>
+    <div class="perfil-card resistente">
+      <div class="perfil-tipo">Perfil Resistente / Cético</div>
+      <div class="perfil-acao">Use C. S. Lewis como ponto de entrada: alguém que queria retirar a doutrina do cristianismo, mas foi convencido pelas Escrituras. A resistência emocional ao inferno muitas vezes coexiste com desejo profundo de justiça — use isso como abertura.</div>
+    </div>
+  </div>
+
+  <!-- BLOCO ADICIONADO: Avaliação Formativa Rápida -->
+  <div class="bloco-aval">
+    <div class="bk">Avaliação Formativa Rápida — Checklist de Objetivos</div>
+    <ul class="checklist">
+      <li>O aluno distinguiu Sheol/Hades (estado intermediário) de Geena e lago de fogo (condenação final)?</li>
+      <li>O aluno identificou os textos-base de pelo menos duas das três posições (infernalismo, aniquilacionismo, universalismo)?</li>
+      <li>O aluno compreendeu o argumento do <em>aiōnios</em> em Mateus 25:46 e a resposta aniquilacionista a ele?</li>
+      <li>O aluno conectou a doutrina à urgência missionária — nomeando concretamente alguém em sua vida?</li>
+      <li>O aluno demonstrou capacidade de falar do tema com firmeza e compaixão, sem sensacionalismo?</li>
+    </ul>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor · Lição 11</span><span class="rn">P3</span></div>
 </div>
 
@@ -606,6 +885,34 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="tempo-linha"><span class="tempo-min">7 min</span><span class="tempo-desc">Tópico III — Visões em diálogo (Pg 5)</span></div>
     <div class="tempo-linha"><span class="tempo-min">8 min</span><span class="tempo-desc">Conclusão, aplicação e oração de missão (Pg 6)</span></div>
   </div>
+
+  <!-- BLOCO ADICIONADO: Uso do Gabarito -->
+  <div class="bloco-gabarito">
+    <div class="bk">Orientação para o Uso do Gabarito (Pg P6)</div>
+    <p>As respostas sugeridas na Pg P6 são orientadoras, não prescritivas. Esta lição em particular exige sensibilidade redobrada: a Questão 04 é deliberadamente pessoal e não tem "resposta certa" — o objetivo é mover o aluno da abstração doutrinária para a urgência relacional concreta. Valorize respostas que nomeiem pessoas reais. Corrija apenas erros factuais (ex.: confundir Hades com lago de fogo, ou tratar o universalismo como posição equivalente ao infernalismo); para o restante, acolha e aprofunde com perguntas da Escada Socrática (Pg P2).</p>
+  </div>
+
+  <!-- BLOCO ADICIONADO: Seguimento Pós-Lição -->
+  <div class="bloco-seguimento">
+    <div class="bk">Seguimento Pós-Lição — Ações para a Semana</div>
+    <div class="seguimento-item">
+      <span class="seg-dia">Dia 1–2</span>
+      <span class="seg-acao">Envie uma mensagem ao grupo com 2 Pedro 3:9 e um convite para que cada um ore esta semana pela pessoa que escreveu no bloco "Leve para a vida" — sem revelar o nome.</span>
+    </div>
+    <div class="seguimento-item">
+      <span class="seg-dia">Dia 3–4</span>
+      <span class="seg-acao">Compartilhe a citação de C. S. Lewis sobre o inferno (<em>O Problema da Dor</em>) como leitura devocional rápida. Alunos intelectuais podem ser incentivados a buscar o capítulo completo.</span>
+    </div>
+    <div class="seguimento-item">
+      <span class="seg-dia">Dia 5</span>
+      <span class="seg-acao">Leia pessoalmente Lucas 16:19-31 em voz alta, devagar, como oração de preparação — deixando que o peso da passagem forme o coração para a próxima semana de testemunho.</span>
+    </div>
+    <div class="seguimento-item">
+      <span class="seg-dia">Pré-L12</span>
+      <span class="seg-acao">Avise a turma que a última lição — O Céu e a Nova Jerusalém — é a resposta gloriosa à pergunta levantada pelo inferno. Encoraje que venham com perguntas genuínas sobre a vida eterna.</span>
+    </div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor · Lição 11</span><span class="rn">P4</span></div>
 </div>
 
