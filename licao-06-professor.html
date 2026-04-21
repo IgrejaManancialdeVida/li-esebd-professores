@@ -272,6 +272,73 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     p{font-size:9pt;}
     .btn{padding:5px 8px;font-size:7pt;}
 }
+
+/* ===== BLOCOS-ALUNO ===== */
+.bloco-aluno{border-left:4px solid var(--cor);background:rgba(160,144,32,0.05);border-radius:0 3px 3px 0;padding:10px 12px;margin:12px 0;}
+.bloco-aluno .ba-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-aluno .ba-titulo::before{content:'✦';font-size:7pt;color:var(--cor);}
+.bloco-aluno .ba-txt{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:var(--ct);margin-bottom:0;}
+.bloco-aluno .ba-nota{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1px;text-transform:uppercase;color:#888;margin-top:6px;padding-top:6px;border-top:1px solid rgba(160,144,32,0.2);}
+
+/* ===== NOVOS BLOCOS PEDAGÓGICOS ===== */
+.bloco-comp{background:#fdf8e0;border:1px solid rgba(122,110,16,0.2);border-radius:4px;padding:10px 12px;margin:10px 0;}
+.bloco-comp .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#7a6e10;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-comp .bk::before{content:"◈";font-size:8pt;}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+.comp-cell{background:#fff;border:1px solid rgba(122,110,16,0.15);border-radius:3px;padding:7px 9px;}
+.comp-cell .cc-titulo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#7a6e10;margin-bottom:3px;display:flex;align-items:center;gap:5px;}
+.comp-cell .cc-titulo::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#7a6e10;flex-shrink:0;}
+.comp-cell.verde .cc-titulo{color:#2e6b4f;}.comp-cell.verde .cc-titulo::before{background:#2e6b4f;}
+.comp-cell.azul  .cc-titulo{color:#3b5e8a;}.comp-cell.azul  .cc-titulo::before{background:#3b5e8a;}
+.comp-cell.ouro  .cc-titulo{color:#8a6a20;}.comp-cell.ouro  .cc-titulo::before{background:#c9a84c;}
+.comp-cell p{font-family:'EB Garamond',serif;font-size:9.5pt;color:#2a2a2a;line-height:1.45;margin-bottom:0;}
+.bloco-fio{background:linear-gradient(135deg,rgba(122,110,16,0.05),rgba(201,168,76,0.07));border:1px solid rgba(201,168,76,0.3);border-top:3px solid #c9a84c;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-fio .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-fio .bk::before{content:"⟿";font-size:11pt;line-height:1;}
+.bloco-fio p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:#3a2a00;margin-bottom:0;}
+.bloco-fio .fio-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px;}
+.bloco-fio .fio-tag{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1px;text-transform:uppercase;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.4);color:#8a6a20;padding:2px 8px;border-radius:2px;}
+.bloco-socratico{background:#f7f2fc;border:1px solid rgba(75,0,130,0.18);border-left:4px solid #6a1b9a;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-socratico .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#6a1b9a;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-socratico .bk::before{content:"❓";font-size:8pt;}
+.soc-nivel{margin-bottom:8px;padding:7px 10px;border-radius:3px;border:1px solid rgba(106,27,154,0.12);}
+.soc-nivel:last-child{margin-bottom:0;}
+.soc-nivel.n1{background:rgba(106,27,154,0.05);}
+.soc-nivel.n2{background:rgba(106,27,154,0.09);}
+.soc-nivel.n3{background:rgba(106,27,154,0.13);}
+.soc-label{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#6a1b9a;margin-bottom:3px;}
+.soc-pergunta{font-family:'EB Garamond',serif;font-size:10pt;font-style:italic;color:#2a0a40;line-height:1.5;margin-bottom:4px;}
+.soc-resp{font-family:'EB Garamond',serif;font-size:9.5pt;color:#4a3a60;line-height:1.45;padding-left:10px;border-left:2px solid rgba(106,27,154,0.3);}
+.bloco-diferenc{background:#f0f7f4;border:1px solid rgba(46,107,79,0.22);border-left:4px solid #2e6b4f;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-diferenc .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#2e6b4f;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-diferenc .bk::before{content:"⊕";font-size:10pt;}
+.dif-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+.dif-item{background:#fff;border:1px solid rgba(46,107,79,0.15);border-radius:3px;padding:7px 9px;}
+.dif-tipo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#2e6b4f;margin-bottom:3px;font-weight:600;}
+.dif-acao{font-family:'EB Garamond',serif;font-size:9.5pt;color:#1e3a2a;line-height:1.45;}
+.bloco-aval{background:#fffbf0;border:1px solid rgba(201,168,76,0.3);border-left:4px solid #c9a84c;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-aval .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-aval .bk::before{content:"☑";font-size:10pt;}
+.aval-check{list-style:none;padding:0;margin:0;}
+.aval-check li{font-family:'EB Garamond',serif;font-size:10pt;color:#3a2a00;padding:3px 0 3px 18px;position:relative;line-height:1.45;border-bottom:1px solid rgba(201,168,76,0.12);}
+.aval-check li:last-child{border-bottom:none;}
+.aval-check li::before{content:"□";position:absolute;left:0;color:#c9a84c;font-size:11pt;line-height:1;}
+.bloco-gabarito-uso{background:#f8f5ff;border:1px solid rgba(100,60,180,0.2);border-left:4px solid #7c4dff;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-gabarito-uso .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#5e35b1;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-gabarito-uso .bk::before{content:"★";font-size:8pt;}
+.bloco-gabarito-uso p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:#2a0a50;margin-bottom:0;}
+.bloco-posticao{background:#e8f5e9;border:1px solid rgba(46,125,50,0.25);border-left:4px solid #388e3c;border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-posticao .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#2e7d32;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.bloco-posticao .bk::before{content:"↗";font-size:10pt;}
+.bloco-posticao ul{list-style:none;padding:0;margin-top:4px;}
+.bloco-posticao ul li{padding:2px 0 2px 14px;position:relative;font-family:'EB Garamond',serif;font-size:10pt;color:#1b3a1e;line-height:1.55;}
+.bloco-posticao ul li::before{content:"→" !important;position:absolute;left:0;color:#388e3c;}
+
+/* mobile novos blocos */
+@media screen and (max-width:768px){
+  .bloco-comp,.bloco-fio,.bloco-socratico,.bloco-diferenc,.bloco-aval,.bloco-gabarito-uso,.bloco-posticao,.bloco-aluno{padding:8px 10px;}
+  .comp-grid,.dif-grid{grid-template-columns:1fr;}
+}
 </style>
 </head>
 <body>
@@ -347,6 +414,11 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="sep"><span>✦</span></div>
   <p>Nenhum outro tópico da escatologia tem implicações tão diretas para a política, a ética cristã e o relacionamento com o judaísmo quanto este. Por isso, um estudo rigoroso — mais do que uma afirmação apressada de qualquer lado — é o caminho mais honesto e frutífero.</p>
   <p>Convém ainda ressaltar que o compromisso do cristão deve ser com a interpretação fiel das Escrituras, reconhecendo a centralidade de Cristo em todo o plano redentor. A maneira como entendemos Israel afeta diretamente a forma como lemos a história da salvação — e deve impulsionar a missão, não alimentar divisões.</p>
+    <div class="bloco-aluno">
+        <div class="ba-titulo">Para Você Refletir — Sua Visão Foi Formada pela Bíblia ou pela Tradição?</div>
+        <div class="ba-txt">A maioria dos cristãos brasileiros cresceu ouvindo que o retorno de Israel em 1948 é o maior sinal profético da história moderna. Mas essa convicção vem de uma leitura pessoal e cuidadosa das Escrituras — ou de pregadores, filmes e tradições recebidas sem exame? Esta lição não pede que você abandone sua posição: pede que você saiba <em>por que</em> a sustenta. Exegese antes de entusiasmo.</div>
+        <div class="ba-nota">✦ Bloco para o aluno · Pg. 2 — Introdução</div>
+    </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -364,6 +436,11 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <h3>Os Profetas e a Restauração de Israel</h3>
   <p>Ezequiel 36-37, Zacarias 12-14 e Jeremias 31 descrevem a restauração de Israel com imagens poderosas. O dispensacionalismo as interpreta como profecias ainda por cumprir-se literalmente. A leitura reformada vê seu cumprimento em Cristo e na missão da Igreja — o "Israel de Deus" ampliado (Gl 6:16) — sem excluir necessariamente uma conversão futura de judeus em grande número.</p>
   <p>Para o professor, é útil destacar que essa diferença não é pequena — envolve o modo como as promessas do Antigo Testamento devem ser lidas à luz da vinda de Cristo. Como os apóstolos interpretam a Lei, os Profetas e as alianças? Essa pergunta hermenêutica é o coração da questão e merece ser feita à turma antes de apresentar respostas prontas.</p>
+    <div class="bloco-aluno">
+        <div class="ba-titulo">Conexão Bíblica — Cristo, o Sim de Todas as Promessas</div>
+        <div class="ba-txt">Paulo afirma em 2 Coríntios 1:20 que "todas as promessas de Deus são nele sim, e nele amém." Hebreus 11:10 diz que Abraão "esperava a cidade que tem fundamentos, cujo artífice e construtor é Deus" — não uma faixa de terra no Oriente Médio. Antes de decidir se as promessas a Israel são literais ou tipológicas, pergunte: o que o Novo Testamento faz com elas? A resposta muda tudo.</div>
+        <div class="ba-nota">✦ Bloco para o aluno · Pg. 3 — O Pacto e as Promessas</div>
+    </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -384,6 +461,11 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <h3>1948: Sinal Profético ou Evento Político?</h3>
   <p>O dispensacionalismo vê na fundação do Estado de Israel o cumprimento de Ez 37 e o início da "geração" de Mt 24:34. A teologia reformada reconhece o evento como historicamente significativo, mas questiona sua validade como cumprimento profético específico — a restauração prometida pelos profetas era espiritual, não apenas política e geográfica.</p>
   <p>Romanos 11 impede conclusões apressadas em ambas as direções. Paulo não autoriza arrogância gentílica nem desprezo ao povo judeu, mas aponta para a soberania de Deus na história e para a possibilidade real de reenxerto dos ramos naturais. A pergunta central não é apenas o que acontecerá com Israel, mas como Deus demonstra sua fidelidade às promessas sem comprometer a centralidade de Cristo.</p>
+    <div class="bloco-aluno">
+        <div class="ba-titulo">Sabia Que? — "Todo o Israel Será Salvo" Não é Unanimidade</div>
+        <div class="ba-txt">Romanos 11:26 — "todo o Israel será salvo" — é um dos versículos mais debatidos da escatologia. Interpretações sérias incluem: (1) o Israel étnico em conversão futura em massa; (2) o conjunto dos eleitos judeus ao longo de toda a história; (3) o povo de Deus completo, judeus e gentios. Nenhuma dessas leituras é fácil de descartar. O texto exige humildade — e muito estudo.</div>
+        <div class="ba-nota">✦ Bloco para o aluno · Pg. 4 — Romanos 9–11: O Texto Decisivo</div>
+    </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -405,6 +487,11 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="sep"><span>✦</span></div>
   <p>Ambas as tradições afirmam o amor de Deus pelo povo judeu, o cumprimento das promessas abraâmicas em Cristo e a abertura do evangelho para todos — judeus e gentios — como a grande missão da Igreja até o fim dos tempos.</p>
   <p>Quando a Igreja mantém Cristo no centro, ela consegue tratar Israel com seriedade bíblica, amor fraterno e prudência pastoral. Esse ponto de convergência impede que o debate seja conduzido de forma ideológica ou que produza rivalidades estéreis entre escolas de interpretação.</p>
+    <div class="bloco-aluno">
+        <div class="ba-titulo">Pense Nisso — Teologia com Consequências Éticas</div>
+        <div class="ba-txt">A visão que você adota sobre Israel e a profecia não fica só no papel. Ela influencia como você ora, como vota, como compreende a missão da Igreja e como se relaciona com o judaísmo. Dispensacionalistas e teólogos da aliança chegam a posições políticas muito distintas a partir das mesmas Escrituras. Isso não significa que "tanto faz" — significa que a exegese responsável tem peso real no mundo real.</div>
+        <div class="ba-nota">✦ Bloco para o aluno · Pg. 5 — Visões em Diálogo</div>
+    </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -426,6 +513,11 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="bver">"Porque não há distinção entre judeu e grego; porque um mesmo é o Senhor de todos, rico para todos os que o invocam." <cite>Romanos 10:12</cite></div>
   <p>A questão de Israel na profecia deve levar o cristão a uma postura de humildade diante das Escrituras, zelo pela verdade e amor por judeus e gentios igualmente necessitados da graça de Deus. A escatologia bíblica não existe para alimentar curiosidades, mas para fortalecer a fé, sustentar a esperança e impulsionar a missão.</p>
   <p>Na próxima lição enfrentaremos uma das controvérsias mais antigas do protestantismo: <strong>O Milênio</strong> — pré, a e pós-milenismo em perspectiva comparada.</p>
+    <div class="bloco-aluno">
+        <div class="ba-titulo">Leve Para a Vida — Ore como Paulo Orou</div>
+        <div class="ba-txt">Em Romanos 10:1, Paulo escreve: <em>"Irmãos, o desejo do meu coração e a minha súplica a Deus por Israel é para salvação."</em> Independente da sua posição escatológica, essa oração não é opcional. O povo judeu não é peça de um tabuleiro profético — é um povo amado por Deus, por quem Cristo morreu. A melhor resposta ao estudo de hoje não é uma tese, mas uma oração.</div>
+        <div class="ba-nota">✦ Bloco para o aluno · Pg. 6 — Conclusão e Aplicação</div>
+    </div>
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -502,6 +594,38 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
       <li>Encerrar com missão e oração pelo povo judeu — não com polêmica ou posicionamento político</li>
     </ul>
   </div>
+
+  <div class="bloco-comp">
+    <div class="bk">Mapa de Competências da Lição 06</div>
+    <div class="comp-grid">
+      <div class="comp-cell">
+        <div class="cc-titulo">Conhecimento</div>
+        <p>Identificar o pacto abraâmico, Romanos 9-11 e as duas tradições (dispensacionalista / aliança) sobre o papel profético de Israel.</p>
+      </div>
+      <div class="comp-cell verde">
+        <div class="cc-titulo">Habilidade</div>
+        <p>Distinguir argumento hermenêutico de posicionamento político; ler Rm 9-11 como progressão lógica, não como repertório de versículos isolados.</p>
+      </div>
+      <div class="comp-cell azul">
+        <div class="cc-titulo">Atitude</div>
+        <p>Substituir entusiasmo acrítico por reverência diante do mistério soberano de Deus (Rm 11:33) e amor missionário pelo povo judeu.</p>
+      </div>
+      <div class="comp-cell ouro">
+        <div class="cc-titulo">Avaliação</div>
+        <p>O aluno separa teologia de geopolítica e sabe articular pelo menos uma diferença exegética entre as duas tradições?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco-fio">
+    <div class="bk">Fio Condutor — Série Eschaton</div>
+    <p>Esta lição aprofunda a tensão entre promessa e cumprimento: Deus é fiel às suas alianças — mas o modo do cumprimento é revelado progressivamente em Cristo. Conecta-se à <strong>Lição 05</strong> (Anticristo — contexto da apostasia e do engano) e prepara a <strong>Lição 07</strong> (O Milênio — pré, a e pós-milenismo). O eixo teológico: a soberania de Deus sobre a história da salvação, desde Abraão até a consumação.</p>
+    <div class="fio-tags">
+      <span class="fio-tag">← Lição 05: Anticristo</span>
+      <span class="fio-tag">Lição 06: Israel</span>
+      <span class="fio-tag">Lição 07: Milênio →</span>
+    </div>
+  </div>
   <div class="alerta">
     <div class="bk">Atenção — Teologia e Geopolítica Não São a Mesma Coisa</div>
     <p>Se a discussão derivar para o conflito israelo-palestino, redirecione com firmeza e gentileza: <em>"Essa é uma questão de ética e direito internacional — não de exegese de Romanos 11. Hoje estamos estudando o que a Bíblia diz sobre o papel de Israel na história da salvação. O que Deus pensa sobre qualquer conflito armado é uma pergunta séria, mas diferente desta."</em></p>
@@ -566,6 +690,25 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     "Paulo não está dizendo que Israel como nação terá um papel especial no fim dos tempos. Está dizendo que Deus não rejeitou seu povo — e que o evangelho é para o judeu primeiro e também para o grego."
     <cite>— John Stott, <em>Romans</em> (The Bible Speaks Today)</cite>
   </div>
+
+  <div class="bloco-socratico">
+    <div class="bk">Escada de Perguntas Socráticas — 3 Níveis</div>
+    <div class="soc-nivel n1">
+      <div class="soc-label">Nível 1 · Diagnóstico</div>
+      <div class="soc-pergunta">"O que você sente quando ouve que 'o retorno de Israel em 1948 cumpriu a profecia de Ezequiel 37'? De onde vem essa certeza?"</div>
+      <div class="soc-resp"><strong>Esperado:</strong> Convicção herdada de pregadores, filmes, tradição familiar. Aceite sem julgar — revela o ponto de partida real da turma.</div>
+    </div>
+    <div class="soc-nivel n2">
+      <div class="soc-label">Nível 2 · Conceitual</div>
+      <div class="soc-pergunta">"Lendo Hebreus 11:10 e Gálatas 3:16, o que Paulo e o autor de Hebreus fazem com as promessas a Abraão? Elas são literais ou têm cumprimento maior?"</div>
+      <div class="soc-resp"><strong>Esperado:</strong> Cristo é a semente; a herança é celestial e eterna, não territorial. A pergunta não cancela Israel — reposiciona o debate.</div>
+    </div>
+    <div class="soc-nivel n3">
+      <div class="soc-label">Nível 3 · Aplicação</div>
+      <div class="soc-pergunta">"Se Romanos 11 proíbe tanto o desprezo ao povo judeu quanto a especulação arrogante sobre seu destino, o que sobra para o cristão fazer? Apenas orar como Paulo (Rm 10:1)?"</div>
+      <div class="soc-resp"><strong>Esperado:</strong> Missão concreta, oração pelo povo judeu, humildade diante do mistério — não certeza geopolítica nem curiosidade ociosa.</div>
+    </div>
+  </div>
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P2</span></div>
 </div>
 
@@ -618,6 +761,40 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">Situação Comum — "Mas Deus não prometeu a terra a Israel para sempre?"</div>
     <p>Resposta sugerida: <em>"Essa é exatamente a questão central — e a resposta depende de como você lê o Antigo Testamento à luz do Novo. Hebreus 11:10 diz que Abraão aguardava 'uma cidade que tem fundamentos, cujo artífice e construtor é Deus'. Paulo em Gálatas 3:16 diz que a promessa foi feita 'à tua semente', e que essa semente é Cristo. Isso não cancela a promessa — a amplia e cumpre em dimensão maior. O debate honesto começa aqui."</em></p>
   </div>
+
+  <div class="bloco-diferenc">
+    <div class="bk">Diferenciação por Perfil de Turma</div>
+    <div class="dif-grid">
+      <div class="dif-item">
+        <div class="dif-tipo">Turma Iniciante</div>
+        <div class="dif-acao">Foque em Rm 9:6 e na metáfora da oliveira. Evite a tabela comparativa antes de fixar que o debate é hermenêutico, não político.</div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-tipo">Turma Avançada</div>
+        <div class="dif-acao">Explore as três interpretações de Rm 11:26 e o debate sobre o <em>katechon</em>. Permita discussão aberta; exija argumentação exegética.</div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-tipo">Turma Ansiosa</div>
+        <div class="dif-acao">Comece e encerre com Rm 11:33-36 (doxologia). Evite detalhes sobre conflitos geopolíticos sem preparar o terreno emocional antes.</div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-tipo">Turma Cética</div>
+        <div class="dif-acao">Use a tabela comparativa como ponto de entrada. Mostre que ambas as tradições têm exegetas sérios — nenhuma é apenas emocional.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco-aval">
+    <div class="bk">Avaliação Formativa Rápida — Checklist do Professor</div>
+    <ul class="aval-check">
+      <li>O aluno distingue o pacto abraâmico nas leituras dispensacionalista e da aliança?</li>
+      <li>O aluno lê Rm 9-11 como argumento progressivo, não como repertório de versículos isolados?</li>
+      <li>O aluno separa teologia profética de posicionamento político sobre o Estado de Israel?</li>
+      <li>O aluno articula ao menos uma diferença exegética entre as duas tradições estudadas?</li>
+      <li>O aluno aplica Rm 10:1 como postura de oração — e não apenas de debate — pelo povo judeu?</li>
+      <li>A aula produziu reverência e urgência missionária — ou disputa ideológica? (autoavaliação)</li>
+    </ul>
+  </div>
   <div class="bloco-guia">
     <div class="bk">Encerramento Ideal da Aula</div>
     <ul>
@@ -654,6 +831,22 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
       <div class="resp-num">Questão 04 — Missão e Rm 11:11</div>
       <div class="resp-txt">Paulo afirma que a evangelização dos gentios faz parte do plano de Deus para provocar ciúme em Israel e assim precipitar a sua salvação (Rm 11:11,14). Isso transforma a missão entre não-judeus em ato de amor indireta e diretamente pelo povo judeu. A Igreja local deveria ter em sua agenda missionária tanto gentios quanto judeus — e orar pelo povo judeu com a mesma urgência de Paulo em Rm 10:1. Resposta pessoal; valorize concretude e conexão com a realidade local.</div>
     </div>
+  </div>
+
+  <div class="bloco-gabarito-uso">
+    <div class="bk">Como Usar Este Gabarito em Aula</div>
+    <p>As respostas são <strong>orientativas</strong>, não definitivas. Valorize respostas pessoais com raciocínio bíblico honesto — mesmo quando divergem da síntese sugerida. Questões sobre Israel costumam provocar silêncio carregado: antes de dar a resposta, pergunte <em>"O que tornou essa pergunta difícil?"</em> — esse silêncio é dado pedagógico valioso. Evite fechar o debate com sua posição pessoal; prefira encerrar com a doxologia de Rm 11:33-36.</p>
+  </div>
+
+  <div class="bloco-posticao">
+    <div class="bk">Seguimento Pós-Lição — Ações para a Semana</div>
+    <ul>
+      <li><strong>Até terça:</strong> Envie pelo grupo: <em>"Leia Romanos 11 completo de uma vez — sem parar. O que surpreendeu você?"</em></li>
+      <li><strong>Até quinta:</strong> Recomende o vídeo do BibleProject sobre Romanos 9-11 (disponível no YouTube em PT).</li>
+      <li><strong>Na próxima EBD:</strong> Retome 2 minutos: "Alguém reviu sua posição sobre Israel — ou encontrou uma pergunta nova?" Continuidade entre lições.</li>
+      <li><strong>Preparação Lição 07:</strong> Leia Apocalipse 20:1-10 e 1 Coríntios 15:20-28 como base para O Milênio.</li>
+      <li><strong>Ação missional:</strong> Sugira que a turma inclua o povo judeu na lista de oração missionária — como Paulo em Rm 10:1.</li>
+    </ul>
   </div>
   <div class="sep"><span>✦</span></div>
   <h2 class="prof">Materiais Complementares</h2>
