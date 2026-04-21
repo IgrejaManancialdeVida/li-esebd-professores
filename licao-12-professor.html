@@ -227,13 +227,15 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
 .rod-prof::before{content:"";position:absolute;top:0;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,#3a5090,#c9a84c,transparent);opacity:0.3;}
 .rod-prof .rt{font-family:'Oswald',sans-serif;font-size:7pt;color:#3a5090;letter-spacing:1px;text-transform:uppercase;}
 .rod-prof .rn{font-family:'Cinzel',serif;font-size:9pt;color:#3a5090;}
-/* tabela comparativa */
-.tabela-comp{width:100%;border-collapse:collapse;margin:10px 0;font-size:9pt;}
-.tabela-comp th{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:#3a5090;padding:6px 8px;text-align:left;}
-.tabela-comp th:first-child{background:#1a3060;}
-.tabela-comp td{font-family:'EB Garamond',serif;font-size:9.5pt;color:#2a2a2a;padding:5px 8px;border-bottom:1px solid rgba(0,0,0,0.06);vertical-align:top;line-height:1.4;}
-.tabela-comp tr:nth-child(even) td{background:rgba(96,128,192,0.04);}
-.tabela-comp td:first-child{font-family:'Oswald',sans-serif;font-size:8pt;color:#3a5090;font-weight:600;letter-spacing:1px;white-space:nowrap;}
+/* tabela comparativa — versão cards por linha (sem corte lateral) */
+.comp-cards{margin:10px 0;display:flex;flex-direction:column;gap:5px;}
+.comp-card{border:1px solid rgba(58,80,144,0.18);border-radius:3px;overflow:hidden;}
+.comp-criterio{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:#1a3060;padding:5px 9px;font-weight:600;}
+.comp-linha{display:flex;align-items:flex-start;gap:0;border-top:1px solid rgba(58,80,144,0.12);}
+.comp-trad{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1px;text-transform:uppercase;color:#fff;padding:5px 7px;min-width:72px;flex-shrink:0;line-height:1.3;}
+.comp-trad.dispensac{background:#3a5090;}
+.comp-trad.reforma{background:#5570a8;}
+.comp-texto{font-family:'EB Garamond',serif;font-size:9.5pt;color:#2a2a2a;padding:5px 8px;line-height:1.4;flex:1;}
 
 /* ===== MOBILE ===== */
 @media screen and (max-width: 768px) {
@@ -255,10 +257,6 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     p{font-size:9.5pt;line-height:1.6;hyphens:auto;}
     .cap::first-letter{font-size:28pt;}
     .bloco-guia, .bloco-dica, .bloco-teo, .bloco-debate, .bloco-herme{padding:8px 10px;}
-    .bloco-guia .bt, .bloco-dica .bt, .bloco-teo .bt,
-    .bloco-debate .bt, .bloco-herme .bt{font-size:7pt;}
-    .tabela-comp{font-size:8.5pt;}
-    .tabela-comp th, .tabela-comp td{padding:5px 6px;}
     .rod{padding:5px 5vw 5vw 5vw;position:relative;}
     .rod::before{left:5vw;right:5vw;}
     .wm{display:none;}
@@ -672,43 +670,38 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   </div>
 
   <h2 class="prof" style="margin-top:10px;">Literal vs. Simbólico — Tabela Comparativa</h2>
-  <table class="tabela-comp">
-    <tr>
-      <th>Critério</th>
-      <th>Dispensacionalismo</th>
-      <th>Amilenismo Reformado</th>
-    </tr>
-    <tr>
-      <td>Nova Jerusalém</td>
-      <td>Cidade literal com dimensões astronômicas reais</td>
-      <td>Imagem simbólica da comunhão plena de Deus com seu povo</td>
-    </tr>
-    <tr>
-      <td>Dimensões (12.000 estádios)</td>
-      <td>Medidas literais — ≈ 2.200 km × 2.200 km × 2.200 km</td>
-      <td>Número simbólico: 12 (povo de Deus) × 1.000 (plenitude)</td>
-    </tr>
-    <tr>
-      <td>Israel e Igreja</td>
-      <td>Destinos distintos na nova criação</td>
-      <td>Um único povo unido na nova criação</td>
-    </tr>
-    <tr>
-      <td>"Faz novas" (21:5)</td>
-      <td>Nova criação após destruição da atual (2 Pe 3:10)</td>
-      <td>Renovação e glorificação do cosmos presente</td>
-    </tr>
-    <tr>
-      <td>Continuidade com o presente</td>
-      <td>Menor — nova criação é radicalmente diferente</td>
-      <td>Maior — fundada na ressurreição corporal de Cristo</td>
-    </tr>
-    <tr>
-      <td>Referências-chave</td>
-      <td>Ap 21:1 ("passou"), 2 Pe 3:10-12 (fogo)</td>
-      <td>Rm 8:21 (libertação), Is 65:17 (continuidade), Ap 21:5 (<em>kainós</em>)</td>
-    </tr>
-  </table>
+  <div class="comp-cards">
+    <div class="comp-card">
+      <div class="comp-criterio">Nova Jerusalém</div>
+      <div class="comp-linha"><span class="comp-trad dispensac">Dispensac.</span><span class="comp-texto">Cidade literal com dimensões astronômicas reais</span></div>
+      <div class="comp-linha"><span class="comp-trad reforma">Reformado</span><span class="comp-texto">Imagem simbólica da comunhão plena de Deus com seu povo</span></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-criterio">Dimensões (12.000 estádios)</div>
+      <div class="comp-linha"><span class="comp-trad dispensac">Dispensac.</span><span class="comp-texto">Medidas literais — ≈ 2.200 km × 2.200 km × 2.200 km</span></div>
+      <div class="comp-linha"><span class="comp-trad reforma">Reformado</span><span class="comp-texto">Número simbólico: 12 (povo de Deus) × 1.000 (plenitude)</span></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-criterio">Israel e Igreja</div>
+      <div class="comp-linha"><span class="comp-trad dispensac">Dispensac.</span><span class="comp-texto">Destinos distintos na nova criação</span></div>
+      <div class="comp-linha"><span class="comp-trad reforma">Reformado</span><span class="comp-texto">Um único povo unido na nova criação</span></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-criterio">"Faz novas" (21:5)</div>
+      <div class="comp-linha"><span class="comp-trad dispensac">Dispensac.</span><span class="comp-texto">Nova criação após destruição da atual (2 Pe 3:10)</span></div>
+      <div class="comp-linha"><span class="comp-trad reforma">Reformado</span><span class="comp-texto">Renovação e glorificação do cosmos presente</span></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-criterio">Continuidade com o presente</div>
+      <div class="comp-linha"><span class="comp-trad dispensac">Dispensac.</span><span class="comp-texto">Menor — nova criação é radicalmente diferente</span></div>
+      <div class="comp-linha"><span class="comp-trad reforma">Reformado</span><span class="comp-texto">Maior — fundada na ressurreição corporal de Cristo</span></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-criterio">Referências-chave</div>
+      <div class="comp-linha"><span class="comp-trad dispensac">Dispensac.</span><span class="comp-texto">Ap 21:1 ("passou"), 2 Pe 3:10-12 (fogo)</span></div>
+      <div class="comp-linha"><span class="comp-trad reforma">Reformado</span><span class="comp-texto">Rm 8:21 (libertação), Is 65:17 (continuidade), Ap 21:5 (<em>kainós</em>)</span></div>
+    </div>
+  </div>
   <div class="cit-autor">
     "A nova criação não é uma destruição e recriação, mas uma renovação e glorificação. Assim como o corpo de Cristo ressurreto era o mesmo corpo, transformado — a nova terra será esta terra, glorificada."
     <cite>— Anthony Hoekema, <em>A Bíblia e o Futuro</em></cite>
