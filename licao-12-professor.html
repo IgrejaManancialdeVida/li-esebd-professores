@@ -272,6 +272,92 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     p{font-size:9pt;}
     .btn{padding:5px 8px;font-size:7pt;}
 }
+
+/* ── BLOCOS DO ALUNO — Lição 12 (replicados na edição do professor) ── */
+.baluno{border-radius:3px;padding:9px 12px;margin-top:12px;margin-bottom:2px;position:relative;}
+.baluno-ico{font-size:10pt;margin-right:6px;vertical-align:middle;}
+.baluno-tag{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:4px;}
+.baluno-corpo{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:var(--ct);}
+.baluno-linha{border-bottom:1px solid rgba(0,0,0,0.12);height:22px;margin-top:6px;}
+.ba-refletir{background:rgba(96,128,192,0.07);border-left:3px solid var(--cor);}
+.ba-refletir .baluno-tag{color:var(--cor);}
+.ba-biblica{background:rgba(201,168,76,0.07);border-left:3px solid var(--ouro);}
+.ba-biblica .baluno-tag{color:#8a6a20;}
+.ba-sabia{background:rgba(20,35,70,0.06);border-left:3px solid #2e4a8e;}
+.ba-sabia .baluno-tag{color:#2e4a8e;}
+.ba-pense{background:rgba(96,128,192,0.04);border:1px dashed rgba(96,128,192,0.35);border-left:3px solid var(--cor);}
+.ba-pense .baluno-tag{color:var(--cor);}
+.ba-vida{background:linear-gradient(135deg,rgba(96,128,192,0.06),rgba(201,168,76,0.06));border:1px solid rgba(201,168,76,0.30);border-left:3px solid var(--ouro);}
+.ba-vida .baluno-tag{color:#8a6a20;}
+
+/* ── MELHORIAS PEDAGÓGICAS — P1 a P4 ── */
+/* Mapa de Competências (P1) */
+.mapa-comp{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.mc-celula{border-radius:3px;padding:8px 10px;}
+.mc-celula.conhecimento{background:rgba(58,80,144,0.08);border:1px solid rgba(58,80,144,0.25);}
+.mc-celula.habilidade{background:rgba(46,107,79,0.08);border:1px solid rgba(46,107,79,0.25);}
+.mc-celula.atitude{background:rgba(201,168,76,0.10);border:1px solid rgba(201,168,76,0.30);}
+.mc-celula.avaliacao{background:rgba(96,128,192,0.06);border:1px dashed rgba(96,128,192,0.35);}
+.mc-label{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:4px;}
+.mc-celula.conhecimento .mc-label{color:#3a5090;}
+.mc-celula.habilidade .mc-label{color:#2e6b4f;}
+.mc-celula.atitude .mc-label{color:#8a6a20;}
+.mc-celula.avaliacao .mc-label{color:var(--cor);}
+.mc-texto{font-family:'EB Garamond',serif;font-size:9pt;line-height:1.5;color:var(--ct);}
+/* Fio Condutor (P1) */
+.bloco-fio{background:linear-gradient(135deg,rgba(58,80,144,0.07),rgba(201,168,76,0.07));border:1px solid rgba(201,168,76,0.25);border-left:4px solid var(--ouro);border-radius:3px;padding:9px 12px;margin:10px 0;}
+.bloco-fio .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+.bloco-fio .bk::before{content:"⟶";font-size:9pt;}
+.bloco-fio p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:var(--ct);margin-bottom:0;}
+/* Escada Socrática (P2) */
+.escada-socratica{margin:10px 0;display:flex;flex-direction:column;gap:5px;}
+.es-degrau{border-radius:3px;padding:8px 11px;}
+.es-degrau.nivel-1{background:rgba(46,107,79,0.07);border-left:3px solid #2e6b4f;margin-left:0;}
+.es-degrau.nivel-2{background:rgba(58,80,144,0.08);border-left:3px solid #3a5090;margin-left:10px;}
+.es-degrau.nivel-3{background:rgba(201,168,76,0.08);border-left:3px solid var(--ouro);margin-left:20px;}
+.es-nivel-tag{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:3px;}
+.es-degrau.nivel-1 .es-nivel-tag{color:#2e6b4f;}
+.es-degrau.nivel-2 .es-nivel-tag{color:#3a5090;}
+.es-degrau.nivel-3 .es-nivel-tag{color:#8a6a20;}
+.es-pergunta{font-family:'EB Garamond',serif;font-size:10pt;font-style:italic;line-height:1.5;color:var(--ct);margin-bottom:3px;}
+.es-resposta{font-family:'EB Garamond',serif;font-size:9pt;line-height:1.45;color:#555;}
+.es-resposta::before{content:"→ ";color:#aaa;font-style:normal;}
+/* Diferenciação por Perfil (P3) */
+.diferenciacao-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.dp-celula{background:#f5f8ff;border:1px solid rgba(96,128,192,0.2);border-radius:3px;padding:8px 10px;}
+.dp-tipo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:#3a5090;font-weight:600;margin-bottom:3px;}
+.dp-acao{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.45;color:var(--ct);}
+/* Avaliação Formativa (P3) */
+.bloco-avaliacao{background:#f0f5ff;border:1px solid rgba(58,80,144,0.25);border-left:4px solid #3a5090;border-radius:3px;padding:9px 12px;margin:10px 0;}
+.bloco-avaliacao .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#3a5090;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-avaliacao .bk::before{content:"✓";font-weight:900;}
+.check-item{display:flex;align-items:flex-start;gap:8px;padding:3px 0;font-family:'EB Garamond',serif;font-size:9.5pt;color:var(--ct);line-height:1.4;}
+.check-box{width:13px;height:13px;border:1px solid rgba(58,80,144,0.5);border-radius:2px;flex-shrink:0;margin-top:2px;}
+/* Seguimento Pós-Lição (P4) */
+.bloco-seguimento{background:#eef8f3;border:1px solid rgba(46,107,79,0.25);border-left:4px solid #2e6b4f;border-radius:3px;padding:9px 12px;margin:10px 0;}
+.bloco-seguimento .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#2e6b4f;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-seguimento .bk::before{content:"◆";font-size:6pt;position:relative;top:-1px;}
+.seg-acao{display:flex;gap:10px;padding:4px 0;border-bottom:1px solid rgba(46,107,79,0.10);align-items:flex-start;}
+.seg-acao:last-child{border-bottom:none;}
+.seg-dia{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#2e6b4f;font-weight:600;min-width:40px;flex-shrink:0;margin-top:2px;}
+.seg-desc{font-family:'EB Garamond',serif;font-size:9.5pt;color:var(--ct);line-height:1.4;}
+/* Orientação de gabarito (P4) */
+.bloco-orientacao-gab{background:#fffdf5;border:1px solid rgba(201,168,76,0.25);border-left:4px solid #c9a84c;border-radius:3px;padding:9px 12px;margin:10px 0;}
+.bloco-orientacao-gab .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+.bloco-orientacao-gab .bk::before{content:"★";font-size:8pt;}
+.bloco-orientacao-gab p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:var(--ct);margin-bottom:0;}
+
+@media (max-width:768px){
+    .baluno{padding:8px 10px;}
+    .baluno-corpo{font-size:9.5pt;}
+    .mapa-comp,.diferenciacao-grid{grid-template-columns:1fr;}
+}
+@media print{
+    .baluno,.mapa-comp,.escada-socratica,.diferenciacao-grid,.bloco-fio,
+    .bloco-avaliacao,.bloco-seguimento,.bloco-orientacao-gab{
+        -webkit-print-color-adjust:exact;print-color-adjust:exact;
+    }
+}
 </style>
 </head>
 <body>
@@ -345,6 +431,14 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="sep"><span>✦</span></div>
   <p>N.T. Wright observa que o destino final dos redimidos não é "ir para o céu quando morrer" — é a ressurreição dos mortos e a vida na nova criação de Deus na terra renovada. "O céu" como destino final é uma simplificação; a nova criação é o quadro completo e mais glorioso.</p>
   <p>Essa esperança corrige a imaginação cristã e nos impede de reduzir a eternidade a uma fuga espiritual do mundo. A promessa bíblica aponta para a plenitude da redenção: Deus reconciliando consigo todas as coisas e conduzindo seu povo à vida perfeita em sua presença. Nos tópicos seguintes, examinaremos a distinção entre o estado intermediário e o destino final, a riqueza da visão de João em Apocalipse 21-22, e o diálogo entre as tradições sobre a natureza da Nova Jerusalém.</p>
+
+  <div class="baluno ba-refletir">
+    <div class="baluno-tag"><span class="baluno-ico">&#9670;</span> Para você refletir</div>
+    <div class="baluno-corpo">A maioria das pessoas imagina o céu como nuvens e harpas — uma existência etérea e desmaterializada. Ao descobrir que a Bíblia descreve uma nova criação concreta e gloriosa, sua esperança mudou? O que seria mais difícil de abandonar: a visão popular do céu ou a visão bíblica de uma nova terra renovada pela presença de Deus?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -362,6 +456,14 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <h3>A Nova Criação: O Destino Final</h3>
   <p>O destino último dos redimidos não é uma existência celeste desencarnada — é a nova criação: "céu novo e terra nova" (Ap 21:1; 2 Pe 3:13; Is 65:17). Deus não abandona sua criação original — ele a renova e glorifica. A nova terra é contínua com esta, assim como o corpo ressurreto é contínuo com o atual. A criação, que geme aguardando a revelação dos filhos de Deus (Rm 8:19-22), será liberta e transformada.</p>
   <p>A distinção entre o estado intermediário e a nova criação final tem grande valor pastoral. Ela consola o crente enlutado com a certeza de que os que morreram em Cristo já estão com o Senhor, mas também preserva a integridade da esperança bíblica, que aguarda a ressurreição do corpo e a restauração plena de todas as coisas. Essa verdade reafirma igualmente a bondade da criação: Deus não trata o corpo e o mundo material como descartáveis — em Cristo, ele garante que sua obra será renovada e glorificada.</p>
+
+  <div class="baluno ba-biblica">
+    <div class="baluno-tag"><span class="baluno-ico">&#9998;</span> Conexão Bíblica</div>
+    <div class="baluno-corpo">Leia Filipenses 1:21-23 e 1 Tessalonicenses 4:13-18 lado a lado. O que Paulo revela sobre o estado intermediário e sobre a esperança da ressurreição? Como a distinção entre "estar com Cristo agora" e "a nova criação final" aparece nesses textos? De que forma eles se complementam em vez de se contradizer?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -381,6 +483,12 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <p>Apocalipse 21:4 lista o que será eliminado para sempre: morte, pranto, clamor e dor. Não haverá mais maldição (Ap 22:3), noite (Ap 22:5), nem necessidade de templo (Ap 21:22) — pois Deus mesmo habitará plenamente com os seus. O rio da água da vida e a árvore da vida (Ap 22:1-2) retomam as imagens do Éden e as superam infinitamente — a história é circular, mas em espiral ascendente: o fim é mais glorioso que o começo.</p>
   <h3>A Presença de Deus: O Bem Supremo</h3>
   <p>O centro absoluto da nova criação não são as ruas de ouro nem as pedras preciosas — é a presença direta e ininterrupta de Deus com sua criatura: "e eles serão os seus povos, e Deus mesmo estará com eles" (Ap 21:3). "E verão a sua face" (Ap 22:4) — a <em>visio Dei</em>, a visão direta de Deus, é o bem supremo para o qual o ser humano foi criado e redimido. Enfatize esse ponto ao fechar a seção: o maior dom do céu não é a cidade — é o próprio Deus.</p>
+
+  <div class="baluno ba-sabia">
+    <div class="baluno-tag"><span class="baluno-ico">&#9654;</span> Sabia que?</div>
+    <div class="baluno-corpo">A expressão <em>visio Dei</em> — "visão de Deus" — foi o maior debate da teologia medieval. Tomás de Aquino a chamou de <em>beatitudo</em>, o bem-aventurado fim supremo do ser humano. A promessa de Apocalipse 22:4 — "e verão a sua face" — resolve aquilo que Moisés não pôde ver (Êx 33:20): na nova criação, a presença de Deus não será mediada por véus, templos ou sacramentos, mas direta, plena e eterna.</div>
+  </div>
+
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -402,6 +510,14 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="sep"><span>✦</span></div>
   <p>O núcleo eterno e inegociável: Deus habitará plenamente com os redimidos, toda lágrima será enxugada, a morte não existirá mais, e os redimidos verão a face de Deus para sempre — esse é o cume de toda esperança cristã e o destino para o qual toda a criação anseia.</p>
   <p>As diferenças de leitura entre abordagens mais literais e mais simbólicas não anulam a certeza central da promessa. Em qualquer das interpretações ortodoxas, a vida eterna é real, a comunhão com Deus é plena, e a morte jamais voltará a ameaçar os redimidos. Esse ponto comum deve produzir reverência e esperança — e não disputa estéril.</p>
+
+  <div class="baluno ba-pense">
+    <div class="baluno-tag"><span class="baluno-ico">&#8857;</span> Pense nisso</div>
+    <div class="baluno-corpo">Pentecostais tendem a ler a Nova Jerusalém literalmente — uma cidade física de ouro e pedras preciosas; reformados tendem a ler simbolicamente — uma imagem da comunhão plena com Deus. Mas ambos concordam no essencial: Deus habitará com seus redimidos para sempre. Essa convergência profunda importa mais que a divergência sobre os detalhes? Como você equilibra fidelidade exegética e humildade interpretativa diante de um texto tão rico?</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -423,6 +539,14 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
   <div class="bver">"E o que estava assentado no trono disse: Eis que faço novas todas as coisas... estas palavras são fiéis e verdadeiras." <cite>Apocalipse 21:5</cite></div>
   <p>Assim, a nova criação não é apenas consolo para depois da morte, mas fundamento para uma vida santa, firme e esperançosa agora. O cristão caminha no mundo com os olhos postos na eternidade, não para fugir da realidade, mas para viver nela à luz da promessa fiel de Deus.</p>
   <p>Na última lição desta série, aplicaremos tudo o que aprendemos: <strong>Vivendo à Luz da Eternidade</strong> — como a escatologia transforma o presente.</p>
+
+  <div class="baluno ba-vida">
+    <div class="baluno-tag"><span class="baluno-ico">&#10022;</span> Leve para a vida</div>
+    <div class="baluno-corpo">Esta semana, deixe a visão da nova criação gerar um fruto concreto: escolha uma área da sua vida — seu trabalho, um relacionamento, um hábito — e pergunte: "Como posso cuidar disso como quem sabe que Deus vai fazer novas todas as coisas?" Anote aqui essa área e um passo prático que você vai dar, à luz da esperança eterna:</div>
+    <div class="baluno-linha"></div>
+    <div class="baluno-linha"></div>
+  </div>
+
   <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -503,6 +627,32 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="bk">Atenção — O Perigo do Desengajamento Espiritualista</div>
     <p>Se algum aluno expressar que "não adianta investir no mundo porque tudo vai acabar", corrija gentilmente: <em>"Paulo diz exatamente o contrário em 1 Coríntios 15:58: 'sede firmes... sabendo que o vosso trabalho não é vão no Senhor.' É porque Deus vai renovar — e não destruir — que o trabalho feito em Cristo tem valor eterno."</em></p>
   </div>
+
+  <h2 class="prof" style="margin-top:10px;">Mapa de Competências</h2>
+  <div class="mapa-comp">
+    <div class="mc-celula conhecimento">
+      <div class="mc-label">Conhecimento</div>
+      <div class="mc-texto">Distinguir estado intermediário da nova criação; identificar os elementos de Apocalipse 21-22 e o debate literal/simbólico</div>
+    </div>
+    <div class="mc-celula habilidade">
+      <div class="mc-label">Habilidade</div>
+      <div class="mc-texto">Relacionar a esperança da nova criação com decisões e práticas concretas do cotidiano — trabalho, cuidado, arte e relacionamentos</div>
+    </div>
+    <div class="mc-celula atitude">
+      <div class="mc-label">Atitude</div>
+      <div class="mc-texto">Cultivar reverência e alegria diante do destino eterno dos redimidos; evitar tanto o escapismo quanto o cinismo sobre o mundo presente</div>
+    </div>
+    <div class="mc-celula avaliacao">
+      <div class="mc-label">Avaliação</div>
+      <div class="mc-texto">O aluno consegue articular a diferença entre platonismo e esperança bíblica, e nomear uma área da vida transformada pela nova criação?</div>
+    </div>
+  </div>
+
+  <div class="bloco-fio">
+    <div class="bk">Fio Condutor da Série</div>
+    <p>Esta é a penúltima lição da série <em>Eschaton</em>. Após tratar o retorno de Cristo (L9), o milênio (L10) e o inferno (L11), chegamos ao destino glorioso dos redimidos. A lição seguinte — <em>Vivendo à Luz da Eternidade</em> — fechará o ciclo aplicando tudo o que foi estudado à vida presente. O professor pode usar este momento para mostrar aos alunos que a série forma um arco: da segunda vinda à consumação, do juízo à renovação de todas as coisas.</p>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P1</span></div>
 </div>
 
@@ -563,6 +713,27 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     "A nova criação não é uma destruição e recriação, mas uma renovação e glorificação. Assim como o corpo de Cristo ressurreto era o mesmo corpo, transformado — a nova terra será esta terra, glorificada."
     <cite>— Anthony Hoekema, <em>A Bíblia e o Futuro</em></cite>
   </div>
+
+  <h2 class="prof" style="margin-top:10px;">Escada de Perguntas Socráticas</h2>
+  <p style="font-size:9.5pt;color:#555;margin-bottom:6px;font-family:'EB Garamond',serif;">Use esta sequência para conduzir a turma do diagnóstico à aplicação. Cada nível pressupõe o anterior.</p>
+  <div class="escada-socratica">
+    <div class="es-degrau nivel-1">
+      <div class="es-nivel-tag">Nível 1 — Diagnóstico</div>
+      <div class="es-pergunta">"Quando você pensa no céu, a primeira imagem que vem à mente é concreta ou abstrata? De onde ela veio?"</div>
+      <div class="es-resposta">Espera-se: imagens etéreas (nuvens, harpas, luz difusa) vindas de filmes, músicas ou pregações populares — abrindo espaço para a correção bíblica.</div>
+    </div>
+    <div class="es-degrau nivel-2">
+      <div class="es-nivel-tag">Nível 2 — Conceitual</div>
+      <div class="es-pergunta">"Por que João descreve a Nova Jerusalém descendo do céu para a terra, e não os redimidos subindo para longe dela?"</div>
+      <div class="es-resposta">Espera-se: percepção do movimento descendente como padrão bíblico (encarnação → nova criação); Deus que vem habitar, não arrancar.</div>
+    </div>
+    <div class="es-degrau nivel-3">
+      <div class="es-nivel-tag">Nível 3 — Aplicação</div>
+      <div class="es-pergunta">"Se Deus vai renovar e não descartar este mundo, o que muda na forma como você cuida do seu trabalho, dos seus relacionamentos e do seu corpo esta semana?"</div>
+      <div class="es-resposta">Espera-se: conexão pessoal e concreta entre a esperança da nova criação e escolhas práticas — combatendo tanto o escapismo quanto a indiferença.</div>
+    </div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P2</span></div>
 </div>
 
@@ -624,6 +795,36 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
       <li>Anuncie a Lição 13: <em>Vivendo à Luz da Eternidade — como a escatologia transforma o presente</em></li>
     </ul>
   </div>
+
+  <h2 class="prof" style="margin-top:10px;">Diferenciação por Perfil</h2>
+  <div class="diferenciacao-grid">
+    <div class="dp-celula">
+      <div class="dp-tipo">Turma analítica</div>
+      <div class="dp-acao">Concentre mais tempo na tabela comparativa (Pg. P2) e no debate literal/simbólico; proponha que cada aluno defenda uma posição com argumentos textuais antes de revelar sua própria leitura.</div>
+    </div>
+    <div class="dp-celula">
+      <div class="dp-tipo">Turma prática</div>
+      <div class="dp-acao">Vá direto à pergunta: "O que muda na sua vida se Deus vai renovar e não descartar o mundo?" Use o bloco <em>Leve para a vida</em> como eixo e deixe a teologia emergir das respostas.</div>
+    </div>
+    <div class="dp-celula">
+      <div class="dp-tipo">Turma enlutada</div>
+      <div class="dp-acao">Enfatize com cuidado o estado intermediário: "Quem morreu em Cristo já está com o Senhor — consciente, em paz." Reserve espaço para perguntas pessoais antes de avançar para a nova criação.</div>
+    </div>
+    <div class="dp-celula">
+      <div class="dp-tipo">Turma ansiosa</div>
+      <div class="dp-acao">Comece com Ap 21:4 — "não haverá mais morte, nem pranto, nem clamor, nem dor." Ancore a aula na segurança da promessa antes de tratar debates interpretativos; evite detalhes que gerem ansiedade apocalíptica.</div>
+    </div>
+  </div>
+
+  <div class="bloco-avaliacao">
+    <div class="bk">Avaliação Formativa Rápida — Checklist de Objetivos</div>
+    <div class="check-item"><div class="check-box"></div>O aluno distingue estado intermediário de nova criação final com precisão?</div>
+    <div class="check-item"><div class="check-box"></div>O aluno percebe que a Nova Jerusalém desce — não subimos para longe do mundo?</div>
+    <div class="check-item"><div class="check-box"></div>O aluno compreende a diferença entre <em>kainós</em> (nova qualidade) e a simples substituição?</div>
+    <div class="check-item"><div class="check-box"></div>O aluno conecta a esperança da nova criação com engajamento ético no presente?</div>
+    <div class="check-item"><div class="check-box"></div>O aluno nomeou uma área concreta da própria vida transformada por esta esperança?</div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P3</span></div>
 </div>
 
@@ -664,6 +865,28 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     <div class="mat-item"><span class="mat-tipo audio">Podcast</span><span class="mat-info">Ligonier Ministries — série <em>The Last Things: Heaven</em> com R.C. Sproul. Spotify / ligonier.org. Trata a <em>visio Dei</em> e a nova criação com profundidade reformada clássica.</span></div>
     <div class="mat-item"><span class="mat-tipo site">Digital</span><span class="mat-info">thegospelcoalition.org — artigo <em>"What Will Heaven Be Like?"</em> (Trevin Wax). Síntese clara da nova criação em perspectiva bíblica — boa leitura preparatória para o professor e para alunos interessados.</span></div>
   </div>
+
+  <div class="bloco-orientacao-gab">
+    <div class="bk">Orientação sobre o Uso do Gabarito</div>
+    <p>As respostas sugeridas acima são orientativas, não definitivas. Nas questões 03 e 04 especialmente — sobre o método hermenêutico e o propósito último do ser humano — valorize o raciocínio apresentado e a honestidade da reflexão pessoal acima da correspondência com o gabarito. Um aluno que diverge com argumentos sólidos demonstra mais maturidade teológica do que aquele que reproduz a resposta esperada sem genuíno processo de pensamento. Use o gabarito para checar se os conceitos centrais foram compreendidos, não para padronizar a reflexão.</p>
+  </div>
+
+  <div class="bloco-seguimento">
+    <div class="bk">Seguimento Pós-Lição — Ações para a Semana</div>
+    <div class="seg-acao">
+      <div class="seg-dia">Dia 1–2</div>
+      <div class="seg-desc">Envie ao grupo uma pergunta simples: <em>"O que você mais gostou de descobrir sobre o céu nesta lição?"</em> — isso fixa o aprendizado e cria ponte para a próxima aula.</div>
+    </div>
+    <div class="seg-acao">
+      <div class="seg-dia">Dia 3–4</div>
+      <div class="seg-desc">Sugira a leitura devocional de Apocalipse 21:1-8 + Romanos 8:18-25 — dois textos que se iluminam mutuamente sobre criação, gemido e esperança.</div>
+    </div>
+    <div class="seg-acao">
+      <div class="seg-dia">Dia 5–7</div>
+      <div class="seg-desc">Prepare a abertura da Lição 13 (<em>Vivendo à Luz da Eternidade</em>) retomando o bloco <em>Leve para a vida</em> desta lição: peça que dois ou três alunos compartilhem o passo concreto que anotaram e o que aconteceu durante a semana.</div>
+    </div>
+  </div>
+
   <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P4</span></div>
 </div>
 
