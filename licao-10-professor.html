@@ -227,6 +227,20 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
 .tabela-comp td{font-family:'EB Garamond',serif;font-size:9.5pt;color:#2a2a2a;padding:5px 8px;border-bottom:1px solid rgba(0,0,0,0.06);vertical-align:top;line-height:1.4;}
 .tabela-comp tr:nth-child(even) td{background:rgba(128,48,32,0.04);}
 .tabela-comp td:first-child{font-family:'Oswald',sans-serif;font-size:8pt;color:#7a2010;font-weight:600;letter-spacing:1px;white-space:nowrap;}
+/* ── tabela responsiva: cards empilhados no mobile ── */
+@media screen and (max-width:768px){
+  .tabela-comp thead{display:none;}
+  .tabela-comp,.tabela-comp tbody,.tabela-comp tr,.tabela-comp td{display:block;width:100%;box-sizing:border-box;}
+  .tabela-comp tr{margin-bottom:12px;border:1px solid rgba(122,32,16,0.25);border-radius:4px;overflow:hidden;}
+  .tabela-comp td{padding:8px 10px;border-bottom:1px solid rgba(0,0,0,0.07);white-space:normal!important;font-size:9pt;line-height:1.45;}
+  .tabela-comp td:first-child{background:#7a2010!important;color:#fff!important;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;text-transform:uppercase;white-space:normal!important;}
+  .tabela-comp td:nth-child(2)::before{content:"Dispensacionalismo Pentecostal";display:block;font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#7a2010;margin-bottom:3px;}
+  .tabela-comp td:nth-child(3)::before{content:"Amilenismo Reformado";display:block;font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:#8a6a20;margin-bottom:3px;}
+  .tabela-comp td[colspan="2"]{font-style:italic;text-align:center;background:rgba(122,32,16,0.04)!important;color:#7a2010!important;}
+  .tabela-comp td[colspan="2"]::before{display:none!important;}
+  .tabela-comp tr:nth-child(even) td{background:rgba(128,48,32,0.04);}
+  .tabela-comp tr:nth-child(even) td:first-child{background:#7a2010!important;}
+}
 @media print{
   body{background:none;}
   .painel,.lbl,.lbl-prof{display:none!important;}
@@ -257,8 +271,7 @@ h2.prof{font-family:'Oswald',sans-serif;font-weight:600;font-size:11.5pt;letter-
     .bloco-guia, .bloco-dica, .bloco-teo, .bloco-debate, .bloco-herme{padding:8px 10px;}
     .bloco-guia .bt, .bloco-dica .bt, .bloco-teo .bt,
     .bloco-debate .bt, .bloco-herme .bt{font-size:7pt;}
-    .tabela-comp{font-size:8.5pt;}
-    .tabela-comp th, .tabela-comp td{padding:5px 6px;}
+
     .rod{padding:5px 5vw 5vw 5vw;position:relative;}
     .rod::before{left:5vw;right:5vw;}
     .wm{display:none;}
