@@ -608,6 +608,106 @@ h2.prof{
 [contenteditable="true"]{outline:none;cursor:text;}
 [contenteditable="true"]:hover{background:rgba(90,62,138,0.05);border-radius:2px;}
 
+/* ── BLOCOS DO ALUNO inseridos na edição do professor ── */
+.baluno{border-radius:3px;padding:9px 12px;margin-top:12px;margin-bottom:2px;position:relative;}
+.baluno-ico{font-size:10pt;margin-right:6px;vertical-align:middle;}
+.baluno-tag{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:4px;}
+.baluno-corpo{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:var(--ct);}
+.baluno-linha{border-bottom:1px solid rgba(0,0,0,0.12);height:22px;margin-top:6px;}
+.ba-refletir{background:rgba(192,144,48,0.07);border-left:3px solid var(--cor);}
+.ba-refletir .baluno-tag{color:var(--cor);}
+.ba-biblica{background:rgba(201,168,76,0.08);border-left:3px solid var(--ouro);}
+.ba-biblica .baluno-tag{color:#8a6a20;}
+.ba-sabia{background:rgba(80,50,10,0.06);border-left:3px solid #7a5a10;}
+.ba-sabia .baluno-tag{color:#7a5a10;}
+.ba-pense{background:rgba(192,144,48,0.04);border:1px dashed rgba(192,144,48,0.38);border-left:3px solid var(--cor);}
+.ba-pense .baluno-tag{color:var(--cor);}
+.ba-vida{background:linear-gradient(135deg,rgba(192,144,48,0.06),rgba(201,168,76,0.07));border:1px solid rgba(201,168,76,0.32);border-left:3px solid var(--ouro);}
+.ba-vida .baluno-tag{color:#8a6a20;}
+
+/* Nota docente sobre bloco do aluno */
+.nota-docente{background:rgba(90,62,138,0.06);border:1px solid rgba(90,62,138,0.22);border-left:3px solid var(--prof);border-radius:3px;padding:8px 11px;margin:6px 0 10px 0;}
+.nota-docente-tag{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:var(--prof);margin-bottom:4px;display:flex;align-items:center;gap:5px;}
+.nota-docente-tag::before{content:'✎';font-size:8pt;}
+.nota-docente p{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.55;color:#3a2a55;margin-bottom:0;}
+
+/* ── MELHORIAS PEDAGÓGICAS P1 — Mapa de Competências ── */
+.mapa-comp{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;}
+.comp-celula{background:#fdfbff;border:1px solid rgba(90,62,138,0.2);border-radius:3px;padding:9px 10px;}
+.comp-titulo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;color:var(--prof);margin-bottom:5px;display:flex;align-items:center;gap:5px;}
+.comp-titulo::before{font-size:8pt;}
+.comp-titulo.conhecimento::before{content:'📖';}
+.comp-titulo.habilidade::before{content:'⚙️';}
+.comp-titulo.atitude::before{content:'🧭';}
+.comp-titulo.avaliacao::before{content:'✓';}
+.comp-celula p{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.5;color:#3a2a55;margin-bottom:0;}
+
+/* Fio Condutor */
+.fio-condutor{background:linear-gradient(135deg,rgba(90,62,138,0.06),rgba(201,168,76,0.06));border:1px solid rgba(90,62,138,0.2);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.fio-condutor .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--prof);margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.fio-condutor .bk::before{content:'⟶';font-size:10pt;}
+.fio-condutor p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:#2a1a44;margin-bottom:0;}
+
+/* ── MELHORIAS PEDAGÓGICAS P2 — Escada Socrática ── */
+.escada-socratica{margin:10px 0;}
+.escada-nivel{border-radius:3px;padding:9px 11px;margin-bottom:6px;position:relative;padding-left:42px;}
+.escada-nivel::before{position:absolute;left:11px;top:9px;font-family:'Cinzel',serif;font-size:14pt;font-weight:900;line-height:1;}
+.escada-nivel.nivel-1{background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.3);}
+.escada-nivel.nivel-1::before{content:'1';color:var(--ouro);}
+.escada-nivel.nivel-2{background:rgba(90,62,138,0.06);border:1px solid rgba(90,62,138,0.22);}
+.escada-nivel.nivel-2::before{content:'2';color:var(--prof);}
+.escada-nivel.nivel-3{background:rgba(139,26,26,0.05);border:1px solid rgba(139,26,26,0.2);}
+.escada-nivel.nivel-3::before{content:'3';color:var(--vermelho);}
+.escada-tipo{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;}
+.nivel-1 .escada-tipo{color:#8a6a20;}
+.nivel-2 .escada-tipo{color:var(--prof);}
+.nivel-3 .escada-tipo{color:var(--vermelho);}
+.escada-pergunta{font-family:'EB Garamond',serif;font-size:10pt;font-style:italic;line-height:1.5;color:var(--ct);margin-bottom:4px;}
+.escada-resp{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.5;color:#555;border-top:1px solid rgba(0,0,0,0.08);padding-top:4px;margin-top:4px;}
+.escada-resp strong{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:1px;text-transform:uppercase;color:#888;}
+
+/* ── MELHORIAS PEDAGÓGICAS P3 — Diferenciação + Avaliação Formativa ── */
+.grid-diferenciacao{display:grid;grid-template-columns:auto 1fr;gap:0;margin:10px 0;border:1px solid rgba(90,62,138,0.2);border-radius:3px;overflow:hidden;}
+.dif-linha{display:contents;}
+.dif-tipo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1px;text-transform:uppercase;background:rgba(90,62,138,0.08);color:var(--prof);padding:7px 10px;border-bottom:1px solid rgba(90,62,138,0.12);font-weight:600;display:flex;align-items:center;}
+.dif-acao{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.5;color:#2a1a44;padding:7px 10px;border-bottom:1px solid rgba(90,62,138,0.08);background:#fdfbff;}
+.dif-tipo:last-of-type,.dif-acao:last-of-type{border-bottom:none;}
+
+.avaliacao-formativa{background:#f5f0fc;border:1px solid rgba(90,62,138,0.25);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.avaliacao-formativa .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--prof);margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.avaliacao-formativa .bk::before{content:'☑';font-size:10pt;}
+.check-item{display:flex;align-items:flex-start;gap:8px;padding:3px 0;border-bottom:1px solid rgba(90,62,138,0.08);}
+.check-item:last-child{border-bottom:none;}
+.check-box{width:12px;height:12px;border:1px solid rgba(90,62,138,0.4);border-radius:2px;flex-shrink:0;margin-top:2px;}
+.check-txt{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.45;color:#3a2a55;}
+
+/* ── MELHORIAS PEDAGÓGICAS P4 — Uso do Gabarito + Seguimento ── */
+.bloco-gabarito{background:#fffdf5;border:1px solid rgba(201,168,76,0.3);border-left:4px solid var(--ouro);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bloco-gabarito .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.bloco-gabarito .bk::before{content:'◈';font-size:9pt;}
+.bloco-gabarito p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:#4a3a10;margin-bottom:0;}
+
+.seguimento-pos{background:linear-gradient(135deg,rgba(90,62,138,0.05),rgba(192,144,48,0.04));border:1px solid rgba(90,62,138,0.18);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.seguimento-pos .bk{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--prof);margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.seguimento-pos .bk::before{content:'↗';font-size:11pt;}
+.seg-item{display:flex;gap:10px;padding:4px 0;border-bottom:1px solid rgba(90,62,138,0.08);align-items:flex-start;}
+.seg-item:last-child{border-bottom:none;}
+.seg-dia{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1px;text-transform:uppercase;color:var(--prof);min-width:52px;flex-shrink:0;padding-top:1px;}
+.seg-acao{font-family:'EB Garamond',serif;font-size:9.5pt;line-height:1.45;color:#3a2a55;}
+
+@media (max-width:768px){
+    .baluno{padding:8px 10px;}
+    .baluno-corpo{font-size:9.5pt;}
+    .mapa-comp{grid-template-columns:1fr;}
+    .grid-diferenciacao{grid-template-columns:1fr;}
+    .dif-tipo{border-bottom:none;padding-bottom:2px;}
+}
+@media print{
+    .baluno,.nota-docente,.mapa-comp,.fio-condutor,
+    .escada-socratica,.grid-diferenciacao,.avaliacao-formativa,
+    .bloco-gabarito,.seguimento-pos{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+
 
 /* garante painel correto para lição 13 */
 .badge-prof{font-family:"Oswald",sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;background:#a07820;color:#fff;padding:4px 12px;border-radius:2px;}
@@ -750,6 +850,16 @@ h2.prof{
     </div>
     <p>A síntese desta série mostra que a escatologia não é um tema periférico, mas a moldura que dá unidade à esperança cristã. Cada lição estudada convergiu para a mesma verdade: Deus conduz a história a um fim santo, justo e glorioso.</p>
     <p>Por isso, conhecer o fim não é satisfazer curiosidade, mas aprender a viver com propósito. A doutrina escatológica amadurece a fé quando leva o crente a abandonar tanto a ansiedade quanto a superficialidade espiritual.</p>
+    <div class="baluno ba-refletir">
+        <div class="baluno-tag"><span class="baluno-ico">&#9670;</span> Para você refletir</div>
+        <div class="baluno-corpo">Ao olhar a síntese das 13 lições, qual tema te impactou mais profundamente — e qual ficou apenas no intelecto sem descer ao coração? A escatologia que não transforma a vida ficou no caminho. O que ainda precisa mudar em você a partir de tudo que foi estudado?</div>
+        <div class="baluno-linha"></div>
+        <div class="baluno-linha"></div>
+    </div>
+    <div class="nota-docente">
+        <div class="nota-docente-tag">Nota ao docente — Para você refletir</div>
+        <p>Este bloco convida o aluno à autoavaliação afetiva e espiritual — não teológica. Não corrija nem avalie as respostas. O objetivo é que o próprio aluno identifique onde a escatologia ainda não desceu do intelecto ao coração. Permita 1–2 minutos de silêncio antes de convidar partilhas voluntárias. Respostas honestas valem mais que respostas corretas.</p>
+    </div>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Este bloco de síntese é uma oportunidade pedagógica rara: pergunte à turma qual das doze afirmações foi mais desafiadora e qual foi mais consoladora. As respostas revelarão onde a série produziu impacto real — e onde o aprendizado ainda está apenas no plano intelectual.</p></div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
@@ -766,6 +876,16 @@ h2.prof{
     <div class="bver">"Todo aquele que tem esta esperança nele a si mesmo se purifica, assim como ele é puro." <cite>1 João 3:3</cite></div>
     <p>A ética escatológica não se apoia em medo estéril, mas em responsabilidade diante de Deus. Quem sabe que Cristo voltará aprende a avaliar o presente à luz da eternidade e a ordenar a vida segundo o Reino que vem.</p>
     <p>Essa perspectiva toca escolhas concretas: o modo de falar, de perdoar, de servir e de perseverar. A vigilância, a santidade e a missão deixam de ser conceitos abstratos e se tornam práticas diárias de fidelidade.</p>
+    <div class="baluno ba-biblica">
+        <div class="baluno-tag"><span class="baluno-ico">&#9998;</span> Conexão Bíblica</div>
+        <div class="baluno-corpo">Leia 2 Pedro 3:10-14 e 1 João 3:2-3 lado a lado. Como Pedro e João conectam a esperança do retorno de Cristo com a ética cotidiana? Quais verbos de ação cada autor usa — e o que eles revelam sobre a postura concreta que o cristão deve ter enquanto aguarda?</div>
+        <div class="baluno-linha"></div>
+        <div class="baluno-linha"></div>
+    </div>
+    <div class="nota-docente">
+        <div class="nota-docente-tag">Nota ao docente — Conexão Bíblica</div>
+        <p>Incentive os alunos a sublinhar os verbos nos textos citados: "purificar-se", "aguardar", "diligenciar", "apressar" (Pedro) e "purificar-se", "ver", "ser semelhante" (João). A análise verbal transforma a leitura em método exegético acessível. Se a turma não trouxe Bíblia, leia os textos em voz alta e peça que anotem os verbos que ouvirem.</p>
+    </div>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>As três atitudes — vigilância, santidade e missão — podem ser apresentadas como três dimensões de uma mesma postura escatológica: olhar para dentro (vigilância do coração), olhar para cima (santidade diante de Deus) e olhar para fora (missão ao próximo). Peça aos alunos que avaliem em qual das três dimensões são mais fortes e em qual precisam crescer.</p></div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
@@ -787,6 +907,14 @@ h2.prof{
     <p>A certeza da ressurreição e da nova criação confere significado eterno ao trabalho presente. "O vosso trabalho não é em vão no Senhor" (1 Co 15:58). Cada ato de amor, cada obra de arte, cada ato de justiça praticado em Cristo tem ressonância eterna — porque o Deus que faz novas todas as coisas não desperdiçará nada do que foi feito em seu nome e pelo seu poder.</p>
     <p>A esperança cristã redefine o sofrimento, a morte e o trabalho porque nenhum deles possui a palavra final. A promessa de Deus impede o desespero e sustenta a fidelidade mesmo quando o presente parece marcado por perdas e limitações.</p>
     <p>Além disso, ela protege o cristão do cinismo. O que é feito no Senhor não desaparece no vazio, mas participa, por graça, da realidade futura que Deus prometeu consumar.</p>
+    <div class="baluno ba-sabia">
+        <div class="baluno-tag"><span class="baluno-ico">&#9654;</span> Sabia que?</div>
+        <div class="baluno-corpo">A palavra grega <em>elpis</em> (esperança) aparece 53 vezes no Novo Testamento e nunca designa um desejo incerto — sempre uma certeza antecipada. Os primeiros cristãos viviam sob perseguição romana, mas os registros históricos mostram que enfrentavam a morte com serenidade desconcertante para os contemporâneos. O filósofo Epicteto, pagão, admirava-se: "É possível, por hábito e disciplina, desprezar a morte assim." Para Paulo, não era hábito — era ressurreição.</div>
+    </div>
+    <div class="nota-docente">
+        <div class="nota-docente-tag">Nota ao docente — Sabia que?</div>
+        <p>Este dado histórico serve como gancho contextual. Use-o para conectar a fé dos mártires à realidade presente da turma: "O que esses cristãos tinham que os tornava assim? Era doutrina? Era disciplina? Paulo diria: era certeza da ressurreição." A menção a Epicteto pode gerar curiosidade intelectual nos alunos mais acadêmicos — e está disponível como ponte para o debate filosófico, se surgir.</p>
+    </div>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Os três contextos — sofrimento, morte e trabalho — podem ser explorados como diagnóstico pessoal: qual dos três é mais difícil para a turma? Em qual área a esperança escatológica ainda não penetrou com força transformadora? Essa pergunta pode abrir um momento de oração e partilha genuína ao final da aula, especialmente por ser a lição final da série.</p></div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
@@ -810,6 +938,16 @@ h2.prof{
     <p>O cristão completo precisa das duas ênfases: a urgência missionária pentecostal e a profundidade cultural reformada. A esperança do retorno de Cristo não é apenas motivo para evangelizar — é motivo para construir, criar, cuidar e amar com tudo o que temos, enquanto temos tempo.</p>
     <p>As diferentes tradições cristãs oferecem ênfases que podem se corrigir e se enriquecer mutuamente. A urgência missionária e o compromisso cultural não precisam ser rivais, mas expressões complementares de uma mesma esperança escatológica.</p>
     <p>Uma escatologia equilibrada evita extremos e forma crentes capazes de anunciar o evangelho com fervor e, ao mesmo tempo, habitar o mundo com responsabilidade, profundidade e amor ao próximo.</p>
+    <div class="baluno ba-pense">
+        <div class="baluno-tag"><span class="baluno-ico">&#8857;</span> Pense nisso</div>
+        <div class="baluno-corpo">A perspectiva pentecostal enfatiza urgência — Cristo pode voltar a qualquer momento; a reformada enfatiza profundidade — o reino avança e exige construção de longo prazo. Essas ênfases parecem opostas, mas precisam coexistir. Qual delas você tende naturalmente? Que fruto concreto a ênfase oposta poderia produzir na sua vida se você a levasse a sério?</div>
+        <div class="baluno-linha"></div>
+        <div class="baluno-linha"></div>
+    </div>
+    <div class="nota-docente">
+        <div class="nota-docente-tag">Nota ao docente — Pense nisso</div>
+        <p>Este bloco é o único da série a colocar o aluno diante de sua própria tendência teológica — o que o torna especialmente revelador. Evite sugerir que uma ênfase é superior. O objetivo é que o aluno reconheça seus limites e se abra ao que a outra tradição pode oferecer. Se houver resistência, diga: "Nenhuma das duas está completa sozinha — a Igreja precisa de ambas." Valorize qualquer resposta honesta, independente do conteúdo teológico.</p>
+    </div>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Na última "Visão em Diálogo" da série, o objetivo não é declarar um vencedor, mas mostrar que a Igreja precisa de ambas as tradições para viver a esperança escatológica de forma plena. Encerre perguntando: "Em qual das duas ênfases você mais se identifica naturalmente? O que a outra pode acrescentar à sua vida?" Isso converte o debate teológico em crescimento pessoal.</p></div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
@@ -832,6 +970,16 @@ h2.prof{
     </div>
     <p>Concluir esta série exige mais do que recordar conteúdos; exige resposta prática. O conhecimento adquirido precisa se converter em transformação real, afetando prioridades, hábitos e a direção da vida diante de Deus.</p>
     <p>A escatologia bíblica chama o cristão a viver de modo intencional, com os olhos erguidos para a promessa divina e os pés firmes na obediência cotidiana. O futuro prometido por Deus é a força que sustenta a fidelidade no presente.</p>
+    <div class="baluno ba-vida">
+        <div class="baluno-tag"><span class="baluno-ico">&#10022;</span> Leve para a vida</div>
+        <div class="baluno-corpo">Esta é a última lição — mas não o fim da jornada. Escolha agora um dos três compromissos do desafio final (vigilância, santidade ou missão) e escreva aqui uma ação concreta e datada que você vai realizar esta semana. A escatologia que não gera compromisso ficou pelo caminho:</div>
+        <div class="baluno-linha"></div>
+        <div class="baluno-linha"></div>
+    </div>
+    <div class="nota-docente">
+        <div class="nota-docente-tag">Nota ao docente — Leve para a vida</div>
+        <p>Este é o bloco de maior peso pastoral da série inteira. Peça que o aluno escreva uma ação <strong>específica, realista e datada</strong> — não uma intenção genérica. "Vou orar mais" é fraco; "Vou ligar para minha mãe na terça e convidar para a igreja" é concreto. Ao final da aula, convide dois ou três alunos que queiram compartilhar voluntariamente o que escreveram. Esse gesto coletivo sela o compromisso com testemunhas.</p>
+    </div>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>Na conclusão desta lição final, o professor tem a oportunidade mais rica de toda a série: transformar conhecimento em decisão. Os três compromissos (vigilância, santidade, missão) podem ser selados com uma oração de consagração ao final da aula — não como fórmula, mas como resposta coletiva e consciente de tudo o que foi aprendido nas treze semanas.</p></div>
     <div class="bloco-dica"><div class="bk">Subsídio ao Professor</div><p>O versículo de encerramento — Ap 22:20 — é a oração mais antiga registrada da Igreja cristã: "Maranata — Vem, Senhor Jesus." Leia-o em voz alta como bênção final, explicando que essa palavra resume toda a esperança escatológica em uma só oração. O aluno que sair desta lição com essa palavra no coração levará consigo a essência de toda a série.</p></div>
     <div class="rod"><span class="rt">Eschaton · EBD Jovens Adultos</span><span class="rn">6</span></div>
@@ -918,6 +1066,30 @@ h2.prof{
         <div class="bk">Leitura da Turma</div>
         <p>Numa lição final, é comum que alguns alunos estejam emocionalmente conectados e outros simplesmente cansados. Calibre o tom: comece com leveza (o que ficou da série?) e vá aprofundando até o momento de decisão. O encerramento com Ap 22:20 deve ser solene e esperançoso — não sentimental nem performático.</p>
     </div>
+    <div class="sep"><span>✦</span></div>
+    <h2 class="prof">Mapa de Competências — Lição 13</h2>
+    <div class="mapa-comp">
+        <div class="comp-celula">
+            <div class="comp-titulo conhecimento">Conhecimento</div>
+            <p>Identificar as três atitudes escatológicas bíblicas (vigilância, santidade, missão) e sua fundamentação em 2 Pe 3 e 1 Jo 3.</p>
+        </div>
+        <div class="comp-celula">
+            <div class="comp-titulo habilidade">Habilidade</div>
+            <p>Relacionar a esperança cristã como <em>elpis</em> (certeza antecipada) com as áreas concretas de sofrimento, morte e trabalho na própria vida.</p>
+        </div>
+        <div class="comp-celula">
+            <div class="comp-titulo atitude">Atitude</div>
+            <p>Comprometer-se com ao menos uma ação datada e específica que traduza a esperança escatológica em obediência prática nesta semana.</p>
+        </div>
+        <div class="comp-celula">
+            <div class="comp-titulo avaliacao">Avaliação</div>
+            <p>O aluno consegue enunciar por que a escatologia deve transformar comportamento e identifica em qual das três atitudes precisa crescer.</p>
+        </div>
+    </div>
+    <div class="fio-condutor">
+        <div class="bk">Fio Condutor — Posição desta Lição na Série</div>
+        <p>As lições 1–12 trataram do <em>o quê</em> da escatologia: sinais, arrebatamento, tribulação, milênio, juízo, inferno, nova criação. A lição 13 responde ao <em>como então devemos viver</em>. Sem ela, a série permanece no campo da especulação teológica. Com ela, a escatologia se torna ética — e a teologia, discipulado. O professor que encerra bem esta lição fecha o arco narrativo das treze semanas.</p>
+    </div>
     <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P1</span></div>
 </div>
 
@@ -962,6 +1134,25 @@ h2.prof{
         "A esperança não é otimismo ingênuo sobre o futuro — é confiança fundamentada no caráter de Deus, que começou e não abandona a obra de suas mãos."
         <cite>— Herman Bavinck, <em>Reformed Dogmatics</em>, vol. 4</cite>
     </div>
+    <div class="sep"><span>✦</span></div>
+    <h2 class="prof">Escada de Perguntas Socráticas</h2>
+    <div class="escada-socratica">
+        <div class="escada-nivel nivel-1">
+            <div class="escada-tipo">Nível 1 — Diagnóstico</div>
+            <div class="escada-pergunta">"O que a palavra <em>esperança</em> significa para você no dia a dia — antes de qualquer resposta teológica?"</div>
+            <div class="escada-resp"><strong>Resposta esperada:</strong> Respostas variadas e pessoais: desejo de algo bom, incerteza quanto ao futuro, confiança em Deus. Acolha sem corrigir — esse é o ponto de partida real da turma, não o ideal teológico.</div>
+        </div>
+        <div class="escada-nivel nivel-2">
+            <div class="escada-tipo">Nível 2 — Conceitual</div>
+            <div class="escada-pergunta">"Se <em>elpis</em> no NT significa certeza antecipada — e não desejo incerto — o que muda na forma como você entende a promessa do retorno de Cristo?"</div>
+            <div class="escada-resp"><strong>Resposta esperada:</strong> O aluno percebe que a esperança cristã não é otimismo frágil, mas fundamento firme para decisões presentes. Pode surgir: "Então posso agir como se fosse verdade" — esse é o insight desejado.</div>
+        </div>
+        <div class="escada-nivel nivel-3">
+            <div class="escada-tipo">Nível 3 — Aplicação</div>
+            <div class="escada-pergunta">"Qual decisão concreta você tomaria esta semana se tivesse certeza absoluta de que Cristo voltará — e por que ainda não a tomou?"</div>
+            <div class="escada-resp"><strong>Resposta esperada:</strong> Esta pergunta expõe a distância entre crença declarada e vida vivida. Respostas honestas revelam onde a escatologia ainda não transformou a conduta. Não preencha o silêncio — deixe a pergunta agir.</div>
+        </div>
+    </div>
     <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor</span><span class="rn">P2</span></div>
 </div>
 
@@ -982,13 +1173,24 @@ h2.prof{
             <li><strong>Releitura da síntese:</strong> leia em voz alta as doze afirmações da síntese (pg. 2) com a turma — uma por vez, com silêncio entre elas. Peça que cada aluno marque mentalmente a que mais os tocou. Esse exercício de contemplação é incomum no contexto de EBD e produz impacto proporcional à sua raridade.</li>
         </ul>
     </div>
-    <div class="bloco-dica">
-        <div class="bk">Adaptações por Perfil de Turma</div>
-        <ul>
-            <li><strong>Turma majoritariamente pentecostal:</strong> valorize a urgência missionária e o fogo da esperança imediata — e acrescente o chamado à profundidade: "A urgência sem profundidade esgota. Como vamos sustentar essa chama por décadas?"</li>
-            <li><strong>Turma mais reformada ou intelectual:</strong> valorize o engajamento cultural e a solidez teológica — e acrescente o chamado à urgência: "A profundidade sem fervor esfria. Quem ao seu redor ainda não ouviu o evangelho?"</li>
-            <li><strong>Turma mista ou heterogênea:</strong> use a convergência final como celebração da riqueza da Igreja. As tradições diferentes precisam umas das outras — e esta sala representa isso.</li>
-        </ul>
+    <h2 class="prof">Diferenciação por Perfil de Turma</h2>
+    <div class="grid-diferenciacao">
+        <div class="dif-tipo">Pentecostal</div>
+        <div class="dif-acao">Valorize a urgência missionária e o fogo da esperança imediata. Acrescente o chamado à profundidade: <em>"A urgência sem raízes esgota. Como sustentar essa chama por décadas?"</em></div>
+        <div class="dif-tipo">Reformada / Intelectual</div>
+        <div class="dif-acao">Valorize o engajamento cultural e a solidez teológica. Acrescente o chamado à urgência: <em>"A profundidade sem fervor esfria. Quem ao seu redor ainda não ouviu o evangelho?"</em></div>
+        <div class="dif-tipo">Mista / Heterogênea</div>
+        <div class="dif-acao">Use a convergência final como celebração da riqueza da Igreja. As tradições diferentes precisam umas das outras — e esta sala representa exatamente isso.</div>
+        <div class="dif-tipo">Turma Ansiosa</div>
+        <div class="dif-acao">Evite linguagem de urgência intensa. Enfatize que a esperança escatológica <em>liberta</em> da ansiedade — não a alimenta. Use 2 Pe 3:14: <em>"diligenciai para serdes achados por ele em paz."</em></div>
+    </div>
+    <div class="avaliacao-formativa">
+        <div class="bk">Avaliação Formativa Rápida — Checklist de Objetivos</div>
+        <div class="check-item"><div class="check-box"></div><div class="check-txt">O aluno nomeou as três atitudes escatológicas bíblicas (vigilância, santidade, missão) com suas próprias palavras?</div></div>
+        <div class="check-item"><div class="check-box"></div><div class="check-txt">O aluno conectou a esperança como <em>elpis</em> (certeza antecipada) a pelo menos um contexto real da sua vida?</div></div>
+        <div class="check-item"><div class="check-box"></div><div class="check-txt">O aluno reconheceu a tensão entre urgência pentecostal e profundidade reformada sem rejeitar nenhuma das duas?</div></div>
+        <div class="check-item"><div class="check-box"></div><div class="check-txt">O aluno escreveu uma ação concreta e datada no bloco "Leve para a vida" (pg. 6)?</div></div>
+        <div class="check-item"><div class="check-box"></div><div class="check-txt">A turma encerrou a série com uma postura de decisão — não apenas de conhecimento acumulado?</div></div>
     </div>
     <div class="sep"><span>✦</span></div>
     <h2 class="prof">Encerramento Ideal da Série</h2>
@@ -1065,6 +1267,25 @@ h2.prof{
         <div class="mat-item">
             <span class="mat-tipo site">Digital</span>
             <span class="mat-info">thegospelcoalition.org/pt — artigo "O que significa viver à luz da eternidade?" Indicação direta para os alunos como leitura de consolidação após a última aula da série.</span>
+        </div>
+    </div>
+    <div class="bloco-gabarito">
+        <div class="bk">Orientação para Uso do Gabarito</div>
+        <p>As respostas sugeridas acima são orientativas — nunca normativas. Nas questões 01 e 04 especialmente, a resposta mais valiosa é a mais honesta, não a mais teologicamente correta. Ao usar o gabarito, priorize: (1) afirmar o aluno que foi específico e pessoal; (2) redirecionar respostas genéricas com a pergunta "e na sua vida concreta, o que isso significa?"; (3) nunca corrigir uma resposta sincera com outra resposta certa. O gabarito serve ao professor como referência de profundidade — não como régua de avaliação do aluno.</p>
+    </div>
+    <div class="seguimento-pos">
+        <div class="bk">Seguimento Pós-Lição — Ações para a Semana</div>
+        <div class="seg-item">
+            <div class="seg-dia">Dia 1–2</div>
+            <div class="seg-acao">Envie uma mensagem breve ao grupo da turma com o versículo de encerramento (Ap 22:20) e uma frase de encorajamento ao compromisso assumido na última aula.</div>
+        </div>
+        <div class="seg-item">
+            <div class="seg-dia">Dia 3–4</div>
+            <div class="seg-acao">Ore nominalmente pelos alunos que partilharam compromissos públicos. Se possível, mande uma mensagem individual de acompanhamento para quem demonstrou maior abertura na aula.</div>
+        </div>
+        <div class="seg-item">
+            <div class="seg-dia">Dia 5–7</div>
+            <div class="seg-acao">Prepare uma breve avaliação pessoal da série: quais alunos cresceram mais? Quais ainda precisam de acompanhamento pastoral? A série terminou — o discipulado continua.</div>
         </div>
     </div>
     <div class="rod-prof"><span class="rt">Eschaton · Edição do Professor · Fim da Série · 13 Lições</span><span class="rn">P4</span></div>
